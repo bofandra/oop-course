@@ -233,18 +233,9 @@ No. Use it when superclass behavior should be reused/extended.
 
 No. The actual runtime object's class determines the applicable implementation.
 
-## Quiz answer key
+## Quiz administration
 
-1. **A**
-2. **B**
-3. **A**
-4. **B**
-5. **A**
-6. A subclass provides a new implementation of an inherited method with the same name.
-7. Replacement ignores the superclass implementation; extension explicitly calls superclass behavior and adds subclass behavior.
-8. Different Notification objects all respond to `send()`, but each may implement it differently.
-9. The call is polymorphic; each runtime object's own implementation handles the operation.
-10. Runtime method selection follows the actual object type.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
