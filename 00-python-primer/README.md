@@ -1,24 +1,31 @@
 # Week 0 — Python Primer
 
-This is prerequisite/self-study material so that class time can focus on object-oriented programming.
+This is prerequisite/self-study material so class time can focus on object-oriented programming.
 
 ## Minimum Python prerequisites
 
 Students should be comfortable with:
 
-- variables and expressions
-- `if` / `elif` / `else`
-- `for` and `while`
-- functions and parameters
-- lists, tuples, and dictionaries
-- basic imports/modules
-- reading Python errors
+- variables and expressions;
+- `if` / `elif` / `else`;
+- `for` and `while`;
+- functions and parameters;
+- lists, tuples, and dictionaries;
+- basic imports/modules;
+- reading Python errors.
+
+## Materials
+
+- [Python Primer notebook](00_python_primer.ipynb)
+- [Readiness check](readiness-check.md)
 
 ## Reference
 
 OpenStax, *Introduction to Python Programming*: use the relevant introductory chapters before Week 1.
 
-## Readiness check
+Week 0 is intentionally Python prerequisite material. It does not introduce formal OOP concepts yet.
+
+## Readiness example
 
 Before Week 1, you should be able to read and explain code like:
 
@@ -32,4 +39,10 @@ for student in students:
     print(greet(student))
 ```
 
-If this is difficult, review the Python fundamentals before continuing to Week 1.
+You should also be able to modify a list/dictionary, write a short function, use a conditional, and interpret a basic Python error message.
+
+If this is difficult, review the primer notebook and introductory Python material before continuing to Week 1.
+
+## Next
+
+Continue to [Week 1 — Introduction to OOP & Thinking in Objects](../week-01/).
