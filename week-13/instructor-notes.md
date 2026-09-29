@@ -209,18 +209,9 @@ No. This course uses them for different roles.
 
 No. A postcondition describes the state/result expected after successful completion.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **A**
-4. **B**
-5. **A**
-6. It makes failure explicit and prevents the object from silently entering invalid state.
-7. An exception raised in one function/method travels outward through callers until handled or left unhandled.
-8. It handles the expected failure while allowing unrelated exceptions to remain visible.
-9. Invalid caller input is an expected failure condition communicated with an exception; an assertion checks an internal condition the programmer believes should hold.
-10. Example precondition: `0 < amount <= balance`; postcondition: `new_balance = old_balance - amount`.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
