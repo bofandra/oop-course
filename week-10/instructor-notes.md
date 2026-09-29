@@ -192,18 +192,9 @@ No. It is a structure that requires careful method resolution and design reasoni
 
 No. Has-a/uses relationships may still be clearer with composition.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **A**
-3. **A**
-4. **B**
-5. **B**
-6. Because Python searches the inheritance hierarchy in a defined order; changing parent order can change which inherited implementation is found first.
-7. A class inherits through multiple parent paths that share a common ancestor.
-8. The primary superclass expresses domain identity/generalization; a mixin provides a focused reusable capability.
-9. Reuse alone does not guarantee a meaningful inheritance relationship and may introduce conflicts/complexity.
-10. Example: Car has an Engine; Order uses PaymentService.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
