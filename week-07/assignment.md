@@ -1,5 +1,7 @@
 # Week 7 Assignment — Polymorphic Payroll
 
+> **Teaching schedule note:** Week 7 is immediately before the Mid Test. Prefer completing most of this work in class or set any submission deadline no later than Thursday before the Mid Test so the assignment does not compete with exam preparation.
+
 ## Objective
 
 Demonstrate overriding, polymorphism, and runtime method selection using a meaningful inheritance hierarchy.
