@@ -291,19 +291,11 @@ Requirement:
 A reasonable initial model:
 
 ```text
-Customer
-
-MenuItem
-   ▲
-   │
-OrderItem
-   ▲
-   │
- Order
-   │
-   ├── uses DeliveryStrategy
-   │
-   └── can use NotificationCreator
+Customer <──────────── Order
+                       │
+                       ├── contains ──> OrderItem ── references ──> MenuItem
+                       ├── uses ──────> DeliveryStrategy
+                       └── can use ───> NotificationCreator
 ```
 
 ## 10. Core model
