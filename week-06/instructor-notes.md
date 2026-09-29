@@ -221,18 +221,9 @@ No. Use inheritance only when the specialized/general relationship makes sense.
 
 For this week, phrase it operationally as a way to reuse superclass initialization. Avoid oversimplified claims about all runtime behavior.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **C**
-3. **B**
-4. **B**
-5. **C**
-6. Superclass = more general class; subclass = more specialized class that inherits from it.
-7. Because inheritance communicates an is-a semantic relationship; code similarity alone does not make one concept a specialized form of another.
-8. Example: Doctor inherits `name`; Doctor adds `specialty`.
-9. It gains inherited superclass features and can add more specialized features.
-10. Because Week 6 focuses first on inheritance itself; Week 7 studies replacing inherited behavior and the polymorphic consequences.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
