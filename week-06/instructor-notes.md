@@ -2,37 +2,37 @@
 
 ## Teaching goal
 
-Students should understand inheritance first as a **model relationship**, not merely as a code-reuse trick.
-
-The core mental model is:
+Week 5 taught:
 
 ```text
-general class
-    ↓
-specialized class
+Car has an Engine
+Order has OrderItems
+Appointment refers to Patient and Doctor
 ```
 
-or:
+Week 6 introduces a different relationship:
 
 ```text
 Doctor is a Person
 Developer is an Employee
 ```
 
+The key learning goal is not Python syntax. It is deciding whether inheritance is **semantically appropriate**.
+
 ## Source alignment
 
 ### Inggriani Liem
 
-Use the Diktat directly:
+Use the Diktat framing that:
 
-- a descendant/child class inherits attributes and methods from an ancestor/parent class;
+- a child/descendant class inherits attributes and methods from an ancestor/parent class;
 - inheritance is a fundamental OO concept;
-- the **is-a** relationship connects a general class with a more specific subclass;
-- a subclass instance must still be a valid instance of its superclass conceptually;
-- inheritance should be designed carefully and not added arbitrarily;
-- has-a and is-implemented-using relationships should not be confused with inheritance.
+- inheritance should be designed carefully rather than added arbitrarily;
+- **is-a** is the conceptual relationship between a general class and a more specific subclass;
+- a subclass object must still be an object of the superclass concept;
+- has-a should not be confused with inheritance.
 
-Do not expand into multiple inheritance yet. The Diktat discusses it, but it is reserved for Week 10.
+The Diktat also discusses many advanced inheritance consequences such as multiple inheritance, renaming, subcontracting, and typing effects. Do **not** teach those in detail in Week 6; later weeks cover selected advanced topics.
 
 ### OpenStax
 
@@ -41,11 +41,9 @@ Use:
 - **13.1 Inheritance Basics**
 - **13.2 Attribute Access**
 
-OpenStax 13.1 explicitly covers is-a vs has-a, superclass/subclass terminology, inheritance syntax, and inherited methods.
+Use only the relevant `super()` material from 13.3 as a Python implementation bridge for superclass initialization.
 
-OpenStax 13.2 covers inherited instance attributes and adding subclass-specific state.
-
-For `super().__init__()`, use only the relevant small portion of **13.3 Methods**. Do not teach overriding or polymorphism yet.
+Overriding and polymorphism remain Week 7 topics.
 
 ## Recommended 200-minute flow
 
@@ -56,65 +54,63 @@ For `super().__init__()`, use only the relevant small portion of **13.3 Methods*
 | 09:10–09:35 | Python subclass syntax |
 | 09:35–10:00 | Inherited attributes and methods |
 | 10:00–10:10 | Break |
-| 10:10–10:30 | Subclass-specific state/behavior |
-| 10:30–10:50 | `super().__init__()` |
-| 10:50–11:25 | Employee hierarchy lab |
+| 10:10–10:35 | Subclass-specific state/behavior |
+| 10:35–10:55 | `super().__init__()` |
+| 10:55–11:25 | Employee lab |
 | 11:25–11:40 | Inheritance vs composition challenge |
 | 11:40–11:50 | Quiz / bridge to overriding |
 
-## Opening review
+## Opening question
 
 Write:
 
 ```text
-Car has Engine
-Doctor is Person
+Car ______ Engine
+Doctor ______ Person
 ```
 
-Ask:
-
-> Which relationship belongs to Week 5, and which one suggests inheritance?
+Ask students to fill the blanks.
 
 Expected:
 
-- Car/Engine → has-a
-- Doctor/Person → is-a
-
-Then introduce inheritance only after that semantic distinction is clear.
-
-## Terminology
-
-Use both source terminologies:
-
 ```text
-superclass / parent / ancestor
-subclass / child / descendant
+Car has an Engine
+Doctor is a Person
 ```
 
-For the rest of teaching, prefer **superclass** and **subclass** because that matches OpenStax.
+Then say:
 
-## Python syntax
+> Week 5 handled "has-a". Week 6 handles "is-a".
 
-Use the smallest possible example:
+## Basic inheritance example
+
+Start with:
 
 ```python
 class Person:
+    def __init__(self, name):
+        self.name = name
+
     def display_name(self):
-        print("Person")
+        print(self.name)
+
 
 class Doctor(Person):
     pass
 ```
 
+Then:
+
+```python
+doctor = Doctor("Dr. Andi")
+doctor.display_name()
+```
+
 Ask:
 
-> Which method did Doctor define itself?
-
-None.
-
-> Can a Doctor instance still call display_name()?
-
-Yes, because it inherits the method.
+- Where was `display_name()` defined?
+- Why can Doctor use it?
+- Is Doctor still conceptually a Person?
 
 ## Subclass specialization
 
@@ -122,155 +118,135 @@ Then add:
 
 ```python
 class Doctor(Person):
+    def __init__(self, name, specialty):
+        super().__init__(name)
+        self.specialty = specialty
+
     def diagnose(self):
         print("Diagnosing")
 ```
 
-Explain:
-
-```text
-inherit general features
-+
-add specific features
-```
-
-Avoid method overriding at this point.
-
-## Using super().__init__()
-
-Use:
-
-```python
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-class Doctor(Person):
-    def __init__(self, name, specialty):
-        super().__init__(name)
-        self.specialty = specialty
-```
-
-Teaching wording:
-
-> First initialize the inherited Person state, then initialize the Doctor-specific state.
-
-Do not explain MRO, cooperative inheritance, or multiple inheritance behavior here.
-
-## Inheritance is not just reuse
-
-This is one of the most important Week 6 messages.
-
-Use:
-
-```text
-Wrong question:
-"Can I reuse code?"
-
-Better question:
-"Is this concept genuinely
-a specialized kind of that concept?"
-```
-
-The Diktat explicitly warns that poorly designed inheritance can make implementation difficult.
-
-## Useful is-a test
-
-Ask students to say the sentence aloud:
-
-```text
-A Doctor is a Person.
-A Manager is an Employee.
-A Car is an Engine.
-```
-
-The sentence should make domain sense.
-
-This is a heuristic, not a complete formal proof.
-
-## Common misconceptions
-
-### 1. Inheritance means "contains"
-
-Correct with:
-
-```text
-Car has Engine
-not
-Car is Engine
-```
-
-### 2. Parent automatically gets child behavior
-
-A Person instance does not automatically gain Doctor-only methods.
-
-### 3. Inheritance exists only to avoid duplication
-
-Code reuse can be a benefit, but the relationship should still model a meaningful is-a relationship.
-
-### 4. Subclass should redefine everything
-
-No. Inherited features are available precisely so the subclass does not have to duplicate them.
-
-### 5. super() means "call any parent method automatically"
-
-Keep the Week 6 use narrow: `super().__init__()` for superclass initialization.
-
-## Live coding sequence
-
-Recommended:
+Draw:
 
 ```text
 Person
-  ↓
-Doctor(Person)
-  ↓
-inherit display_name()
-  ↓
-add specialty
-  ↓
-add diagnose()
-  ↓
-use super().__init__()
-  ↓
-add Patient(Person)
+- name
+- display_name()
+
+Doctor
+- inherited name
+- inherited display_name()
+- specialty
+- diagnose()
 ```
 
-Then move to Employee / Developer / Designer.
+## Teaching super()
+
+Use a deliberately narrow explanation:
+
+> `super().__init__(...)` lets the subclass reuse the superclass initialization before adding subclass-specific state.
+
+Do not explain:
+
+- MRO internals;
+- cooperative multiple inheritance;
+- zero-argument `super()` implementation details.
+
+Those would distract from the Week 6 goal.
+
+## Important caution
+
+The Diktat explicitly warns that inheritance should be designed carefully.
+
+Use this bad example:
+
+```python
+class Engine:
+    def start(self):
+        print("start")
+
+
+class Car(Engine):
+    pass
+```
+
+Ask:
+
+> Is a Car an Engine?
+
+No.
+
+Then redesign:
+
+```python
+class Car:
+    def __init__(self, engine):
+        self.engine = engine
+```
+
+This links Week 5 and Week 6.
+
+## isinstance()
+
+Use lightly:
+
+```python
+isinstance(doctor, Doctor)
+isinstance(doctor, Person)
+```
+
+The teaching point is conceptual:
+
+```text
+Doctor is a Person.
+```
+
+Do not expand into Python's full type system.
+
+## Common misconceptions
+
+### 1. Inheritance is just code reuse
+
+Correct with the is-a test.
+
+### 2. A subclass gets only methods
+
+Clarify that inherited features include state/attributes and behavior in the conceptual model.
+
+### 3. Every related class should share a parent
+
+No. Use inheritance only when the specialized/general relationship makes sense.
+
+### 4. super() means "the parent class"
+
+For this week, phrase it operationally as a way to reuse superclass initialization. Avoid oversimplified claims about all runtime behavior.
 
 ## Quiz answer key
 
 1. **B**
-2. **B**
-3. **C**
-4. **C**
-5. **B**
-6. Superclass is the more general class; subclass is the more specialized class that inherits from it.
-7. Because a Car is not a specialized kind of Engine; it has an Engine.
-8. It may inherit shared Person state/behavior such as name and display_name().
-9. Duplicated code does not prove an is-a relationship; inheritance should represent domain meaning.
-10. Any syntactically correct `class Student(Person): ...` example is acceptable.
+2. **C**
+3. **B**
+4. **B**
+5. **C**
+6. Superclass = more general class; subclass = more specialized class that inherits from it.
+7. Because inheritance communicates an is-a semantic relationship; code similarity alone does not make one concept a specialized form of another.
+8. Example: Doctor inherits `name`; Doctor adds `specialty`.
+9. It gains inherited superclass features and can add more specialized features.
+10. Because Week 6 focuses first on inheritance itself; Week 7 studies replacing inherited behavior and the polymorphic consequences.
 
 ## Assignment grading notes
 
-Reward:
+Reward meaningful modelling more than clever code.
 
-- correct semantic is-a relationship;
-- correct superclass/subclass direction;
-- inherited feature use;
-- simple subclass specialization;
-- correct use of `super().__init__()`.
+A simple correct hierarchy is better than unnecessary extra inheritance levels.
 
-Do not reward unnecessary abstraction.
-
-If students override methods, acknowledge that it works but tell them overriding is assessed next week.
+If a student duplicates Employee initialization instead of using `super().__init__()`, deduct only against the relevant criterion; the deeper purpose remains understanding the inheritance relationship.
 
 ## What not to teach yet
 
-Avoid detailed treatment of:
+Avoid detailed coverage of:
 
-- overriding;
-- `super().method()` for extending overridden behavior;
+- method overriding;
 - polymorphism;
 - dynamic binding;
 - abstract classes;
@@ -282,7 +258,7 @@ Avoid detailed treatment of:
 
 End with:
 
-> Doctor inherits display_name() from Person. But what if Doctor needs a different version of a method that Person already defines?
+> A Doctor can inherit `display_name()` from Person. But what if Doctor needs a different implementation of a behavior that already exists in Person?
 
 That leads directly to:
 
