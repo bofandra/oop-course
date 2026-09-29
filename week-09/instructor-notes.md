@@ -218,18 +218,9 @@ Do not introduce a broad cross-language interface taxonomy here. Stay with the s
 
 No. They work with inheritance/overriding/polymorphism and can make required polymorphic behavior explicit.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **C**
-4. **B**
-5. **A**
-6. Abstract/deferred class is incomplete/not intended for direct meaningful instantiation; concrete class has enough implementation to create meaningful objects.
-7. A feature whose existence/contract is known but whose concrete implementation is deferred to descendants.
-8. Yes. Shared state and concrete methods can coexist with abstract/deferred behavior.
-9. A fake default can silently provide meaningless behavior; an abstract requirement makes concrete subclasses responsible for implementing the behavior.
-10. Concrete subclasses can implement the same abstract operation differently and still be called polymorphically.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
