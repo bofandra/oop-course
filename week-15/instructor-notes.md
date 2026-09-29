@@ -150,16 +150,11 @@ This keeps the formal-source boundary clear.
 Use Food Ordering:
 
 ```text
-Customer
-
-MenuItem
-   ↑
-OrderItem
-   ↑
- Order
-   │
-   ├── Delivery strategy
-   └── Notification creator
+Customer <──────────── Order
+                       │
+                       ├── contains ──> OrderItem ── references ──> MenuItem
+                       ├── uses ──────> Delivery strategy
+                       └── can use ───> Notification creator
 ```
 
 Do not force both patterns into every student model if the student can explain a simpler coherent alternative under a different assumption.
