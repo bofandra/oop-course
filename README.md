@@ -53,6 +53,13 @@ By the end of the course, students should be able to:
 
 See [Course Map](COURSE_MAP.md) for the detailed weekly learning-outcome, assessment, and source alignment.
 
+Teaching operations:
+
+- [Teaching Readiness Audit](TEACHING_READINESS_AUDIT.md)
+- [Semester Teaching Calendar](TEACHING_CALENDAR.md)
+- [Course Material Release Plan](RELEASE_PLAN.md)
+- [Execution Audit](EXECUTION_AUDIT.md)
+
 ## Weekly Plan
 
 | Week | Topic |
@@ -112,7 +119,11 @@ oop-course/
 │   └── final-project/
 ├── templates/
 │   └── colab_template.ipynb
-└── COURSE_MAP.md
+├── COURSE_MAP.md
+├── TEACHING_READINESS_AUDIT.md
+├── TEACHING_CALENDAR.md
+├── RELEASE_PLAN.md
+└── EXECUTION_AUDIT.md
 ```
 
 ### Standard teaching-week package
