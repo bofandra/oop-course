@@ -241,18 +241,9 @@ False.
 
 No. Rebinding one reference says nothing about other references.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **B**
-4. **B**
-5. **A**
-6. Aliasing means multiple references/names identify the same object.
-7. Mutation changes an existing object; reassignment changes which object a name refers to.
-8. `id()` is runtime identity information, not stable domain identity.
-9. Another reference still reaches the object.
-10. At a high level, when no reachable application references remain, the object may become eligible for automatic memory reclamation.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
