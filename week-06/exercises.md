@@ -1,19 +1,31 @@
 # Week 6 Exercises — Inheritance
 
-## Exercise 1 — Identify Superclass and Subclass
+## Exercise 1 — Identify the is-a Relationship
 
-For each pair, identify the superclass and subclass:
+For each pair, decide whether inheritance is appropriate.
 
-- Person / Doctor
-- Employee / Developer
-- Vehicle / Car
-- Animal / Cat
+1. Doctor / Person
+2. Car / Engine
+3. Developer / Employee
+4. Laptop / Battery
+5. SavingsAccount / BankAccount
+6. Order / Customer
 
-Then write an **is-a** sentence for each.
+Write your reasoning using one of these forms:
+
+```text
+X is a Y
+```
+
+or:
+
+```text
+X has a Y
+```
 
 ---
 
-## Exercise 2 — Simple Inheritance
+## Exercise 2 — Basic Superclass and Subclass
 
 Create:
 
@@ -31,101 +43,60 @@ Then create:
 
 ```python
 class Student(Person):
-    ...
+    pass
 ```
 
-Add:
-
-- `student_id`
-- `display_student_id()`
-
-Demonstrate that a Student object can use both inherited and subclass-specific behavior.
+Create one `Student` object and demonstrate that it can use `display_name()` inherited from `Person`.
 
 ---
 
-## Exercise 3 — Inherited vs Specific Features
+## Exercise 3 — Add Subclass-specific State
 
-Given:
+Extend `Student` with:
+
+- `student_id`
+
+Use:
+
+```python
+super().__init__(name)
+```
+
+to initialize the Person part of the object.
+
+Then print:
+
+- inherited `name`
+- subclass-specific `student_id`
+
+---
+
+## Exercise 4 — Add Subclass-specific Behavior
+
+Create:
 
 ```text
 Employee
+  ↓
+Developer
+```
+
+Employee:
+
 - employee_id
 - name
 - display_info()
 
-Developer is-a Employee
+Developer adds:
+
 - programming_language
 - write_code()
-```
 
-Classify each feature as:
-
-- inherited from Employee; or
-- specific to Developer.
+Demonstrate that a Developer can use both inherited and subclass-specific behavior.
 
 ---
 
-## Exercise 4 — Use super().__init__()
-
-Implement:
-
-```python
-class Vehicle:
-    def __init__(self, brand):
-        self.brand = brand
-```
-
-and:
-
-```python
-class Car(Vehicle):
-    ...
-```
-
-Car adds:
-
-- `number_of_doors`
-
-Use `super().__init__()` to initialize `brand`.
-
-Create two Car objects.
-
----
-
-## Exercise 5 — Is-a or Has-a?
-
-Classify each relationship:
-
-1. Car / Engine
-2. Doctor / Person
-3. Laptop / Battery
-4. Cat / Animal
-5. Order / OrderItem
-6. Manager / Employee
-
-For each, explain why inheritance is or is not appropriate.
-
----
-
-## Exercise 6 — Invalid Inheritance
-
-Consider:
-
-```python
-class Engine:
-    pass
-
-class Car(Engine):
-    pass
-```
-
-Explain why this may be syntactically valid Python but conceptually poor modelling.
-
-Rewrite it using an object relationship instead.
-
----
-
-## Exercise 7 — One Superclass, Two Subclasses
+## Exercise 5 — Two Subclasses, One Superclass
 
 Create:
 
@@ -135,26 +106,89 @@ Person
 └── Patient
 ```
 
-Requirements:
+Doctor adds:
 
-- Person: `name`, `display_name()`
-- Doctor: `specialty`, `diagnose()`
-- Patient: `patient_id`, `show_patient_id()`
+- specialty
+- diagnose()
 
-Use `super().__init__()` in both subclasses.
+Patient adds:
+
+- patient_id
+- show_patient_id()
+
+Create one object from each subclass and demonstrate inherited behavior.
 
 ---
 
-## Challenge — Appropriate Generalization
+## Exercise 6 — What Is Inherited?
 
-You are given three classes with duplicated `name` and `email` state:
+Given:
 
-- Customer
-- Employee
-- Supplier
+```python
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
 
-Would you create a Person superclass?
+    def display_brand(self):
+        print(self.brand)
 
-Write a short design argument. Consider whether all three concepts genuinely satisfy the intended **is-a Person** relationship in your domain.
 
-There is no automatic answer based only on duplicated code.
+class Car(Vehicle):
+    def __init__(self, brand, seats):
+        super().__init__(brand)
+        self.seats = seats
+
+    def display_seats(self):
+        print(self.seats)
+```
+
+Answer:
+
+1. Which attribute originates from Vehicle?
+2. Which attribute is Car-specific?
+3. Which method is inherited?
+4. Which method exists only on Car?
+
+---
+
+## Exercise 7 — Inheritance Is Not Just Reuse
+
+Suppose someone proposes:
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+
+class Car(Engine):
+    pass
+```
+
+Explain why this design is semantically weak even though it reuses `start()`.
+
+Redesign it using a has-a relationship.
+
+---
+
+## Challenge — Employee Hierarchy
+
+Model:
+
+```text
+Employee
+├── Developer
+├── Designer
+└── Manager
+```
+
+All employees share:
+
+- employee_id
+- name
+
+Each subclass adds one attribute and one behavior.
+
+Use `super().__init__()` in every subclass.
+
+Do not override superclass methods yet. That is the focus of Week 7.
