@@ -162,18 +162,9 @@ For `01_thinking_in_objects.ipynb`:
 5. spend most lab time on the Library exercise and Challenge;
 6. require students to explain answers verbally or in comments.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **C**
-4. **D**
-5. **B / False**
-6. Expected: class = general definition; object/instance = a particular runtime instance of that class.
-7. Accept any internally consistent example.
-8. Typical candidates: Customer, Order, Product / OrderItem. Relationship explanation is more important than exact names.
-9. Expected themes: grouping related state and behavior, clearer ownership/responsibility, easier reasoning as complexity grows, collaboration among objects.
-10. **1 class, 2 Patient instances.**
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
