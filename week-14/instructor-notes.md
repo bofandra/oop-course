@@ -206,18 +206,9 @@ No. Candidate objects require modelling judgment.
 
 No. Plain assertions are sufficient for this week's learning objective.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **A**
-3. **A**
-4. **B**
-5. **B**
-6. OOA analyses the problem/domain; OOD refines the solution design and implementation-facing decisions.
-7. Responsibilities help determine where state and behavior belong before syntax locks the design in.
-8. Independent example: Student state. Collaboration example: Enrollment refers to Student/Course.
-9. It verifies that several objects and operations work together in a complete scenario.
-10. A diagram shows structure; contracts and design decisions define behavioral expectations and implementation boundaries.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
