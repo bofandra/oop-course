@@ -4,58 +4,62 @@
 
 ## Part A — Multiple Choice
 
-### 1. Inheritance primarily represents which relationship?
+### 1. Inheritance is most appropriate when:
 
-A. has-a  
-B. is-a  
-C. uses-a-file  
-D. part-of-a-module
+A. one object contains another object  
+B. one class is a specialized kind of another class  
+C. two classes happen to use similar variable names  
+D. a class needs access to a module
 
-### 2. In:
+### 2. Which statement is a valid is-a relationship?
+
+A. Car is an Engine  
+B. Order is a Product  
+C. Doctor is a Person  
+D. Library is a Book
+
+### 3. In:
 
 ```python
 class Doctor(Person):
     pass
 ```
 
-Doctor is the:
+`Person` is the:
 
-A. superclass  
-B. subclass  
-C. module  
-D. attribute
+A. subclass  
+B. superclass  
+C. instance  
+D. method
 
-### 3. Which relationship is most suitable for inheritance?
+### 4. What is the purpose of this call in our Week 6 examples?
 
-A. Car / Engine  
-B. Order / OrderItem  
-C. Developer / Employee  
-D. Laptop / Battery
+```python
+super().__init__(name)
+```
 
-### 4. A subclass instance normally has access to:
+A. Delete the superclass  
+B. Initialize the superclass part of the subclass object  
+C. Convert a subclass to a module  
+D. Override every superclass method
 
-A. only subclass-specific methods  
-B. only superclass methods  
-C. inherited superclass features plus subclass-specific features  
-D. no methods until they are copied manually
+### 5. Which design is usually better for Car and Engine?
 
-### 5. In this course, `super().__init__()` is mainly introduced in Week 6 to:
-
-A. delete the superclass  
-B. reuse superclass initialization from the subclass  
-C. create multiple inheritance automatically  
-D. override every method
+A. Car inherits Engine  
+B. Engine inherits Car  
+C. Car has an Engine  
+D. They must be unrelated
 
 ---
 
 ## Part B — Short Answer
 
-### 6. Explain superclass and subclass in your own words.
+### 6. Explain the difference between superclass and subclass.
 
-### 7. Why is "Car is an Engine" a warning sign when deciding whether to use inheritance?
+### 7. Why should inheritance represent a meaningful model relationship rather than only code reuse?
 
-### 8. What does a Doctor object inherit from Person in a simple Person/Doctor design?
+### 8. Give one example of an inherited feature and one subclass-specific feature.
 
-### 9. Why is code duplication alone not enough reason to create an inheritance relationship?
+### 9. What does a subclass gain from inheritance in the basic model used this week?
 
-### 10. Write a minimal Python example where `Student` inherits from `Person`.
+### 10. Why is method overriding intentionally postponed until Week 7?
