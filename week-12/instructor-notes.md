@@ -177,18 +177,9 @@ False. The Diktat explicitly distinguishes the two concepts.
 
 False. A module may contain one or more related definitions.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **C**
-3. **A**
-4. **A**
-5. **B**
-6. Overriding changes inherited subclass behavior; overloading gives the same operation/name multiple meanings/forms.
-7. Otherwise the syntax may become surprising or semantically misleading.
-8. `is` checks identity; `==` invokes value-equality behavior such as `__eq__()`.
-9. The list structure is generic; the element type is parameterized as Book or Person.
-10. It separates reusable class definitions from application/runner logic and allows importing them elsewhere.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
