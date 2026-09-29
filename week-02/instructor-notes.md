@@ -216,25 +216,9 @@ add display_info()
 
 Do not jump directly to a fully finished class.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **C**
-3. **B**
-4. **C**
-5. **B**
-6. **C**
-7. Instance attribute belongs to a particular instance and may differ between objects; class attribute is class-level information shared/accessed at the class level in this simplified model.
-8. Two instances; `book_2.title == "B"`.
-9. A class is one definition from which multiple independent runtime instances can be created, each carrying its own instance state.
-10. Expected minimal form:
-
-```python
-class Product:
-    def __init__(self, sku, name):
-        self.sku = sku
-        self.name = name
-```
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
