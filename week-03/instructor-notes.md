@@ -187,18 +187,9 @@ Need controlled access
 Encapsulation
 ```
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **C**
-3. **D**
-4. **B**
-5. **B**
-6. State = data/attribute values describing the object at a point in time; behavior = operations/methods the object can perform.
-7. Example: `area()` reads; `resize()` changes state.
-8. It keeps behavior close to the data it needs and makes object responsibilities clearer.
-9. `is_on` changes from `False` to `True`.
-10. The class currently lacks rules/control around valid state changes; this motivates encapsulation/invariants in the next week.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
