@@ -1,5 +1,7 @@
 # Week 14 Assignment — University Registration from Requirement to Test
 
+> **Teaching workload note:** When the Final Project is active, this assignment is best used as an in-class integration lab or as rehearsal for Final Project Milestone A (OOA, class diagram, responsibilities, contracts). It does not need to become a second large take-home project.
+
 ## Objective
 
 Produce a complete object-oriented solution using the Week 14 lifecycle:
