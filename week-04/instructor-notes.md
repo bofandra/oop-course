@@ -214,18 +214,9 @@ The course standard for introductory examples remains:
 _balance
 ```
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **B**
-4. **B**
-5. **B**
-6. Encapsulation concerns grouping state/behavior and controlling access/change; abstraction concerns exposing useful operations while hiding unnecessary internal workings.
-7. Python's leading underscore is a convention, not enforced private access.
-8. It lets callers read a value through the public interface without encouraging direct use of the internal attribute.
-9. The caller need not know how status is represented, which checks run, or exactly how the state update is performed.
-10. It defines a valid-state rule the object's operations should preserve.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
