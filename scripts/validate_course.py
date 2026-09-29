@@ -13,7 +13,6 @@ import re
 import subprocess
 import sys
 import tempfile
-import traceback
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +26,10 @@ def required_structure(errors: list[str]) -> None:
     required = [
         "README.md",
         "COURSE_MAP.md",
+        "TEACHING_READINESS_AUDIT.md",
+        "TEACHING_CALENDAR.md",
+        "RELEASE_PLAN.md",
+        "EXECUTION_AUDIT.md",
         "templates/colab_template.ipynb",
         "00-python-primer/README.md",
         "00-python-primer/00_python_primer.ipynb",
@@ -207,7 +210,9 @@ def validate_public_assessment_safety(errors: list[str]) -> None:
 
     private_only = [
         ROOT / "assessments" / "midterm" / "answer-key.md",
+        ROOT / "assessments" / "midterm" / "instructor-notes.md",
         ROOT / "assessments" / "final-project" / "answer-key.md",
+        ROOT / "assessments" / "final-project" / "instructor-notes.md",
     ]
     for path in private_only:
         if path.exists():
