@@ -198,18 +198,9 @@ No. In this course example, creation is represented as a method whose concrete c
 
 No. Analysis/design should reveal the problem before choosing a pattern.
 
-## Quiz answer key
+## Quiz administration
 
-1. **C**
-2. **B**
-3. **A**
-4. **A**
-5. **C**
-6. Code reuse reuses implementation artifacts; design reuse reuses a proven organization/solution idea.
-7. It moves interchangeable delivery-fee calculations out of Order and lets Order use them polymorphically.
-8. The decision about which concrete notification object is created.
-9. It can add classes/indirection without solving a real variation or creation problem.
-10. Patterns arrange previously learned collaborations, inheritance, overriding, and polymorphism into reusable structures.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
