@@ -148,18 +148,9 @@ Show how Product, OrderItem, and Order have different responsibilities.
 
 For this course, use composition mainly as a practical whole/part modelling idea. Do not teach full UML aggregation/composition lifecycle semantics because the source material does not provide that level of detail.
 
-## Quiz answer key
+## Quiz administration
 
-1. **B**
-2. **B**
-3. **B**
-4. **B**
-5. **C**
-6. Client uses a service provided by Supplier.
-7. A Car has an Engine; it is not a specialized kind of Engine.
-8. The Appointment can work with the Patient object and its state/behavior instead of duplicating selected values.
-9. Product owns product data; OrderItem combines product + quantity and calculates subtotal; Order owns items and calculates total.
-10. Any conceptually sound examples are acceptable.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
 
 ## Assignment grading notes
 
