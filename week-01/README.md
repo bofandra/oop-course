@@ -163,3 +163,12 @@ self
   ↓
 Instance state
 ```
+
+
+## Week 1 package
+
+- [Colab notebook](01_thinking_in_objects.ipynb)
+- [Exercises](exercises.md)
+- [Quiz](quiz.md)
+- [Assignment](assignment.md)
+- [Instructor notes](instructor-notes.md)
