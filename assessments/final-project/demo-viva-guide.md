@@ -58,7 +58,7 @@ Student runs one test and answers one design question.
 
 ## Viva question bank
 
-The lecturer may ask questions such as:
+The instructor may ask questions such as:
 
 1. Which class owns this responsibility, and why?
 2. Why is this relationship inheritance rather than composition?
@@ -106,7 +106,7 @@ Keep questions aligned with the course learning outcomes.
 
 ## AI-assisted submissions
 
-If AI assistance is permitted by institutional rules, the viva becomes especially important.
+If AI assistance is permitted by applicable rules, the viva becomes especially important.
 
 The evaluation question remains:
 
