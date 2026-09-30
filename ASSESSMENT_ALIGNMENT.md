@@ -107,7 +107,7 @@ Two separate assessment components exist:
 Final Project artifact
 → 35%
 
-Demo / Code Explanation / Participation
+Demo / Code Explanation / Learning Evidence
 → 10%
 ```
 
