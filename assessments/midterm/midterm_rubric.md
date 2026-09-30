@@ -172,4 +172,4 @@ does not demonstrate the intended polymorphic solution for Section D.
 
 ## Suggested grade interpretation
 
-Apply the institution's official grading scale from the course syllabus after the raw score is calculated.
+Use the raw score as the Mid Test score. If a letter grade is needed, use the configured scale in `grading_config.json` or a facilitator-provided equivalent; the public open course does not assume one institution-specific scale.

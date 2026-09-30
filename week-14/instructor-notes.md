@@ -206,6 +206,10 @@ No. Candidate objects require modelling judgment.
 
 No. Plain assertions are sufficient for this module's learning objective.
 
+## Cohort workload guidance
+
+If the Final Project is already active, Module 14 can be used as a focused integration lab or as evidence for the project's analysis/design milestone. It does not need to become a second large take-home project.
+
 ## Quiz administration
 
 The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.

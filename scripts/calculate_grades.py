@@ -57,7 +57,7 @@ def load_registry(path: Path) -> dict[str, dict]:
             registry[assessment_id] = {
                 "assessment_id": assessment_id,
                 "component": row["component"].strip(),
-                "week": row.get("week", "").strip(),
+                "module": row.get("module", row.get("week", "")).strip(),
                 "title": row.get("title", "").strip(),
                 "included": included,
                 "max_score": float(row.get("max_score", "100") or 100),

@@ -59,6 +59,7 @@ Open-course guidance:
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
+- [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
@@ -66,7 +67,7 @@ Open-course guidance:
 
 ## Suggested learning sequence
 
-The numbered weeks are **modules in a recommended order**, not calendar weeks. Learners may move faster or slower as needed.
+The numbered folders represent **modules in a recommended order**, not calendar weeks. Learners may move faster or slower as needed.
 
 | Module | Topic |
 |---:|---|
@@ -98,7 +99,7 @@ The repository includes a complete assessment model for learners or instructors 
 | Coding Labs | 20% | notebooks and `assignment.md` |
 | Mid-Course Assessment | 20% | [assessment package](assessments/midterm/) |
 | Final Project | 35% | [Final Project package](assessments/final-project/) |
-| Demo / Code Explanation / Participation | 10% | [rubric](assessments/demo-participation-rubric.md) |
+| Demo / Code Explanation / Learning Evidence | 10% | [rubric](assessments/demo-participation-rubric.md) |
 | **Total** | **100%** | |
 
 Self-paced learners may instead use the quizzes, labs, and rubrics purely for self-assessment.

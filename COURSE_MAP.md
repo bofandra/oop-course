@@ -37,13 +37,15 @@ This document connects module topics, Course Learning Outcomes (CLO), assessment
 
 ## Assessment alignment
 
+See [Assessment Alignment](ASSESSMENT_ALIGNMENT.md) for the module-by-module evidence map, difficulty progression, and assessment guardrails.
+
 | Assessment | Weight | Main CLO |
 |---|---:|---|
 | Quiz / Concept Exercises | 15% | CLO-1–5 progressively |
 | Module Coding Labs | 20% | CLO-1–5 progressively |
 | Mid Test | 20% | CLO-1–3 |
 | Final Project | 35% | CLO-1–6 |
-| Demo / Code Explanation / Participation | 10% | CLO-1–6, especially explanation/ownership |
+| Demo / Code Explanation / Learning Evidence | 10% | CLO-1–6, especially explanation/ownership |
 | **Total** | **100%** | |
 
 ## Reference alignment
