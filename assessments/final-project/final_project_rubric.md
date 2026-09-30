@@ -18,7 +18,7 @@ Do not require one exact class list. Reward coherent alternatives that satisfy t
 | Criterion | Points |
 |---|---:|
 | Class diagram communicates the main model | 4 |
-| Object-reference / has-a relationships are appropriate | 4 |
+| General references/associations and whole–part relationships are distinguished and appropriate | 4 |
 | Inheritance relationships represent meaningful is-a relationships | 4 |
 | Responsibilities are placed in sensible classes | 3 |
 | **Subtotal** | **15** |
@@ -51,7 +51,7 @@ Do not award full marks for inheritance used only to reduce duplicated code when
 
 | Criterion | Points |
 |---|---:|
-| Important preconditions/invariants are identified | 4 |
+| Important preconditions, invariants, and lifecycle/transition rules are identified | 4 |
 | Invalid operations raise appropriate exceptions | 4 |
 | Failed operations preserve valid object state | 4 |
 | Contract reasoning is explained in README/design notes | 3 |
@@ -83,7 +83,7 @@ Do not award extra points merely for frameworks, databases, advanced typing, or 
 | End-to-end scenario | 2 |
 | **Subtotal** | **10** |
 
-Plain Python `assert` tests are sufficient.
+Plain Python `assert` tests are sufficient as lightweight test checks. They must not be the only mechanism enforcing required runtime business rules, and they should be executed without Python optimization (`-O`).
 
 ## Total
 

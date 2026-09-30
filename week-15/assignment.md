@@ -23,13 +23,13 @@ Order must calculate the order subtotal from its OrderItems.
 
 ## Part 2 — Strategy-style delivery
 
-Implement at least:
+Define an abstract/common `DeliveryStrategy` with required operation `fee(subtotal)`, then implement at least:
 
 - `PickupDelivery`;
 - `StandardDelivery`;
 - `ExpressDelivery`.
 
-Each must support:
+Each concrete strategy must implement:
 
 ```python
 fee(subtotal)
@@ -56,6 +56,8 @@ Write plain `assert` tests for:
 4. three delivery strategies;
 5. Order total with different delivery strategies;
 6. at least one notification creator flow.
+
+As in Module 14, plain `assert` statements are lightweight test checks; they are not the application's required runtime validation mechanism.
 
 ## Part 5 — Design explanation
 

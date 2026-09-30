@@ -32,7 +32,7 @@ This document connects module topics, Course Learning Outcomes (CLO), assessment
 | 12 | Operator Overloading, Genericity & Modules | CLO-4 | special methods, type parametrization concept, modules |
 | 13 | Exception Handling & Assertions | CLO-4, CLO-5 | exceptions, pre/postconditions, invariants, state-dependent transition rules |
 | 14 | OOA, OOD, OOP & OOT | CLO-5 | requirement-to-test workflow |
-| 15 | Reusability & Design Patterns | CLO-5, CLO-6 | design reuse, Strategy/Factory Method-style examples |
+| 15 | Reusability & Design Patterns | CLO-5, CLO-6 | design reuse, explicit Strategy contract, Factory Method-style creation |
 | 16 | Final Project / Final Test | CLO-1–6 | complete solution + demo/viva |
 
 ## Assessment alignment

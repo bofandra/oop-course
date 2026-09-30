@@ -85,11 +85,11 @@ Demo explanation
 Evidence should include:
 
 - candidate classes with clear responsibilities;
-- meaningful object relationships;
+- meaningful object relationships, distinguishing general references/associations from whole–part relationships where relevant;
 - appropriate state and behavior;
 - encapsulation and valid object state;
 - inheritance and polymorphism where justified;
-- contracts and exception handling;
+- invariants, state-transition/precondition rules, and exception handling;
 - executable Python implementation;
 - tests for independent and collaborating classes;
 - at least one end-to-end scenario;
