@@ -59,6 +59,7 @@ Open-course guidance:
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
+- [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
