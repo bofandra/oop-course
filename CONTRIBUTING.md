@@ -19,7 +19,7 @@ Please preserve these principles:
 2. Introduce concepts in the existing progression; do not assess a concept before it is taught.
 3. Keep databases, web frameworks, REST APIs, GUIs, cloud deployment, advanced testing frameworks, and architecture frameworks outside required scope.
 4. Prefer meaningful object responsibilities and collaboration over pattern count.
-5. Keep learner-facing material self-paced and independent of institution, semester, fixed calendar, or cohort-specific scheduling.
+5. Keep learner-facing material self-paced and independent of institution-specific or fixed-calendar scheduling.
 6. Do not publish answer keys for assessments that may be reused by facilitated cohorts.
 7. Keep formal concepts aligned to the documented references.
 
