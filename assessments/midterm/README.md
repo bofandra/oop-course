@@ -189,9 +189,8 @@ elif vehicle_type == "motorcycle":
 Answer short questions explaining:
 
 - why Car/Motorcycle use inheritance;
-- why Rental should refer to Vehicle rather than duplicate vehicle data;
-- why that reference is an association and not automatically whole–part composition;
-- where encapsulation appears;
+- why Rental should refer to Vehicle rather than duplicate vehicle data, and why that reference is an association rather than automatically whole–part composition;
+- where encapsulation and lifecycle-rule ownership appear;
 - why cost calculation is polymorphic;
 - how dynamic binding determines the method implementation at runtime.
 
