@@ -35,16 +35,20 @@ The Diktat is the primary conceptual source for object-oriented terminology and 
 
 ## Source discipline
 
+The complete policy is documented in [Source Boundary](SOURCE_BOUNDARY.md).
+
 When extending the course:
 
-- keep conceptual claims traceable to the Diktat or an explicitly documented course interpretation;
-- keep Python syntax/behavior traceable to OpenStax where the topic is covered;
-- clearly mark implementation techniques that are useful but not formal topics in either reference;
-- do not expand required scope merely because a Python feature exists;
-- keep [COURSE_MAP.md](COURSE_MAP.md), [ASSESSMENT_ALIGNMENT.md](ASSESSMENT_ALIGNMENT.md), and this file aligned.
+- **formal concepts** must be traceable to the Diktat or OpenStax;
+- a Python mechanism not directly taught by either reference may be used only as a **minimal implementation bridge** for an already-supported concept;
+- an implementation bridge must not silently create a new conceptual learning outcome or hidden assessment requirement;
+- material that is neither sourced by the two formal references nor needed as a minimal bridge stays outside the required course;
+- do not expand required scope merely because a Python feature, framework, or external pattern catalogue exists;
+- keep [COURSE_MAP.md](COURSE_MAP.md), [ASSESSMENT_ALIGNMENT.md](ASSESSMENT_ALIGNMENT.md), [SOURCE_BOUNDARY.md](SOURCE_BOUNDARY.md), and this file aligned.
 
 ## Related documents
 
 - [Course Map](COURSE_MAP.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
+- [Source Boundary](SOURCE_BOUNDARY.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
