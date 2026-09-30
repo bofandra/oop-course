@@ -110,7 +110,10 @@ Create a minimal class diagram that makes visible:
 - important state;
 - important operations;
 - inheritance relationships;
-- object-reference relationships.
+- general object-reference/association relationships;
+- whole–part relationships where they are actually meaningful.
+
+Do not label every stored object reference as composition.
 
 The diagram may be:
 
@@ -130,9 +133,10 @@ Document:
 - internal state where relevant;
 - object references;
 - inheritance/polymorphism decisions;
-- preconditions;
+- preconditions, including state-dependent preconditions for lifecycle operations;
 - postconditions where useful;
-- class invariants.
+- class invariants;
+- state-transition rules where the workflow has restricted lifecycle moves.
 
 Every major design decision should have a reason.
 
@@ -172,6 +176,8 @@ At minimum, test:
 10. one complete end-to-end scenario.
 
 No testing framework is required.
+
+Here, plain `assert` statements are lightweight **test checks**. They are not a substitute for required runtime validation in the application itself, and the tests should be run without Python optimization (`-O`) because optimized execution can remove assertions.
 
 ## Required end-to-end scenario
 
