@@ -1,4 +1,4 @@
-# Week 10 Quiz — Multiple Inheritance & Mixins
+# Module 10 Quiz — Multiple Inheritance & Mixins
 
 **Suggested duration:** 15–20 minutes
 
