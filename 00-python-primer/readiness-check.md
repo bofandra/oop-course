@@ -1,8 +1,8 @@
-# Week 0 — Python Readiness Check
+# Module 0 — Python Readiness Check
 
 This is a **self-check**, not an OOP assessment.
 
-You are ready for Week 1 if you can complete most tasks without needing step-by-step syntax help.
+You are ready for Module 1 if you can complete most tasks without needing step-by-step syntax help.
 
 ## Part A — Read the code
 
@@ -106,6 +106,6 @@ If you can:
 - understand function parameters/return values;
 - read a basic Python error;
 
-you are ready to begin Week 1.
+you are ready to begin Module 1.
 
 If not, revisit the Python Primer notebook and the relevant introductory OpenStax chapters before continuing.
