@@ -1,5 +1,7 @@
 # Mid Test — Module 8
 
+> **Assessment notebook:** [Open Mid-Course Assessment in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/assessments/midterm/midterm_exam.ipynb)
+
 ## Case Study: Vehicle Rental System
 
 ### Purpose

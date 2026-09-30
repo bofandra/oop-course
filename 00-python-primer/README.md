@@ -2,6 +2,8 @@
 
 This is prerequisite/self-study material so the main course can focus on object-oriented programming.
 
+> **Run the notebook:** [Open Module 0 — Python Primer in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/00-python-primer/00_python_primer.ipynb)
+
 ## Minimum Python prerequisites
 
 Learners should be comfortable with:

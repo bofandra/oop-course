@@ -1,11 +1,21 @@
 # Object Oriented Programming — Open Course
 
+[![Validate course materials](https://github.com/bofandra/oop-course/actions/workflows/course-validation.yml/badge.svg)](https://github.com/bofandra/oop-course/actions/workflows/course-validation.yml)
+
 A self-paced, open course for learning **object-oriented thinking using Python**.
 
 This course is designed for anyone to use **at any time**, with a flexible self-paced learning path.
 
 Primary implementation language: **Python**  
 Primary lab environment: **Google Colab**
+
+## Start learning
+
+- New learner: [Start Here](START_HERE.md)
+- Ready to run code: [Open notebooks in Google Colab](COLAB.md)
+- Want the full pathway: [Course Map](COURSE_MAP.md)
+
+No enrollment or fixed calendar is required.
 
 ## Course approach
 
@@ -55,15 +65,18 @@ See [Course Map](COURSE_MAP.md) for the detailed module, learning-outcome, asses
 Open-course guidance:
 
 - [Start Here](START_HERE.md)
+- [Open in Google Colab](COLAB.md)
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
+- [Reference Map](REFERENCE_MAP.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
 - [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
+- [Contributing](CONTRIBUTING.md)
 
 ## Suggested learning sequence
 
@@ -113,6 +126,8 @@ The formal course scope is intentionally aligned to these two references.
 
 The Diktat is used primarily for OOP concepts and terminology. OpenStax is used primarily for Python-facing implementation.
 
+See the [Reference Map](REFERENCE_MAP.md) for module-by-module source alignment.
+
 ## Repository structure
 
 ```text
@@ -128,6 +143,9 @@ oop-course/
 ├── templates/
 ├── scripts/
 ├── COURSE_MAP.md
+├── REFERENCE_MAP.md
+├── COLAB.md
+├── CONTRIBUTING.md
 ├── OPEN_COURSE_GUIDE.md
 ├── SELF_PACED_GUIDE.md
 ├── INSTRUCTOR_GUIDE.md
@@ -179,7 +197,7 @@ Move to next module when ready
 
 ## Using the notebooks
 
-Open the notebook in Google Colab, save a personal copy, run the examples, complete the TODO cells, and compare your work against the stated requirements and rubrics.
+Use the [Colab notebook index](COLAB.md) to launch the executable course notebooks directly in Google Colab. Save a personal copy, run the examples, complete the TODO cells, and compare your work against the stated requirements and rubrics.
 
 ## License
 

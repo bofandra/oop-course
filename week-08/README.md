@@ -1,5 +1,7 @@
 # Module 8 — Mid Test
 
+> **Assessment notebook:** [Open Mid-Course Assessment in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/assessments/midterm/midterm_exam.ipynb)
+
 ## Learning outcome
 
 Integrate concepts from Modules 1–7 by analysing a new problem, modelling objects and relationships, implementing a Python solution, and explaining the resulting OOP design.

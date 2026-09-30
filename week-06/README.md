@@ -1,5 +1,7 @@
 # Module 6 — Inheritance
 
+> **Run the notebook:** [Open Module 6 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-06/06_inheritance.ipynb)
+
 ## Learning outcomes
 
 By the end of this module, learners should be able to:

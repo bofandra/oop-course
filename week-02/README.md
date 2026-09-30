@@ -1,5 +1,7 @@
 # Module 2 — Classes, Objects & Instances
 
+> **Run the notebook:** [Open Module 2 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-02/02_classes_objects_instances.ipynb)
+
 ## Learning outcomes
 
 By the end of this module, learners should be able to:

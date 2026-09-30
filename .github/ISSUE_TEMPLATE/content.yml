@@ -1,0 +1,47 @@
+name: Course content issue
+description: Report unclear, incorrect, or inconsistent learning material
+title: "[Content] "
+labels: []
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - Module 0 — Python Primer
+        - Module 1
+        - Module 2
+        - Module 3
+        - Module 4
+        - Module 5
+        - Module 6
+        - Module 7
+        - Module 8 — Mid-course assessment
+        - Module 9
+        - Module 10
+        - Module 11
+        - Module 12
+        - Module 13
+        - Module 14
+        - Module 15
+        - Module 16 — Final project
+        - Course-wide documentation
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: File or section
+      description: Include the file path, heading, or notebook cell context.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
