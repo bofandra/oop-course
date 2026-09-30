@@ -1,0 +1,21 @@
+{
+  "component_weights": {
+    "quiz": 0.15,
+    "lab": 0.20,
+    "mid_test": 0.20,
+    "final_project": 0.35,
+    "demo": 0.10
+  },
+  "letter_scale_status": "CONFIRM_WITH_OFFICIAL_TAU_POLICY",
+  "letter_scale": [
+    {"grade": "A", "minimum": 85.0},
+    {"grade": "A-", "minimum": 80.0},
+    {"grade": "B+", "minimum": 75.0},
+    {"grade": "B", "minimum": 70.0},
+    {"grade": "B-", "minimum": 65.0},
+    {"grade": "C+", "minimum": 60.0},
+    {"grade": "C", "minimum": 56.0},
+    {"grade": "D", "minimum": 45.0},
+    {"grade": "E", "minimum": 0.0}
+  ]
+}
