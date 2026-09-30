@@ -85,6 +85,7 @@ Open-course guidance:
 - [Reference Map](REFERENCE_MAP.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
+- [Accessibility Guide](ACCESSIBILITY.md)
 - [Changelog](CHANGELOG.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
 - [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
@@ -210,6 +211,16 @@ Move to next module when ready
 ## Using the notebooks
 
 Use the [Colab notebook index](COLAB.md) to launch the executable course notebooks directly in Google Colab. Save a personal copy, run the examples, complete the TODO cells, and compare your work against the stated requirements and rubrics.
+
+## Citation and reuse
+
+If you use or adapt this course for teaching, training, or research, use the repository's [citation metadata](CITATION.cff). GitHub can use this file to provide a **Cite this repository** action.
+
+For adapted instructional material, preserve appropriate attribution and follow the license terms below.
+
+## Accessibility
+
+See the [Accessibility Guide](ACCESSIBILITY.md) for learner guidance and content-authoring rules. Essential course instructions should remain available as text, and new visuals should include equivalent text descriptions.
 
 ## License
 
