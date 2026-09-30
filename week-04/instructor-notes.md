@@ -89,8 +89,9 @@ The `@property` examples are a practical Python bridge used in this course; do n
 | 10 min | Abstraction |
 | 10 min | Break |
 | 20 min | Read-only `@property` |
-| 20 min | Invariant concept |
-| 40 min | Product Inventory lab |
+| 15 min | Invariant concept |
+| 10 min | Invariant vs state-transition rule |
+| 35 min | Product Inventory lab |
 | 10 min | Appointment challenge |
 | 10 min | Quiz / bridge to relationships |
 
@@ -179,6 +180,33 @@ Ask:
 > Does every normal public operation leave the object in a state where this remains true?
 
 Do not yet formalize preconditions/postconditions or Python `assert`; Module 13 covers that.
+
+### Invariant is not the same as a transition rule
+
+Make this distinction explicit:
+
+```text
+Invariant
+→ condition that must hold in every valid observable state
+
+Transition rule
+→ restriction on which moves between valid states are allowed
+```
+
+Examples:
+
+```text
+stock >= 0
+→ invariant
+
+Appointment status ∈ {waiting, confirmed, cancelled}
+→ invariant
+
+cancelled → confirmed is forbidden
+→ transition rule
+```
+
+Do not call every business rule an invariant. This vocabulary prepares learners for the more formal treatment of contracts in Module 13.
 
 ## Why `@property`?
 

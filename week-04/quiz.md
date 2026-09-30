@@ -57,4 +57,4 @@ appointment.confirm()
 
 What internal detail can be hidden behind this interface?
 
-### 10. Why is the rule `stock >= 0` useful when designing Product methods?
+### 10. For an Appointment, explain why `status in {waiting, confirmed, cancelled}` is an invariant, while “cancelled cannot become confirmed” is a state-transition rule.

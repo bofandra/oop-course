@@ -29,7 +29,7 @@ The Final Project integrates the full course, but does **not** require every opt
 | 1 | objects, identity, state, behavior, class vs object | concept distinction + modelling explanation | identify candidate objects and justify modelling choices | no detailed Python class mechanics required |
 | 2 | classes, instances, `__init__`, `self`, class vs instance attributes | syntax/concept interpretation | create multiple independent instances from one class | no inheritance/encapsulation rules |
 | 3 | state, behavior, methods, responsibility, state transition | distinguish state vs behavior | implement meaningful state-changing methods | validation/encapsulation intentionally incomplete |
-| 4 | encapsulation, abstraction, public interface, invariant | explain interface/internal-state distinction | preserve valid state through controlled public behavior | no exception architecture yet |
+| 4 | encapsulation, abstraction, public interface, invariant, transition rule | explain interface/internal-state and invariant/transition distinctions | preserve valid state and legal transitions through controlled public behavior | no exception architecture yet |
 | 5 | Client–Supplier, references, has-a, collaboration | relationship classification | model collaborating objects through references | do not use inheritance |
 | 6 | inheritance, is-a, superclass/subclass, `super()` | inheritance reasoning | implement meaningful specialization | no overriding/polymorphism required yet |
 | 7 | overriding, polymorphism, dynamic binding | method-selection reasoning | polymorphic hierarchy + runtime method selection | no abstract classes or multiple inheritance |
