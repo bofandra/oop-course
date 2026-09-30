@@ -1,4 +1,4 @@
-# Week 11 Quiz — References & Object Identity
+# Module 11 Quiz — References & Object Identity
 
 **Suggested duration:** 15–20 minutes
 
