@@ -27,10 +27,9 @@ def required_structure(errors: list[str]) -> None:
     required = [
         "README.md",
         "COURSE_MAP.md",
-        "TEACHING_READINESS_AUDIT.md",
-        "LECTURER_OPERATIONAL_KIT.md",
-        "TEACHING_CALENDAR.md",
-        "RELEASE_PLAN.md",
+        "OPEN_COURSE_GUIDE.md",
+        "SELF_PACED_GUIDE.md",
+        "INSTRUCTOR_GUIDE.md",
         "EXECUTION_AUDIT.md",
         "GRADING_SYSTEM.md",
         "GRADEBOOK_GUIDE.md",
@@ -309,6 +308,47 @@ def validate_markdown_links(errors: list[str]) -> None:
                 fail(errors, f"{rel}: broken relative link: {raw_link}")
 
 
+def validate_open_course_neutrality(errors: list[str]) -> None:
+    forbidden_patterns = {
+        "institution affiliation": re.compile(r"TANRI\s+ABENG", re.IGNORECASE),
+        "institution abbreviation": re.compile(r"\bTAU\b"),
+        "semester wording": re.compile(r"\bsemester\b", re.IGNORECASE),
+        "fixed Saturday schedule": re.compile(r"\bSaturday\b", re.IGNORECASE),
+        "old academic-year label": re.compile(r"2026\s*/\s*2027"),
+        "old fixed class time": re.compile(r"08:30\s*[–-]\s*11:50"),
+    }
+
+    text_suffixes = {".md", ".py", ".json", ".csv", ".yml", ".yaml", ".ipynb"}
+    for path in sorted(ROOT.rglob("*")):
+        if not path.is_file() or path.suffix not in text_suffixes:
+            continue
+        if ".git" in path.parts:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        for label, pattern in forbidden_patterns.items():
+            if pattern.search(text):
+                fail(
+                    errors,
+                    f"{path.relative_to(ROOT)}: open-course neutrality check found {label}",
+                )
+
+    retired_paths = [
+        ROOT / "TEACHING_CALENDAR.md",
+        ROOT / "RELEASE_PLAN.md",
+        ROOT / "LECTURER_OPERATIONAL_KIT.md",
+        ROOT / "TEACHING_READINESS_AUDIT.md",
+    ]
+    for path in retired_paths:
+        if path.exists():
+            fail(
+                errors,
+                f"{path.relative_to(ROOT)}: schedule/cohort-specific document should not exist",
+            )
+
+
 def validate_public_assessment_safety(errors: list[str]) -> None:
     for path in sorted(ROOT.glob("week-*/instructor-notes.md")):
         text = path.read_text(encoding="utf-8").lower()
@@ -335,6 +375,7 @@ def main() -> int:
     validate_gradebook_tool(errors)
     validate_markdown_links(errors)
     validate_public_assessment_safety(errors)
+    validate_open_course_neutrality(errors)
 
     if errors:
         print("COURSE VALIDATION FAILED")
@@ -357,6 +398,7 @@ def main() -> int:
     print("- relative Markdown links: OK")
     print("- public assessment-key guard: OK")
     print("- gradebook calculator self-test: OK")
+    print("- open-course neutrality: OK")
     return 0
 
 
