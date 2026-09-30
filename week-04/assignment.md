@@ -56,6 +56,7 @@ Answer:
 5. Which part of your design demonstrates encapsulation?
 6. Which part demonstrates abstraction?
 7. What could go wrong if callers directly manipulate `_quantity`?
+8. In one or two sentences, explain how an invariant differs from a state-transition rule. Give a simple example of a transition rule, even though this inventory assignment only requires the quantity invariant.
 
 ## Rubric
 
