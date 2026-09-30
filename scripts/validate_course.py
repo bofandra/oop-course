@@ -31,6 +31,7 @@ def required_structure(errors: list[str]) -> None:
         "SELF_PACED_GUIDE.md",
         "SELF_ASSESSMENT_GUIDE.md",
         "MASTERY_CHECKS.md",
+        "ASSESSMENT_ALIGNMENT.md",
         "INSTRUCTOR_GUIDE.md",
         "EXECUTION_AUDIT.md",
         "GRADING_SYSTEM.md",
@@ -355,6 +356,49 @@ def validate_open_course_neutrality(errors: list[str]) -> None:
             )
 
 
+
+def validate_assessment_structure(errors: list[str]) -> None:
+    assignment_paths = sorted(ROOT.glob("week-*/assignment.md"))
+
+    for path in assignment_paths:
+        text = path.read_text(encoding="utf-8")
+        rel = path.relative_to(ROOT)
+
+        if re.search(r"\*\*Teaching (?:schedule|workload) note:\*\*", text, re.IGNORECASE):
+            fail(
+                errors,
+                f"{rel}: facilitator-only teaching schedule/workload note belongs in instructor-notes.md",
+            )
+
+        rubric_lines = [
+            line for line in text.splitlines()
+            if line.strip().startswith("|")
+            and re.search(r"\|\s*\d+(?:\.\d+)?%\s*\|\s*$", line)
+            and "**Total**" not in line
+        ]
+
+        if not rubric_lines:
+            fail(errors, f"{rel}: assignment rubric with percentage weights is missing")
+            continue
+
+        weights = []
+        for line in rubric_lines:
+            match = re.search(r"\|\s*(\d+(?:\.\d+)?)%\s*\|\s*$", line)
+            if match:
+                weights.append(float(match.group(1)))
+
+        if abs(sum(weights) - 100.0) > 0.001:
+            fail(
+                errors,
+                f"{rel}: rubric weights sum to {sum(weights):g}%, expected 100%",
+            )
+
+    for path in sorted(ROOT.glob("week-*/quiz.md")):
+        text = path.read_text(encoding="utf-8")
+        rel = path.relative_to(ROOT)
+        if "## Part A" not in text or "## Part B" not in text:
+            fail(errors, f"{rel}: quiz should contain both objective and explanation sections")
+
 def validate_public_assessment_safety(errors: list[str]) -> None:
     for path in sorted(ROOT.glob("week-*/instructor-notes.md")):
         text = path.read_text(encoding="utf-8").lower()
@@ -380,6 +424,7 @@ def main() -> int:
     validate_python_files(errors)
     validate_gradebook_tool(errors)
     validate_markdown_links(errors)
+    validate_assessment_structure(errors)
     validate_public_assessment_safety(errors)
     validate_open_course_neutrality(errors)
 
@@ -402,6 +447,8 @@ def main() -> int:
     print("- required Module 0–16 structure: OK")
     print("- notebook compilation/execution: OK")
     print("- relative Markdown links: OK")
+    print("- assignment rubric / quiz structure: OK")
+    print("- learner-facing assessment neutrality: OK")
     print("- public assessment-key guard: OK")
     print("- gradebook calculator self-test: OK")
     print("- open-course neutrality: OK")
