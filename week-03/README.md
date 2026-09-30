@@ -1,4 +1,4 @@
-# Week 3 — Attributes, Methods, State & Behavior
+# Module 3 — Attributes, Methods, State & Behavior
 
 ## Learning outcomes
 
@@ -15,13 +15,13 @@ By the end of this session, students should be able to:
 
 Inggriani Liem states that a class has attributes and methods/services. Attribute values at runtime represent the **state** of an object, while methods are executable services associated with the object. The Diktat also frames method execution as something requested through interaction/messages between objects.
 
-OpenStax 11.3 provides the Python implementation basis for this week: defining and calling instance methods that work with instance attributes.
+OpenStax 11.3 provides the Python implementation basis for this module: defining and calling instance methods that work with instance attributes.
 
-This week stays focused on **state and behavior**. Access control, protected internal state, and invariants are introduced in Week 4.
+This module stays focused on **state and behavior**. Access control, protected internal state, and invariants are introduced in Module 4.
 
-## From Week 2 to Week 3
+## From Module 2 to Module 3
 
-Week 2:
+Module 2:
 
 ```text
 Class
@@ -33,7 +33,7 @@ Attributes
 State
 ```
 
-Week 3 adds:
+Module 3 adds:
 
 ```text
 State
@@ -153,7 +153,7 @@ At this stage, the key question is:
 
 > What behavior naturally belongs to the object that owns this state?
 
-Week 4 will discuss how an object can also control and protect its internal state.
+Module 4 will discuss how an object can also control and protect its internal state.
 
 ## 5. State-changing vs read-only behavior
 
@@ -258,7 +258,7 @@ waiting
 cancelled
 ```
 
-Do not add validation rules yet. That becomes the bridge to Week 4.
+Do not add validation rules yet. That becomes the bridge to Module 4.
 
 ## Main exercise — Book
 
@@ -300,7 +300,7 @@ Ask:
 
 At this stage, probably nothing.
 
-Do not solve it with a large validation framework yet. Keep the question for Week 4:
+Do not solve it with a large validation framework yet. Keep the question for Module 4:
 
 > Should outside code and object methods be allowed to create any state they want?
 
@@ -339,7 +339,7 @@ Focus on:
 
 Read **11.3 Instance methods**.
 
-## Week 3 package
+## Module 3 package
 
 - [Colab notebook](03_state_and_behavior.ipynb)
 - [Exercises](exercises.md)
@@ -347,13 +347,13 @@ Read **11.3 Instance methods**.
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 3 asks:
+Module 3 asks:
 
 > What can an object do with its state?
 
-Week 4 asks:
+Module 4 asks:
 
 > Who should be allowed to change that state, and how do we keep the object valid?
 
