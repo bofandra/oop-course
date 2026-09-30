@@ -1,5 +1,7 @@
 # Module 12 — Operator Overloading, Genericity & Organizing Classes into Modules
 
+> **Run the notebook:** [Open Module 12 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-12/12_operator_overloading_genericity_modules.ipynb)
+
 ## Learning outcomes
 
 By the end of this module, learners should be able to:
