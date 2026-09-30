@@ -1,4 +1,4 @@
-# Week 6 Assignment — Employee Inheritance Hierarchy
+# Module 6 Assignment — Employee Inheritance Hierarchy
 
 ## Objective
 
