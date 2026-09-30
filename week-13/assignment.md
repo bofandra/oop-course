@@ -102,6 +102,7 @@ Answer:
 6. Why is the invariant also checked with `assert`?
 7. What is exception propagation?
 8. Why should caller code often decide how an exception is presented?
+9. Give one example of a state-transition rule and rewrite it as a state-dependent precondition for an operation.
 
 ## Rubric
 
