@@ -408,3 +408,7 @@ Module 6 asks:
 That leads directly to:
 
 **Module 6 — Inheritance.**
+
+## Course navigation
+
+[← Module 4](../week-04/) · [Course Map](../COURSE_MAP.md) · [Module 6 →](../week-06/)
