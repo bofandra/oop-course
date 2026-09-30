@@ -1,4 +1,4 @@
-# Week 10 Exercises — Multiple Inheritance & Mixins
+# Module 10 Exercises — Multiple Inheritance & Mixins
 
 ## Exercise 1 — Two Parents
 
