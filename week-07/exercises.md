@@ -42,17 +42,19 @@ Explain the difference.
 
 ## Exercise 3 — Polymorphic Calls
 
-Create:
+Create a `Notification` superclass with `send()`, then create:
 
-- `EmailNotification`
-- `SMSNotification`
-- `PushNotification`
+- `EmailNotification(Notification)`
+- `SMSNotification(Notification)`
+- `PushNotification(Notification)`
 
-Each has:
+Override:
 
 ```python
 send()
 ```
+
+in each subclass
 
 Put all objects in one list and call:
 

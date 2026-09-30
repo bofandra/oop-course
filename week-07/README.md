@@ -86,20 +86,25 @@ Use `super()` when the superclass implementation is still useful.
 
 ## 3. Polymorphism
 
-Create several classes with the same operation:
+Create a small inheritance hierarchy with the same operation:
 
 ```python
-class EmailNotification:
+class Notification:
+    def send(self):
+        print("Sending generic notification")
+
+
+class EmailNotification(Notification):
     def send(self):
         print("Sending email")
 
 
-class SMSNotification:
+class SMSNotification(Notification):
     def send(self):
         print("Sending SMS")
 
 
-class PushNotification:
+class PushNotification(Notification):
     def send(self):
         print("Sending push notification")
 ```
@@ -124,6 +129,8 @@ notification.send()
 ```
 
 Different runtime objects produce different behavior.
+
+This example intentionally uses a shared superclass so the relationship to **inheritance + overriding** remains explicit. Python can also support polymorphic calls through compatible interfaces without a shared superclass, but that broader duck-typing style is not required for this module.
 
 ## 4. Dynamic binding
 

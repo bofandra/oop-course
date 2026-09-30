@@ -119,6 +119,8 @@ class Point:
         )
 ```
 
+For this introductory example, assume `other` is another `Point`. A more defensive implementation can define behavior for comparisons with unrelated types, but that is outside this module's core goal.
+
 Then two different objects can be equal in value:
 
 ```python
@@ -163,7 +165,7 @@ p1 + p2
 p1.__add__(p2)
 ```
 
-The operator should reflect a meaningful domain operation.
+For this introductory example, assume the right-hand operand is another `Point`. The operator should reflect a meaningful domain operation.
 
 ## 4. Do not overload operators arbitrarily
 
