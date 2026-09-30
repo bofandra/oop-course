@@ -25,7 +25,7 @@ Module 14  OOA → OOD → OOP → OOT
 Module 15  Reusability & Design Patterns when useful
 ```
 
-Not every optional technique must appear. Students should use an abstraction only when it improves the model.
+Not every optional technique must appear. Learners should use an abstraction only when it improves the model.
 
 ## Final workflow
 
@@ -49,7 +49,7 @@ Demo / Viva
 
 The final assessment uses a **University Learning Management System**.
 
-Students must analyse the requirement themselves rather than being given a ready-made class list.
+Learners must analyse the requirement themselves rather than being given a ready-made class list.
 
 The system must support, at minimum:
 
@@ -93,7 +93,7 @@ Evidence should include:
 - at least one end-to-end scenario;
 - ability to explain design decisions.
 
-## Student materials
+## Learner materials
 
 - [Final Project brief](../assessments/final-project/README.md)
 - [Detailed rubric](../assessments/final-project/final_project_rubric.md)
