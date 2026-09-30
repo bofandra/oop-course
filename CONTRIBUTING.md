@@ -11,6 +11,7 @@ Read:
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Accessibility Guide](ACCESSIBILITY.md)
+- [Local Setup & Reproducibility](LOCAL_SETUP.md)
 
 ## Course design guardrails
 
@@ -56,6 +57,8 @@ When changing a module, check whether the same change also requires updates to:
 - do not require third-party packages unless the course scope is explicitly changed.
 
 ## Validation
+
+Use Python 3.12 when you want to reproduce the reference CI environment. See [Local Setup & Reproducibility](LOCAL_SETUP.md).
 
 Before opening a pull request, run:
 
