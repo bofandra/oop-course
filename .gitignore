@@ -5,3 +5,8 @@ __pycache__/
 venv/
 .env
 .DS_Store
+
+# Private student records / generated gradebooks
+private-gradebook/
+gradebook_summary*.csv
+grades/
