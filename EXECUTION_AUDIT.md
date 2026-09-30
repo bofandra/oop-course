@@ -10,6 +10,7 @@ The audit checks the public course repository end-to-end:
 - all Jupyter notebooks;
 - Python example files;
 - notebook code-cell syntax;
+- clean published notebook state (no saved execution counts or outputs);
 - sequential execution of notebook code cells in isolated temporary directories;
 - Module 12 multi-file module example;
 - relative Markdown links;
@@ -24,6 +25,7 @@ At the time of this audit:
 Required course structure    PASS
 Notebook JSON / nbformat     PASS
 Notebook code compilation    PASS
+Clean notebook state         PASS
 Notebook sequential runtime  PASS
 Module 12 models.py/main.py    PASS
 Relative Markdown links      PASS
