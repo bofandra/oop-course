@@ -33,6 +33,22 @@ For each module, aim to reach all four levels:
 | 15 | identify a real variation/reuse problem and apply a small reusable design without overengineering |
 | 16 | build, test, demonstrate, and defend a complete object-oriented solution |
 
+## Worked self-check feedback
+
+Use [Mastery Checks](MASTERY_CHECKS.md) after you have attempted a module's examples/exercises. The prompts are intentionally different from the public quizzes and include collapsible worked feedback so independent learners can verify reasoning without exposing facilitator assessment keys.
+
+Recommended order:
+
+```text
+module study
+→ exercises
+→ quiz attempt
+→ mastery check
+→ open worked feedback
+→ rerun/modify an example if needed
+→ retry uncertain ideas
+```
+
 ## Quiz review protocol
 
 After attempting a module quiz:
@@ -59,4 +75,4 @@ The design decision I can now explain is...
 
 ## Assessment integrity
 
-The repository does not publish direct keys for assessment material that may also be reused in facilitated cohorts. For self-paced learning, feedback comes from executable examples, module outcomes, exercises, rubrics, mastery checkpoints, and repeated attempts.
+The repository does not publish direct keys for assessment material that may also be reused in facilitated cohorts. For self-paced learning, feedback comes from executable examples, module outcomes, exercises, rubrics, [Mastery Checks](MASTERY_CHECKS.md), mastery checkpoints, and repeated attempts.
