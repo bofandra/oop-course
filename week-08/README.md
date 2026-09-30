@@ -84,3 +84,7 @@ The assessment only uses concepts already taught from the two formal course refe
 The Mid Test is intended to measure object-oriented modelling and implementation, not web development, databases, APIs, GUI programming, or advanced Python features.
 
 Learners should solve the problem using the simplest OOP design that satisfies the stated requirements. The assessment does not require exceptions: invalid lifecycle operations may be rejected by leaving state unchanged or returning a simple status result.
+
+## Course navigation
+
+[← Module 7](../week-07/) · [Course Map](../COURSE_MAP.md) · [Module 9 →](../week-09/)
