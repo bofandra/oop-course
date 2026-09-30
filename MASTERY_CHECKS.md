@@ -46,9 +46,9 @@ Why is this a bug?
 
 ```python
 def total(prices):
-    sum = 0
+    total_value = 0
     for price in prices:
-        sum += price
+        total_value += price
 ```
 
 <details>
