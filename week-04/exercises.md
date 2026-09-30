@@ -1,4 +1,4 @@
-# Week 4 Exercises — Encapsulation & Abstraction
+# Module 4 Exercises — Encapsulation & Abstraction
 
 ## Exercise 1 — Public Interface or Internal Detail?
 
@@ -124,7 +124,7 @@ remove_stock(3)
 remove_stock(20)
 ```
 
-For your Week 4 design:
+For your Module 4 design:
 
 1. What is stock after each operation?
 2. Which operation should not be allowed to make stock negative?
