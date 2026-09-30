@@ -42,20 +42,20 @@ Use OpenStax only as implementation support for Python concepts already taught.
 
 Do not present the OOA/OOD/OOP/OOT lifecycle as coming from OpenStax.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 13 contracts |
-| 08:45–09:10 | Requirement → OOA |
-| 09:10–09:35 | Candidate classes / responsibilities |
-| 09:35–10:00 | Minimal class diagram |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | OOD: interfaces, references, contracts |
-| 10:35–10:55 | OOP implementation |
-| 10:55–11:20 | OOT: independent + collaboration tests |
-| 11:20–11:40 | University Registration lab |
-| 11:40–11:50 | Quiz / Week 15 bridge |
+| 15 min | Review Week 13 contracts |
+| 25 min | Requirement → OOA |
+| 25 min | Candidate classes / responsibilities |
+| 25 min | Minimal class diagram |
+| 10 min | Break |
+| 25 min | OOD: interfaces, references, contracts |
+| 20 min | OOP implementation |
+| 25 min | OOT: independent + collaboration tests |
+| 20 min | University Registration lab |
+| 10 min | Quiz / Week 15 bridge |
 
 ## Opening exercise
 
