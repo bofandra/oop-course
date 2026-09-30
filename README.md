@@ -54,8 +54,10 @@ See [Course Map](COURSE_MAP.md) for the detailed module, learning-outcome, asses
 
 Open-course guidance:
 
+- [Start Here](START_HERE.md)
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
+- [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
@@ -172,6 +174,10 @@ Move to next module when ready
 ## Using the notebooks
 
 Open the notebook in Google Colab, save a personal copy, run the examples, complete the TODO cells, and compare your work against the stated requirements and rubrics.
+
+## License
+
+Instructional materials are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** and code/software portions are licensed under the **MIT License**, except where otherwise noted. See [LICENSE.md](LICENSE.md).
 
 ## Scope discipline
 
