@@ -2,7 +2,7 @@
 
 This document operationalizes the course assessment plan already defined in the root README.
 
-## 1. Final grade formula
+## 1. Final assessment grade formula
 
 All major assessment artifacts use a **0–100 raw score**.
 
@@ -213,7 +213,7 @@ Current planned scale:
 | D | 45–55.99 |
 | E | <45 |
 
-**Operational warning:** confirm this scale against the official TAU academic/syllabus policy before publishing final grades. If the official scale changes, edit `grading_config.json`; do not hand-edit calculated totals.
+**Operational warning:** confirm this scale against the the grading scale you intend to use before publishing final grades. If the official scale changes, edit `grading_config.json`; do not hand-edit calculated totals.
 
 ## 8. Attendance / eligibility
 
@@ -221,11 +221,11 @@ Attendance eligibility is deliberately **not hard-coded** into the grade calcula
 
 Why:
 
-- attendance policy is an institutional/syllabus rule;
+- attendance policy is an facilitator-defined or organization-defined rule;
 - exceptions may require administrative approval;
 - attendance eligibility should not silently change a numeric grade formula.
 
-Before final grade release, perform a separate eligibility check according to the official course/university policy.
+Before final grade release, perform a separate eligibility check according to the the applicable learning environment policy.
 
 ## 9. Gradebook files
 
@@ -295,4 +295,4 @@ The repository should contain only:
 - grading logic;
 - documentation.
 
-Keep real student records in an institutionally approved private location.
+Keep real student records in an a private location appropriate for your learning environment.
