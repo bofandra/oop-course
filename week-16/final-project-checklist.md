@@ -9,10 +9,11 @@ Use this checklist before submission.
 - [ ] Every major class has a clear responsibility.
 - [ ] I identified important state and behavior.
 - [ ] I documented object relationships.
+- [ ] I distinguish general references/associations from whole–part has-a/composition-style relationships where that distinction matters.
 - [ ] I created a class diagram.
 - [ ] My inheritance relationships represent a meaningful is-a relationship.
 - [ ] My object-reference relationships are not incorrectly modeled as inheritance.
-- [ ] I documented at least one invariant or important contract rule.
+- [ ] I documented at least one invariant and at least one state-dependent precondition/transition rule where the workflow requires one.
 
 ## Implementation
 
@@ -38,6 +39,7 @@ Use this checklist before submission.
 - [ ] I test grading.
 - [ ] I have at least one complete end-to-end scenario.
 - [ ] All tests execute successfully.
+- [ ] Plain `assert` statements in my test file are test checks, not the only mechanism enforcing required runtime business rules.
 
 ## Documentation
 
