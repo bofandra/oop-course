@@ -45,20 +45,20 @@ Use only the relevant `super()` material from 13.3 as a Python implementation br
 
 Overriding and polymorphism remain Week 7 topics.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 5: has-a vs is-a |
-| 08:45–09:10 | Inheritance concept and terminology |
-| 09:10–09:35 | Python subclass syntax |
-| 09:35–10:00 | Inherited attributes and methods |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Subclass-specific state/behavior |
-| 10:35–10:55 | `super().__init__()` |
-| 10:55–11:25 | Employee lab |
-| 11:25–11:40 | Inheritance vs composition challenge |
-| 11:40–11:50 | Quiz / bridge to overriding |
+| 15 min | Review Week 5: has-a vs is-a |
+| 25 min | Inheritance concept and terminology |
+| 25 min | Python subclass syntax |
+| 25 min | Inherited attributes and methods |
+| 10 min | Break |
+| 25 min | Subclass-specific state/behavior |
+| 20 min | `super().__init__()` |
+| 30 min | Employee lab |
+| 15 min | Inheritance vs composition challenge |
+| 10 min | Quiz / bridge to overriding |
 
 ## Opening question
 
