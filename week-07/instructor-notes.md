@@ -233,6 +233,10 @@ No. Use it when superclass behavior should be reused/extended.
 
 No. The actual runtime object's class determines the applicable implementation.
 
+## Cohort workload guidance
+
+If this course is used in a facilitated cohort, Module 7 sits immediately before the Mid Test. Prefer using the payroll assignment as selected lab/assessment evidence rather than imposing a fixed public deadline. Keep any cohort-specific date or submission rule outside the public open-course materials.
+
 ## Quiz administration
 
 The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.
