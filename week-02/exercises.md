@@ -17,8 +17,10 @@ Answer:
 
 1. How many class definitions are there?
 2. How many `Book` instances are there?
-3. Is `book_1 is book_2` expected to be `True` or `False`?
+3. Are `book_1` and `book_2` two separate instances created from the same class? Explain without using Python identity operators yet.
 4. What is the conceptual relationship between `Book` and `book_1`?
+
+> Python's `is` identity operator is introduced formally in Module 11. Module 2 only requires the concept that separate constructor calls create separate instances.
 
 ---
 
