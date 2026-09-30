@@ -1,4 +1,4 @@
-# Week 12 Exercises — Operator Overloading, Genericity & Modules
+# Module 12 Exercises — Operator Overloading, Genericity & Modules
 
 ## Exercise 1 — Readable Objects
 
@@ -28,7 +28,7 @@ p1 is p2
 p1 == p2
 ```
 
-using concepts from Week 11.
+using concepts from Module 11.
 
 ---
 
@@ -70,7 +70,7 @@ Compare `overriding` and `overloading` by explaining:
 - whether inheritance is required;
 - one example from this course.
 
-Do not confuse Week 7 method overriding with Week 12 operator overloading.
+Do not confuse Module 7 method overriding with Module 12 operator overloading.
 
 ---
 
