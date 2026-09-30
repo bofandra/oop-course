@@ -212,7 +212,7 @@ Why use `super().__init__(name)` inside a subclass constructor?
 <details>
 <summary>Feedback</summary>
 
-It delegates initialization of the superclass portion of the object to the superclass implementation, avoiding duplicated setup logic and keeping shared initialization in one place.
+It calls the superclass initializer to establish shared superclass-defined state, avoiding duplicated setup logic and keeping shared initialization in one place.
 
 </details>
 

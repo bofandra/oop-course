@@ -6,10 +6,10 @@ Total score: **100 points**
 
 | Criterion | Points |
 |---|---:|
-| Identifies Vehicle, Car, Motorcycle, Customer, and Rental as relevant classes/concepts | 5 |
+| Identifies the main domain concepts coherently, including Rental as a relationship/process object | 3 |
 | Identifies meaningful state for the classes | 4 |
-| Identifies meaningful behavior | 3 |
-| Describes class responsibilities coherently | 3 |
+| Identifies meaningful behavior | 4 |
+| Describes and justifies class responsibilities coherently | 4 |
 | **Subtotal** | **15** |
 
 Partial credit is appropriate when the model is different but still coherent.
@@ -22,9 +22,9 @@ Do not require students to reproduce one exact object list if their alternative 
 |---|---:|
 | Car is-a Vehicle | 3 |
 | Motorcycle is-a Vehicle | 3 |
-| Rental refers to/has-a Customer | 3 |
-| Rental refers to/has-a Vehicle | 3 |
-| Explanation/diagram clearly distinguishes is-a from has-a/reference relationships | 3 |
+| Rental refers to/associates with Customer | 3 |
+| Rental refers to/associates with Vehicle | 3 |
+| Explanation/diagram distinguishes inheritance, general references/associations, and whole–part meaning where relevant | 3 |
 | **Subtotal** | **15** |
 
 Do not require formal UML notation.
@@ -44,9 +44,9 @@ Do not require formal UML notation.
 
 | Criterion | Points |
 |---|---:|
-| Constructors establish required object state | 3 |
-| Vehicle availability behavior is represented through methods/public interface | 3 |
-| Rental start/complete behavior changes relevant state correctly | 2 |
+| Constructors establish required object state | 2 |
+| Vehicle availability behavior is represented through methods/public interface | 2 |
+| Rental enforces the `created → active → completed` lifecycle and availability rules | 4 |
 | display/info behavior is coherent | 2 |
 
 ### C3. Encapsulation — 8 points
@@ -78,8 +78,8 @@ Do not require formal UML notation.
 
 | Criterion | Points |
 |---|---:|
-| Car and Motorcycle both provide `calculate_rental_cost(days)` | 5 |
-| Implementations produce the required different calculations | 4 |
+| Vehicle defines standard `calculate_rental_cost(days)` behavior and Motorcycle overrides it | 5 |
+| Car's inherited standard behavior and Motorcycle's overridden behavior produce the required calculations | 4 |
 | Rental delegates total calculation to the Vehicle object | 3 |
 | Demonstration uses the same method call without unnecessary type-based branching | 3 |
 | **Subtotal** | **15** |
@@ -99,9 +99,9 @@ daily_rate × days × 0.90
 Award **3 points each** for five explanations:
 
 1. Car/Motorcycle as subclasses of Vehicle;
-2. Rental holding Vehicle/Customer object references;
-3. encapsulation in the design;
-4. why `calculate_rental_cost()` is polymorphic;
+2. Rental holding Vehicle/Customer object references and why those are associations rather than automatically composition;
+3. encapsulation and lifecycle-rule ownership in the design;
+4. why inherited/overridden `calculate_rental_cost()` is polymorphic;
 5. dynamic binding based on runtime object.
 
 For each answer:
@@ -140,7 +140,7 @@ The important point is responsibility and state ownership.
 
 ### Encapsulation note
 
-A preferred design lets Vehicle manage its own availability:
+A preferred design lets Vehicle manage its own availability and lets Rental manage its own lifecycle state:
 
 ```python
 vehicle.mark_unavailable()

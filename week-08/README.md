@@ -43,7 +43,11 @@ Python Classes
    ↓
 Inheritance
    ↓
-Polymorphism
+Overriding
+   ↓
+Polymorphism / Dynamic Binding
+   ↓
+State-transition rules
    ↓
 Explanation
 ```
@@ -79,4 +83,4 @@ The assessment only uses concepts already taught from the two formal course refe
 
 The Mid Test is intended to measure object-oriented modelling and implementation, not web development, databases, APIs, GUI programming, or advanced Python features.
 
-Learners should solve the problem using the simplest OOP design that satisfies the stated requirements.
+Learners should solve the problem using the simplest OOP design that satisfies the stated requirements. The assessment does not require exceptions: invalid lifecycle operations may be rejected by leaving state unchanged or returning a simple status result.

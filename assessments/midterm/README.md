@@ -38,7 +38,10 @@ A vehicle must be able to:
 
 - report whether it is available;
 - become unavailable when a rental starts;
-- become available again when a rental is completed.
+- become available again when a rental is completed;
+- calculate a standard rental cost using `daily_rate × rental_days`.
+
+The standard cost behavior belongs to Vehicle so subclasses can inherit or override it.
 
 ### Car
 
@@ -48,11 +51,13 @@ A Car adds:
 
 - `seats`
 
-For this exam, the Car rental cost is:
+For this exam, Car uses the standard Vehicle rental-cost behavior:
 
 ```text
 daily_rate × rental_days
 ```
+
+Car may inherit this behavior unchanged.
 
 ### Motorcycle
 
@@ -62,7 +67,7 @@ A Motorcycle adds:
 
 - `engine_capacity`
 
-For this exam, Motorcycle rental cost receives a 10% discount:
+Motorcycle **overrides** the inherited rental-cost behavior to apply a 10% discount:
 
 ```text
 daily_rate × rental_days × 0.90
@@ -84,10 +89,14 @@ A Rental connects:
 - rental duration in days;
 - rental status.
 
-Initial rental status:
+Rental lifecycle:
 
 ```text
 created
+  ↓ start()
+active
+  ↓ complete()
+completed
 ```
 
 A Rental must provide:
@@ -99,10 +108,13 @@ A Rental must provide:
 
 Rules:
 
-1. a rental can start only when its Vehicle is available;
-2. when the rental starts, the Vehicle becomes unavailable;
-3. when the rental completes, the Vehicle becomes available again;
-4. total cost must use the Vehicle's own `calculate_rental_cost(days)` behavior.
+1. a rental can start only when its status is `created` and its Vehicle is available;
+2. when the rental starts, status becomes `active` and the Vehicle becomes unavailable;
+3. a rental can complete only when its status is `active`;
+4. when the rental completes, status becomes `completed` and the Vehicle becomes available again;
+5. a completed rental cannot be started again;
+6. total cost must use the Vehicle object's own `calculate_rental_cost(days)` behavior;
+7. exceptions are not required for this assessment; an invalid lifecycle request may simply leave state unchanged or return a simple failure result.
 
 ## Exam sections
 
@@ -128,8 +140,9 @@ Explain the relationships among:
 
 At minimum, identify:
 
-- which relationships are **is-a**;
-- which are object-reference / **has-a** relationships.
+- which relationships are **is-a** inheritance relationships;
+- which are object-reference/association relationships;
+- whether any relationship is meaningfully whole–part rather than assuming every stored reference is composition.
 
 You may use a simple text diagram.
 
@@ -146,7 +159,9 @@ Your implementation should demonstrate:
 - encapsulation of availability state;
 - object references;
 - inheritance;
-- `super().__init__()`.
+- `super().__init__()`;
+- a Vehicle-level `calculate_rental_cost(days)` operation that can be inherited or overridden;
+- Rental lifecycle rules for `created → active → completed`.
 
 Keep the design simple.
 
@@ -158,7 +173,7 @@ Demonstrate that the same call:
 vehicle.calculate_rental_cost(days)
 ```
 
-can produce different behavior for Car and Motorcycle.
+uses standard inherited behavior for Car and overridden behavior for Motorcycle.
 
 Your Rental class should not need a long branch such as:
 
@@ -174,8 +189,8 @@ elif vehicle_type == "motorcycle":
 Answer short questions explaining:
 
 - why Car/Motorcycle use inheritance;
-- why Rental should refer to Vehicle rather than duplicate vehicle data;
-- where encapsulation appears;
+- why Rental should refer to Vehicle rather than duplicate vehicle data, and why that reference is an association rather than automatically whole–part composition;
+- where encapsulation and lifecycle-rule ownership appear;
 - why cost calculation is polymorphic;
 - how dynamic binding determines the method implementation at runtime.
 

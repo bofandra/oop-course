@@ -10,12 +10,15 @@ one object
 multiple collaborating objects
 ```
 
-The most important distinction is:
+The most important distinctions are:
 
 ```text
-has-a / uses
+reference / association
+≠ necessarily composition
+
+has-a whole–part
 ≠
-is-a
+is-a inheritance
 ```
 
 ## Source alignment
@@ -94,6 +97,23 @@ provides that service
 
 Do not relabel the topic as dependency injection or architecture patterns.
 
+## Reference/association vs whole–part
+
+Before has-a vs is-a, make one distinction explicit:
+
+> Storing a reference to another object does not by itself prove a whole–part composition relationship.
+
+Examples:
+
+```text
+Appointment → Patient
+Rental → Customer
+```
+
+These objects can be independently meaningful outside the referring object.
+
+Then use the Diktat's Car–Engine whole–part example.
+
 ## Has-a vs is-a
 
 Use the Diktat's Car–Engine example.
@@ -146,7 +166,9 @@ Show how Product, OrderItem, and Order have different responsibilities.
 
 ### 4. Any association is automatically composition
 
-For this course, use composition mainly as a practical whole/part modelling idea. Do not teach full UML aggregation/composition lifecycle semantics because the source material does not provide that level of detail.
+No. A reference such as Appointment → Patient may be an association between independently meaningful objects.
+
+For this course, reserve composition-style language mainly for clear whole/part modelling such as Order → OrderItem or Car → Engine. Do not teach full UML aggregation/composition lifecycle semantics because the source material does not provide that level of detail.
 
 ## Quiz administration
 

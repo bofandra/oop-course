@@ -20,7 +20,7 @@ The Diktat is the primary conceptual source for object-oriented terminology and 
 | 2 | Classes, objects & instances | class as static description; runtime objects; attributes; construction | §11.2 classes, instances, `__init__`, `self`, class/instance attributes; light preview of §11.3 | independent instances |
 | 3 | State & behavior | attributes as object state; methods/services; interaction/message concepts | §11.3 instance methods | state-changing behavior |
 | 4 | Encapsulation & abstraction | abstraction, encapsulation, visibility, class invariant | §11.1 encapsulation and abstraction | protected valid state |
-| 5 | Object relationships | Client–Supplier relationship; references/contained entities | previously learned class/reference mechanics | collaborating objects / has-a |
+| 5 | Object relationships | Client–Supplier relationship; references/contained entities; has-a whole–part distinction | previously learned class/reference mechanics | collaborating objects; association/reference vs whole–part reasoning |
 | 6 | Inheritance | ancestor/descendant; inherited features; is-a modelling | §13.1 is-a vs has-a and inheritance; §13.2 inherited state; relevant `super()` material from §13.3 | meaningful specialization |
 | 7 | Overriding, polymorphism & dynamic binding | redefinition, polymorphism, dynamic binding | §13.3 overriding, `super()`, polymorphism | runtime method selection |
 | 8 | Mid-course assessment | integration of Modules 1–7 | integration of Modules 1–7 | Vehicle Rental assessment |

@@ -47,9 +47,9 @@ Answer:
 3. What service is supplied?
 4. Where does the Supplier appear: attribute, formal argument, or function result?
 
-## Exercise 4 — Has-a or Is-a?
+## Exercise 4 — Reference, Has-a, or Is-a?
 
-Classify each pair as **has-a** or **is-a** and explain why:
+Classify each pair as **reference/association**, **has-a whole–part**, or **is-a** and explain why:
 
 - Car / Engine
 - Doctor / Person
@@ -57,8 +57,9 @@ Classify each pair as **has-a** or **is-a** and explain why:
 - Laptop / Battery
 - Student / Person
 - Library / Book
+- Appointment / Patient
 
-Do not implement inheritance yet.
+A relationship can involve a stored object reference without necessarily being whole–part composition. Do not implement inheritance yet.
 
 ## Exercise 5 — Composition
 
@@ -100,7 +101,7 @@ Add `display_info()` that shows:
 <member name> borrowed <book title>
 ```
 
-Explain the relationships.
+Explain the relationships, including why Loan referring to Member and Book does not mean that Member or Book is necessarily a component whose lifecycle belongs to Loan.
 
 ## Challenge — Enrollment as a Relationship Object
 

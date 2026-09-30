@@ -30,10 +30,10 @@ The Final Project integrates the full course, but does **not** require every opt
 | 2 | classes, instances, `__init__`, `self`, class vs instance attributes | syntax/concept interpretation | create multiple independent instances from one class | no inheritance/encapsulation rules |
 | 3 | state, behavior, methods, responsibility, state transition | distinguish state vs behavior | implement meaningful state-changing methods | validation/encapsulation intentionally incomplete |
 | 4 | encapsulation, abstraction, public interface, invariant, transition rule | explain interface/internal-state and invariant/transition distinctions | preserve valid state and legal transitions through controlled public behavior | no exception architecture yet |
-| 5 | Client–Supplier, references, has-a, collaboration | relationship classification | model collaborating objects through references | do not use inheritance |
+| 5 | Client–Supplier, references/associations, whole–part has-a, collaboration | distinguish association/reference from whole–part and is-a | model collaborating objects through references with justified relationship meaning | do not use inheritance |
 | 6 | inheritance, is-a, superclass/subclass, `super()` | inheritance reasoning | implement meaningful specialization | no overriding/polymorphism required yet |
 | 7 | overriding, polymorphism, dynamic binding | method-selection reasoning | polymorphic hierarchy + runtime method selection | no abstract classes or multiple inheritance |
-| 8 | integration of Modules 1–7 | — | Vehicle Rental Mid Test | no Module 9+ concepts required |
+| 8 | integration of Modules 1–7 | — | Vehicle Rental Mid Test: relationships, lifecycle rules, inheritance, overriding, polymorphism | no Module 9+ concepts or exception architecture required |
 | 9 | abstract/deferred classes and required behavior | abstract vs concrete reasoning | implement ABC + concrete subclasses | no multiple inheritance |
 | 10 | multiple inheritance, MRO, mixins, repeated inheritance | lookup/design reasoning | capability mixins + MRO conflict experiment | no custom MRO/C3 implementation |
 | 11 | references, identity, aliasing, mutation, reassignment, lifecycle | predict runtime reference behavior | demonstrate shared references and reassignment | no deepcopy implementation |
@@ -52,9 +52,9 @@ The Mid Test intentionally assesses only material introduced in **Modules 1–7*
 | Evidence | Main CLO | What is measured |
 |---|---|---|
 | object identification | CLO-1 | candidate objects, state, behavior, responsibilities |
-| relationship modelling | CLO-2 | is-a vs has-a/reference relationships |
+| relationship modelling | CLO-2 | is-a inheritance vs object-reference/association relationships; whole–part only when justified |
 | Python implementation | CLO-1, CLO-2, CLO-3 | classes, state, methods, encapsulation, collaboration, inheritance |
-| polymorphism section | CLO-3 | overriding, same operation across subtypes, no type-branch substitute |
+| polymorphism section | CLO-3 | inherited standard behavior + overriding, same operation across subtypes, no type-branch substitute |
 | concept explanation | CLO-1–3 | reasoning linked to the submitted design |
 
 The Mid Test must **not** require:

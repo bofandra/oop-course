@@ -22,7 +22,7 @@ This document connects module topics, Course Learning Outcomes (CLO), assessment
 | 2 | Classes, Objects & Instances | CLO-1 | class/instance implementation |
 | 3 | State & Behavior | CLO-1, CLO-2 | responsibility and state-changing methods |
 | 4 | Encapsulation & Abstraction | CLO-2 | public interface, protected state |
-| 5 | Object Relationships | CLO-2 | Client–Supplier, references, has-a |
+| 5 | Object Relationships | CLO-2 | Client–Supplier, references/associations, whole–part has-a |
 | 6 | Inheritance | CLO-3 | is-a, superclass/subclass, inherited behavior |
 | 7 | Overriding, Polymorphism & Dynamic Binding | CLO-3 | polymorphic method calls |
 | 8 | Mid Test | CLO-1–3 | integrated Vehicle Rental assessment |

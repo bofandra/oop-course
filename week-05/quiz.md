@@ -34,9 +34,9 @@ D. Order database
 
 ### 5. Which statement is correct?
 
-A. has-a should always be implemented with inheritance  
+A. every stored object reference automatically means composition  
 B. is-a and has-a mean the same thing  
-C. has-a often represents a whole/component or object relationship  
+C. has-a commonly expresses a whole/component relationship, while a general reference may simply associate two independent objects  
 D. Client–Supplier requires multiple inheritance
 
 ## Part B — Short Answer
@@ -49,4 +49,4 @@ D. Client–Supplier requires multiple inheritance
 
 ### 9. In the Product → OrderItem → Order model, describe the responsibility of each class.
 
-### 10. Give one example of a has-a relationship and one example of an is-a relationship.
+### 10. Give one example each of: a general reference/association, a has-a whole–part relationship, and an is-a relationship.
