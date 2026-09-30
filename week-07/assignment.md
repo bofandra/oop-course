@@ -95,11 +95,12 @@ Answer:
 | Criterion | Weight |
 |---|---:|
 | Correct inheritance hierarchy | 15% |
-| Correct overriding | 25% |
-| Polymorphic loop | 25% |
+| Correct overriding | 20% |
+| Polymorphic loop | 20% |
+| Dynamic binding / runtime method-selection explanation | 15% |
 | Correct pay calculations | 15% |
 | No unnecessary type branching | 10% |
-| Explanation / reasoning | 10% |
+| Overall explanation / reasoning | 5% |
 | **Total** | **100%** |
 
 ## Scope
