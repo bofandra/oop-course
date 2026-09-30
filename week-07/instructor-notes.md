@@ -73,7 +73,7 @@ The Python term **overriding** is the implementation term used throughout the st
 | 30 min | Notification live coding |
 | 30 min | Payroll lab |
 | 10 min | Shape challenge |
-| 5 min | UTS bridge |
+| 5 min | Mid Test bridge |
 
 ## Opening example
 
@@ -264,11 +264,11 @@ Avoid:
 - operator overloading;
 - design patterns.
 
-## UTS preparation
+## Mid Test preparation
 
 Module 7 is the last new teaching module before the Mid Test.
 
-Use the final minutes to remind students that UTS integrates:
+Use the final minutes to remind learners that the Mid Test integrates:
 
 ```text
 Module 1 — objects
