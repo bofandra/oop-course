@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. distinguish **overloading** from **overriding**;
 2. explain operator overloading as giving familiar operators meaningful behavior for user-defined objects;
