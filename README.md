@@ -60,6 +60,8 @@ Teaching operations:
 - [Semester Teaching Calendar](TEACHING_CALENDAR.md)
 - [Course Material Release Plan](RELEASE_PLAN.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
+- [Grading Operational System](GRADING_SYSTEM.md)
+- [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
 
 ## Weekly Plan
 
@@ -91,7 +93,7 @@ Teaching operations:
 | Weekly Coding Labs | 20% | weekly notebooks and `assignment.md` |
 | Mid Test | 20% | [Mid Test package](assessments/midterm/) |
 | Final Project | 35% | [Final Project package](assessments/final-project/) |
-| Demo / Code Explanation / Participation | 10% | weekly discussion + final demo/viva |
+| Demo / Code Explanation / Participation | 10% | [rubric](assessments/demo-participation-rubric.md) + weekly discussion + final demo/viva |
 | **Total** | **100%** | |
 
 ## Primary References
@@ -125,7 +127,13 @@ oop-course/
 ├── LECTURER_OPERATIONAL_KIT.md
 ├── TEACHING_CALENDAR.md
 ├── RELEASE_PLAN.md
-└── EXECUTION_AUDIT.md
+├── EXECUTION_AUDIT.md
+├── GRADING_SYSTEM.md
+├── GRADEBOOK_GUIDE.md
+├── grading_config.json
+└── scripts/
+    ├── validate_course.py
+    └── calculate_grades.py
 ```
 
 ### Standard teaching-week package
