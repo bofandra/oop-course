@@ -172,3 +172,4 @@ Instance state
 - [Quiz](quiz.md)
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
