@@ -89,6 +89,7 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 - added `ACCESSIBILITY.md` with learner and contributor accessibility guidance;
 - added validation guards for citation/accessibility publication assets;
 - added `LOCAL_SETUP.md` documenting the Python 3.12 reference environment, optional local workflow, and repository validation command;
-- added a notebook publication-hygiene guard requiring published notebooks to have no saved execution counts or cell outputs.
+- added a notebook publication-hygiene guard requiring published notebooks to have no saved execution counts or cell outputs;
+- added consistent Previous / Course Map / Next navigation to Module 0–16 and a validator guard for the learning path.
 
 Future changes should preserve the course progression, assessment guardrails, reference alignment, accessibility guidance, and self-paced/open-course neutrality described in the repository documentation.

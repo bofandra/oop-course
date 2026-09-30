@@ -490,3 +490,7 @@ Module 15 asks:
 That leads to:
 
 **Module 15 — Reusability, Design Patterns & OOP Case Study.**
+
+## Course navigation
+
+[← Module 13](../week-13/) · [Course Map](../COURSE_MAP.md) · [Module 15 →](../week-15/)

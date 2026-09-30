@@ -125,3 +125,7 @@ An in-memory Python solution is enough.
 The target is not the largest program.
 
 The target is a solution whose object model, responsibilities, relationships, runtime behavior, contracts, tests, and design decisions can all be explained coherently.
+
+## Course navigation
+
+[← Module 15](../week-15/) · [Course Map](../COURSE_MAP.md) · [Course Home](../README.md)

@@ -352,3 +352,7 @@ Module 12 moves to several language-level class features:
 That leads to:
 
 **Module 12 — Operator Overloading, Genericity & Organizing Classes into Modules.**
+
+## Course navigation
+
+[← Module 10](../week-10/) · [Course Map](../COURSE_MAP.md) · [Module 12 →](../week-12/)

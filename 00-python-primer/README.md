@@ -49,3 +49,7 @@ If this is difficult, review the primer notebook and introductory Python materia
 ## Next
 
 Continue to [Module 1 — Introduction to OOP & Thinking in Objects](../week-01/).
+
+## Course navigation
+
+[← Course Home](../README.md) · [Course Map](../COURSE_MAP.md) · [Module 1 →](../week-01/)

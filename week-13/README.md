@@ -480,3 +480,7 @@ Module 14 asks:
 That leads to:
 
 **Module 14 — OOP Analysis, Design, Class Diagram & Testing.**
+
+## Course navigation
+
+[← Module 12](../week-12/) · [Course Map](../COURSE_MAP.md) · [Module 14 →](../week-14/)

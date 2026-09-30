@@ -175,3 +175,7 @@ Instance state
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 - [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
+
+## Course navigation
+
+[← Module 0](../00-python-primer/) · [Course Map](../COURSE_MAP.md) · [Module 2 →](../week-02/)

@@ -338,3 +338,7 @@ Module 11 moves from class structure back to runtime objects:
 That leads to:
 
 **Module 11 — Object Lifecycle, References & Object Identity.**
+
+## Course navigation
+
+[← Module 9](../week-09/) · [Course Map](../COURSE_MAP.md) · [Module 11 →](../week-11/)

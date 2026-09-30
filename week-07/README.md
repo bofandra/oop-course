@@ -322,3 +322,7 @@ Inheritance
 Overriding
 Polymorphism
 ```
+
+## Course navigation
+
+[← Module 6](../week-06/) · [Course Map](../COURSE_MAP.md) · [Module 8 →](../week-08/)

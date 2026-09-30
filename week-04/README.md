@@ -420,3 +420,7 @@ Once one object controls its own state, the next question is:
 That leads to:
 
 **Module 5 — Object Relationships.**
+
+## Course navigation
+
+[← Module 3](../week-03/) · [Course Map](../COURSE_MAP.md) · [Module 5 →](../week-05/)

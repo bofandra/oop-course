@@ -317,3 +317,7 @@ Module 7 asks:
 That leads directly to:
 
 **Module 7 — Overriding, Polymorphism & Dynamic Binding.**
+
+## Course navigation
+
+[← Module 5](../week-05/) · [Course Map](../COURSE_MAP.md) · [Module 7 →](../week-07/)

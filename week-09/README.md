@@ -342,3 +342,7 @@ Module 10 asks:
 That leads directly to:
 
 **Module 10 — Multiple Inheritance & Mixins.**
+
+## Course navigation
+
+[← Module 8](../week-08/) · [Course Map](../COURSE_MAP.md) · [Module 10 →](../week-10/)

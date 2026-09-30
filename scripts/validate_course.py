@@ -443,6 +443,43 @@ def validate_publication_navigation(errors: list[str]) -> None:
                 fail(errors, f"{path.name}: missing public navigation link to {link}")
 
 
+def validate_module_navigation(errors: list[str]) -> None:
+    modules = [(0, ROOT / "00-python-primer" / "README.md")]
+    modules.extend(
+        (module, ROOT / f"week-{module:02d}" / "README.md")
+        for module in range(1, 17)
+    )
+
+    for module, path in modules:
+        if not path.exists():
+            continue
+
+        text = path.read_text(encoding="utf-8")
+        if "## Course navigation" not in text:
+            fail(errors, f"{path.relative_to(ROOT)}: missing Course navigation footer")
+            continue
+
+        if "../COURSE_MAP.md" not in text:
+            fail(errors, f"{path.relative_to(ROOT)}: Course navigation must link COURSE_MAP.md")
+
+        if module == 0:
+            expected = ["../week-01/", "../README.md"]
+        elif module == 16:
+            expected = ["../week-15/", "../README.md"]
+        else:
+            expected = [
+                f"../week-{module - 1:02d}/" if module > 1 else "../00-python-primer/",
+                f"../week-{module + 1:02d}/",
+            ]
+
+        for link in expected:
+            if link not in text:
+                fail(
+                    errors,
+                    f"{path.relative_to(ROOT)}: Course navigation missing expected link {link}",
+                )
+
+
 def validate_local_setup_guide(errors: list[str]) -> None:
     path = ROOT / "LOCAL_SETUP.md"
     if not path.exists():
@@ -621,6 +658,7 @@ def main() -> int:
     validate_module_colab_navigation(errors)
     validate_reference_map(errors)
     validate_publication_navigation(errors)
+    validate_module_navigation(errors)
     validate_local_setup_guide(errors)
     validate_publication_metadata(errors)
     validate_assessment_structure(errors)
@@ -651,6 +689,7 @@ def main() -> int:
     print("- direct module Colab navigation: OK")
     print("- reference-map coverage: OK")
     print("- publication navigation: OK")
+    print("- Module 0–16 course navigation: OK")
     print("- local reproducibility guide: OK")
     print("- citation/accessibility metadata: OK")
     print("- assignment rubric / quiz structure: OK")
