@@ -38,20 +38,20 @@ Keep this conceptual. Do not introduce `TypeVar`, `Generic[T]`, covariance, cont
 
 Use **11.5 Using Modules with Classes** for moving class definitions into modules, importing classes, and using aliases.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 11 identity vs equality |
-| 08:45–09:10 | Overloading concept vs overriding |
-| 09:10–09:35 | `__str__()` and `__eq__()` |
-| 09:35–10:00 | `__add__()` |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Meaningful operator semantics |
-| 10:35–10:55 | Genericity concept |
-| 10:55–11:20 | Modules with classes |
-| 11:20–11:40 | Point / Money lab |
-| 11:40–11:50 | Quiz / Week 13 bridge |
+| 15 min | Review Week 11 identity vs equality |
+| 25 min | Overloading concept vs overriding |
+| 25 min | `__str__()` and `__eq__()` |
+| 25 min | `__add__()` |
+| 10 min | Break |
+| 25 min | Meaningful operator semantics |
+| 20 min | Genericity concept |
+| 25 min | Modules with classes |
+| 20 min | Point / Money lab |
+| 10 min | Quiz / Week 13 bridge |
 
 ## Opening bridge from Week 11
 
