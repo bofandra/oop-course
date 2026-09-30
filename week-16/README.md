@@ -100,6 +100,7 @@ Evidence should include:
 - [Demo / viva guide](../assessments/final-project/demo-viva-guide.md)
 - [Planning notebook](16_final_project_planning.ipynb)
 - [Submission checklist](final-project-checklist.md)
+- [Mastery checks / project defense prompts](../MASTERY_CHECKS.md)
 
 ## Scope
 
