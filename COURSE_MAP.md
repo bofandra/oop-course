@@ -45,7 +45,7 @@ See [Assessment Alignment](ASSESSMENT_ALIGNMENT.md) for the module-by-module evi
 | Module Coding Labs | 20% | CLO-1–5 progressively |
 | Mid Test | 20% | CLO-1–3 |
 | Final Project | 35% | CLO-1–6 |
-| Demo / Code Explanation / Participation | 10% | CLO-1–6, especially explanation/ownership |
+| Demo / Code Explanation / Learning Evidence | 10% | CLO-1–6, especially explanation/ownership |
 | **Total** | **100%** | |
 
 ## Reference alignment
