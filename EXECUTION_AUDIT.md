@@ -6,14 +6,14 @@ Audit status: **validated against the current repository state**
 
 The audit checks the public course repository end-to-end:
 
-- Week 0–16 required structure;
+- Module 0–16 required structure;
 - all Jupyter notebooks;
 - Python example files;
 - notebook code-cell syntax;
 - sequential execution of notebook code cells in isolated temporary directories;
-- Week 12 multi-file module example;
+- Module 12 multi-file module example;
 - relative Markdown links;
-- accidental publication of weekly quiz answer keys.
+- accidental publication of module quiz answer keys.
 
 ## Result
 
@@ -24,7 +24,7 @@ Required course structure    PASS
 Notebook JSON / nbformat     PASS
 Notebook code compilation    PASS
 Notebook sequential runtime  PASS
-Week 12 models.py/main.py    PASS
+Module 12 models.py/main.py    PASS
 Relative Markdown links      PASS
 Public quiz-key guard        PASS
 ```
@@ -37,10 +37,10 @@ Some cells deliberately demonstrate an invalid or weak design before the correct
 
 Examples include:
 
-- Week 4: direct mutation can create invalid BankAccount state;
-- Week 9: a concrete Shape returning a meaningless default area is shown before ABC;
-- Week 13: an unprotected withdrawal demonstrates how invalid negative balance can occur;
-- Week 15: a mode-based branch is shown before the Strategy-style refactor.
+- Module 4: direct mutation can create invalid BankAccount state;
+- Module 9: a concrete Shape returning a meaningless default area is shown before ABC;
+- Module 13: an unprotected withdrawal demonstrates how invalid negative balance can occur;
+- Module 15: a mode-based branch is shown before the Strategy-style refactor.
 
 These cells are pedagogical demonstrations, not execution defects.
 
