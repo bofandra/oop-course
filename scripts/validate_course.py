@@ -109,6 +109,22 @@ def validate_notebooks(errors: list[str]) -> None:
             if cell.get("cell_type") == "code"
         ]
 
+        # Published notebooks should start clean so learners do not inherit
+        # stale execution state or saved output from a prior run.
+        for index, cell in enumerate(code_cells):
+            execution_count = cell.get("execution_count")
+            outputs = cell.get("outputs", [])
+            if execution_count is not None:
+                fail(
+                    errors,
+                    f"{rel}: code cell {index} has saved execution_count={execution_count!r}",
+                )
+            if outputs:
+                fail(
+                    errors,
+                    f"{rel}: code cell {index} has {len(outputs)} saved output(s)",
+                )
+
         # First compile every code cell.
         for index, cell in enumerate(code_cells):
             source = cell.get("source", "")
@@ -629,6 +645,7 @@ def main() -> int:
     print(f"- Python files checked: {python_count}")
     print("- required Module 0–16 structure: OK")
     print("- notebook compilation/execution: OK")
+    print("- clean notebook publication state: OK")
     print("- relative Markdown links: OK")
     print("- Colab launch coverage: OK")
     print("- direct module Colab navigation: OK")
