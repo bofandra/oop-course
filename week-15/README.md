@@ -452,3 +452,7 @@ Module 15 asks learners to integrate and reuse design ideas.
 Module 16 asks them to create and defend a complete OO solution:
 
 **Module 16 — Final Project / Final Test.**
+
+## Course navigation
+
+[← Module 14](../week-14/) · [Course Map](../COURSE_MAP.md) · [Module 16 →](../week-16/)
