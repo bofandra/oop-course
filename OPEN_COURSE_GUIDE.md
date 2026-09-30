@@ -1,15 +1,8 @@
 # Open Course Guide
 
-This repository is an **institution-independent, self-paced open course**.
+This repository is a **self-paced open course** designed for flexible, asynchronous use.
 
-It has:
-
-- no university affiliation;
-- no semester dependency;
-- no fixed meeting day or class time;
-- no required cohort start/end date.
-
-Anyone may begin at any time.
+Anyone may begin at any time and choose a pace that fits their needs.
 
 ## How to use the course
 
