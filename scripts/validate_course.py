@@ -42,6 +42,7 @@ def required_structure(errors: list[str]) -> None:
         "GRADEBOOK_GUIDE.md",
         "COLAB.md",
         "REFERENCE_MAP.md",
+        "SOURCE_BOUNDARY.md",
         "CONTRIBUTING.md",
         ".github/ISSUE_TEMPLATE/content.yml",
         ".github/ISSUE_TEMPLATE/technical.yml",
@@ -405,6 +406,27 @@ def validate_reference_map(errors: list[str]) -> None:
             fail(errors, f"REFERENCE_MAP.md: missing Module {module} mapping")
 
 
+
+def validate_source_boundary(errors: list[str]) -> None:
+    path = ROOT / "SOURCE_BOUNDARY.md"
+    if not path.exists():
+        return
+
+    text = path.read_text(encoding="utf-8")
+    required_fragments = [
+        "# Source Boundary",
+        "exactly two formal references",
+        "## Three source categories",
+        "### 1. Formal course concept",
+        "### 2. Minimal implementation bridge",
+        "### 3. Out of scope",
+        "## Rule for future changes",
+        "## Assessment rule",
+    ]
+    for fragment in required_fragments:
+        if fragment not in text:
+            fail(errors, f"SOURCE_BOUNDARY.md: missing required policy fragment: {fragment}")
+
 def validate_publication_navigation(errors: list[str]) -> None:
     required_links = {
         ROOT / "README.md": [
@@ -412,6 +434,7 @@ def validate_publication_navigation(errors: list[str]) -> None:
             "COLAB.md",
             "COURSE_MAP.md",
             "REFERENCE_MAP.md",
+            "SOURCE_BOUNDARY.md",
             "SELF_PACED_GUIDE.md",
             "SELF_ASSESSMENT_GUIDE.md",
             "ACCESSIBILITY.md",
@@ -657,6 +680,7 @@ def main() -> int:
     validate_colab_index(errors)
     validate_module_colab_navigation(errors)
     validate_reference_map(errors)
+    validate_source_boundary(errors)
     validate_publication_navigation(errors)
     validate_module_navigation(errors)
     validate_local_setup_guide(errors)
@@ -688,6 +712,7 @@ def main() -> int:
     print("- Colab launch coverage: OK")
     print("- direct module Colab navigation: OK")
     print("- reference-map coverage: OK")
+    print("- source-boundary policy: OK")
     print("- publication navigation: OK")
     print("- Module 0–16 course navigation: OK")
     print("- local reproducibility guide: OK")
