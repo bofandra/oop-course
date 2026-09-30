@@ -1,4 +1,4 @@
-# Week 14 — OOP Analysis, Design, Class Diagram & Testing
+# Module 14 — OOP Analysis, Design, Class Diagram & Testing
 
 ## Learning outcomes
 
@@ -43,11 +43,11 @@ test related/collaborating classes
 test the entire system
 ```
 
-This week uses a deliberately minimal class-diagram notation and plain Python `assert` statements. The goal is the OOA → OOD → OOP → OOT reasoning flow, not advanced UML or testing frameworks.
+This module uses a deliberately minimal class-diagram notation and plain Python `assert` statements. The goal is the OOA → OOD → OOP → OOT reasoning flow, not advanced UML or testing frameworks.
 
-## From Week 13 to Week 14
+## From Module 13 to Module 14
 
-Week 13 focused on individual object operations:
+Module 13 focused on individual object operations:
 
 ```text
 precondition
@@ -56,7 +56,7 @@ postcondition
 invariant
 ```
 
-Week 14 zooms out:
+Module 14 zooms out:
 
 > How do we move from a problem statement to a complete object-oriented solution?
 
@@ -360,7 +360,7 @@ read requirement
 immediately write class syntax
 ```
 
-Week 14 instead asks students to pause:
+Module 14 instead asks students to pause:
 
 ```text
 What are the objects?
@@ -464,9 +464,9 @@ Focus on:
 
 Use previously studied Python chapters only as implementation support.
 
-This week's lifecycle framing comes primarily from the Diktat.
+This module's lifecycle framing comes primarily from the Diktat.
 
-## Week 14 package
+## Module 14 package
 
 - [Colab notebook](14_oop_analysis_design_testing.ipynb)
 - [Exercises](exercises.md)
@@ -474,14 +474,14 @@ This week's lifecycle framing comes primarily from the Diktat.
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 14 builds a complete solution systematically.
+Module 14 builds a complete solution systematically.
 
-Week 15 asks:
+Module 15 asks:
 
 > Once we have a working OO design, what parts of the design can be reused rather than reinvented?
 
 That leads to:
 
-**Week 15 — Reusability, Design Patterns & OOP Case Study.**
+**Module 15 — Reusability, Design Patterns & OOP Case Study.**
