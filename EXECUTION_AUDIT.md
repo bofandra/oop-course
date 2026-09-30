@@ -15,6 +15,7 @@ The audit checks the public course repository end-to-end:
 - Module 12 multi-file module example;
 - relative Markdown links;
 - public learner-onboarding navigation from `README.md` and `START_HERE.md`;
+- Previous / Course Map / Next navigation across Module 0–16;
 - accidental publication of module quiz answer keys.
 
 ## Result
@@ -30,6 +31,7 @@ Notebook sequential runtime  PASS
 Module 12 models.py/main.py    PASS
 Relative Markdown links      PASS
 Learner onboarding nav       PASS
+Module course navigation     PASS
 Public quiz-key guard        PASS
 ```
 
