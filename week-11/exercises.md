@@ -1,4 +1,4 @@
-# Week 11 Exercises — Object Lifecycle, References & Object Identity
+# Module 11 Exercises — Object Lifecycle, References & Object Identity
 
 ## Exercise 1 — Same Object or Different Object?
 
