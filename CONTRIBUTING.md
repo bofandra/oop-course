@@ -10,6 +10,7 @@ Read:
 - [Reference Map](REFERENCE_MAP.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
+- [Accessibility Guide](ACCESSIBILITY.md)
 
 ## Course design guardrails
 
@@ -22,6 +23,7 @@ Please preserve these principles:
 5. Keep learner-facing material self-paced and independent of institution-specific or fixed-calendar scheduling.
 6. Do not publish answer keys for assessments that may be reused by facilitated cohorts.
 7. Keep formal concepts aligned to the documented references.
+8. Preserve accessibility: essential meaning must not depend only on color, images, or a specific interface.
 
 ## Module changes
 
@@ -74,4 +76,5 @@ Confirm that:
 - Colab launch coverage remains complete;
 - reference mapping remains accurate;
 - learner-facing wording remains self-paced and institution-neutral;
+- new visuals have meaningful text alternatives and essential instructions remain text-accessible;
 - no assessment answer key has been published accidentally.
