@@ -671,9 +671,9 @@ def validate_assessment_concept_progression(errors: list[str]) -> None:
     ]
 
     implementation_patterns = [
-        (12, re.compile(r"def\\s+__eq__\\s*\\("), "operator overloading/equality implementation"),
+        (12, re.compile(r"def\s+__eq__\s*\("), "operator overloading/equality implementation"),
         (12, re.compile(r"implement[^\\n]*`__eq__\\(\\)`", re.IGNORECASE), "operator overloading/equality implementation"),
-        (12, re.compile(r"def\\s+__add__\\s*\\("), "operator overloading/addition implementation"),
+        (12, re.compile(r"def\s+__add__\s*\("), "operator overloading/addition implementation"),
         (12, re.compile(r"implement[^\\n]*`__add__\\(\\)`", re.IGNORECASE), "operator overloading/addition implementation"),
     ]
 
