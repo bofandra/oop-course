@@ -29,6 +29,7 @@ def required_structure(errors: list[str]) -> None:
         "CHANGELOG.md",
         "CITATION.cff",
         "ACCESSIBILITY.md",
+        "LOCAL_SETUP.md",
         "COURSE_MAP.md",
         "OPEN_COURSE_GUIDE.md",
         "SELF_PACED_GUIDE.md",
@@ -398,6 +399,7 @@ def validate_publication_navigation(errors: list[str]) -> None:
             "SELF_PACED_GUIDE.md",
             "SELF_ASSESSMENT_GUIDE.md",
             "ACCESSIBILITY.md",
+            "LOCAL_SETUP.md",
             "CITATION.cff",
             "CHANGELOG.md",
             "00-python-primer/readiness-check.md",
@@ -423,6 +425,23 @@ def validate_publication_navigation(errors: list[str]) -> None:
         for link in links:
             if link not in text:
                 fail(errors, f"{path.name}: missing public navigation link to {link}")
+
+
+def validate_local_setup_guide(errors: list[str]) -> None:
+    path = ROOT / "LOCAL_SETUP.md"
+    if not path.exists():
+        return
+
+    text = path.read_text(encoding="utf-8")
+    required_fragments = [
+        "Python 3.12",
+        "python scripts/validate_course.py",
+        "COURSE VALIDATION PASSED",
+        "Google Colab",
+    ]
+    for fragment in required_fragments:
+        if fragment not in text:
+            fail(errors, f"LOCAL_SETUP.md: missing required reproducibility guidance: {fragment}")
 
 
 def validate_publication_metadata(errors: list[str]) -> None:
@@ -586,6 +605,7 @@ def main() -> int:
     validate_module_colab_navigation(errors)
     validate_reference_map(errors)
     validate_publication_navigation(errors)
+    validate_local_setup_guide(errors)
     validate_publication_metadata(errors)
     validate_assessment_structure(errors)
     validate_public_assessment_safety(errors)
@@ -614,6 +634,7 @@ def main() -> int:
     print("- direct module Colab navigation: OK")
     print("- reference-map coverage: OK")
     print("- publication navigation: OK")
+    print("- local reproducibility guide: OK")
     print("- citation/accessibility metadata: OK")
     print("- assignment rubric / quiz structure: OK")
     print("- learner-facing assessment neutrality: OK")
