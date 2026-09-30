@@ -27,6 +27,8 @@ def required_structure(errors: list[str]) -> None:
     required = [
         "README.md",
         "CHANGELOG.md",
+        "CITATION.cff",
+        "ACCESSIBILITY.md",
         "COURSE_MAP.md",
         "OPEN_COURSE_GUIDE.md",
         "SELF_PACED_GUIDE.md",
@@ -395,6 +397,8 @@ def validate_publication_navigation(errors: list[str]) -> None:
             "REFERENCE_MAP.md",
             "SELF_PACED_GUIDE.md",
             "SELF_ASSESSMENT_GUIDE.md",
+            "ACCESSIBILITY.md",
+            "CITATION.cff",
             "CHANGELOG.md",
             "00-python-primer/readiness-check.md",
             "week-01/",
@@ -419,6 +423,35 @@ def validate_publication_navigation(errors: list[str]) -> None:
         for link in links:
             if link not in text:
                 fail(errors, f"{path.name}: missing public navigation link to {link}")
+
+
+def validate_publication_metadata(errors: list[str]) -> None:
+    citation_path = ROOT / "CITATION.cff"
+    if citation_path.exists():
+        text = citation_path.read_text(encoding="utf-8")
+        required_fragments = [
+            "cff-version: 1.2.0",
+            'title: "Object Oriented Programming — Open Course"',
+            "authors:",
+            'family-names: "Muhammad"',
+            'given-names: "Bofandra"',
+            'repository-code: "https://github.com/bofandra/oop-course"',
+        ]
+        for fragment in required_fragments:
+            if fragment not in text:
+                fail(errors, f"CITATION.cff: missing required metadata fragment: {fragment}")
+
+    accessibility_path = ROOT / "ACCESSIBILITY.md"
+    if accessibility_path.exists():
+        text = accessibility_path.read_text(encoding="utf-8")
+        for heading in [
+            "# Accessibility Guide",
+            "## Learner guidance",
+            "## Content authoring rules",
+            "## Assessment accessibility",
+        ]:
+            if heading not in text:
+                fail(errors, f"ACCESSIBILITY.md: missing required section: {heading}")
 
 
 def validate_open_course_neutrality(errors: list[str]) -> None:
@@ -553,6 +586,7 @@ def main() -> int:
     validate_module_colab_navigation(errors)
     validate_reference_map(errors)
     validate_publication_navigation(errors)
+    validate_publication_metadata(errors)
     validate_assessment_structure(errors)
     validate_public_assessment_safety(errors)
     validate_open_course_neutrality(errors)
@@ -580,6 +614,7 @@ def main() -> int:
     print("- direct module Colab navigation: OK")
     print("- reference-map coverage: OK")
     print("- publication navigation: OK")
+    print("- citation/accessibility metadata: OK")
     print("- assignment rubric / quiz structure: OK")
     print("- learner-facing assessment neutrality: OK")
     print("- public assessment-key guard: OK")
