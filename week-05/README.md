@@ -1,4 +1,4 @@
-# Week 5 — Object Relationships
+# Module 5 — Object Relationships
 
 ## Learning outcomes
 
@@ -18,11 +18,11 @@ Inggriani Liem states that relationships among classes include **Client–Suppli
 
 The Diktat also distinguishes **has-a** from **is-a**. A has-a relationship reflects a whole/component relationship; its example is a Car having an Engine and Wheels. It warns that beginners often incorrectly implement has-a using inheritance.
 
-This week concentrates on Client–Supplier, has-a, composition, and collaboration. Inheritance is introduced formally in Week 6.
+This module concentrates on Client–Supplier, has-a, composition, and collaboration. Inheritance is introduced formally in Module 6.
 
-## From Week 4 to Week 5
+## From Module 4 to Module 5
 
-Week 4 focused on one object protecting its own state:
+Module 4 focused on one object protecting its own state:
 
 ```text
 Product
@@ -42,7 +42,7 @@ Appointment
 Doctor
 ```
 
-Week 5 asks:
+Module 5 asks:
 
 > How should objects refer to and use each other?
 
@@ -199,7 +199,7 @@ class Car(Engine):
 
 because Car **has an** Engine; a Car **is not an** Engine.
 
-The formal inheritance treatment comes next week.
+The formal inheritance treatment comes next module.
 
 ## 5. Composition
 
@@ -292,7 +292,7 @@ Appointment has-a Patient reference
 Doctor is-a Person
 ```
 
-Do not implement inheritance deeply this week. That is Week 6.
+Do not implement inheritance deeply this module. That is Module 6.
 
 ## Main exercise — Library Loan
 
@@ -359,9 +359,9 @@ Focus on:
 
 ### OpenStax
 
-Preview **13.1 Inheritance Basics** only to reinforce the distinction between a general/specialized **is-a** relationship and the object relationships studied this week.
+Preview **13.1 Inheritance Basics** only to reinforce the distinction between a general/specialized **is-a** relationship and the object relationships studied this module.
 
-## Week 5 package
+## Module 5 package
 
 - [Colab notebook](05_object_relationships.ipynb)
 - [Exercises](exercises.md)
@@ -369,9 +369,9 @@ Preview **13.1 Inheritance Basics** only to reinforce the distinction between a 
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 5:
+Module 5:
 
 ```text
 Order has OrderItem
@@ -379,10 +379,10 @@ Car has Engine
 Appointment uses Patient/Doctor
 ```
 
-Week 6 asks:
+Module 6 asks:
 
 > What if one class really is a more specialized kind of another class?
 
 That leads directly to:
 
-**Week 6 — Inheritance.**
+**Module 6 — Inheritance.**
