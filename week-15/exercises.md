@@ -41,13 +41,13 @@ Answer:
 Create:
 
 ```text
-DeliveryStrategy-style objects
+DeliveryStrategy (abstract/common contract)
 ├── PickupDelivery
 ├── StandardDelivery
 └── ExpressDelivery
 ```
 
-Each must provide:
+Use `ABC` / `@abstractmethod` so the shared `fee(subtotal)` operation is explicit. Each concrete strategy must provide:
 
 ```python
 fee(subtotal)
