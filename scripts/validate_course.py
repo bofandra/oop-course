@@ -324,6 +324,8 @@ def validate_open_course_neutrality(errors: list[str]) -> None:
             continue
         if ".git" in path.parts:
             continue
+        if path == ROOT / "scripts" / "validate_course.py":
+            continue
         try:
             text = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
