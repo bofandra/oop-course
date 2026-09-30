@@ -15,7 +15,7 @@ It is separate from the **Final Project artifact — 35%**.
 | Explains inheritance / polymorphism using the submitted code | 20 |
 | Explains contracts, exceptions, and testing evidence | 15 |
 | Responds to viva questions / performs a small live modification | 15 |
-| Weekly preparation, participation, and code explanation throughout the course | 10 |
+| Module preparation, participation, and code explanation throughout the course | 10 |
 | **Total** | **100** |
 
 ## Performance guidance
@@ -63,13 +63,13 @@ Full credit:
 - can make a small requested change or test adjustment;
 - demonstrates ownership of the code.
 
-### Weekly preparation / participation — 10
+### Module preparation / participation — 10
 
 Use evidence such as:
 
 - preparedness for guided labs;
 - participation in modelling discussions;
-- ability to explain weekly code;
+- ability to explain module code;
 - completion of in-class reasoning/reflection work.
 
 Do not turn this into a personality/popularity score.
