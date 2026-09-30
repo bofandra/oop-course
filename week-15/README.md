@@ -427,6 +427,7 @@ This module does not introduce an additional formal OpenStax design-pattern chap
 - [Quiz](quiz.md)
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## Next module
 
