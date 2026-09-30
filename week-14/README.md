@@ -45,7 +45,9 @@ test related/collaborating classes
 test the entire system
 ```
 
-This module uses a deliberately minimal class-diagram notation and plain Python `assert` statements. The goal is the OOA → OOD → OOP → OOT reasoning flow, not advanced UML or testing frameworks.
+This module uses a deliberately minimal class-diagram notation and plain Python `assert` statements as lightweight **test checks**. The goal is the OOA → OOD → OOP → OOT reasoning flow, not advanced UML or testing frameworks.
+
+These test assertions are different from using `assert` inside domain logic as a business-rule enforcement mechanism. Required validation belongs in normal control flow/exceptions; the plain assertions here are only a small educational testing mechanism and should be run without Python optimization (`-O`).
 
 ## From Module 13 to Module 14
 
@@ -437,9 +439,9 @@ Learners should test:
 5. cancellation state;
 6. one complete registration scenario.
 
-Use plain `assert` statements.
+Use plain `assert` statements as test checks.
 
-No `pytest` is required.
+Run the tests normally, not with `python -O`, because optimized execution can remove assertions. No `pytest` is required.
 
 ## Reflection
 
