@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain why a subclass may need a different implementation of inherited behavior;
 2. override an inherited method in Python;
@@ -300,7 +300,7 @@ Read **13.3 Methods**:
 
 Module 8 is the **Mid Test**.
 
-Students should now be able to integrate:
+Learners should now be able to integrate:
 
 ```text
 Objects
