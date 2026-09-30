@@ -1,4 +1,4 @@
-# Week 6 Quiz — Inheritance
+# Module 6 Quiz — Inheritance
 
 **Suggested duration:** 15–20 minutes
 
@@ -32,7 +32,7 @@ B. superclass
 C. instance  
 D. method
 
-### 4. What is the purpose of this call in our Week 6 examples?
+### 4. What is the purpose of this call in our Module 6 examples?
 
 ```python
 super().__init__(name)
@@ -60,6 +60,6 @@ D. They must be unrelated
 
 ### 8. Give one example of an inherited feature and one subclass-specific feature.
 
-### 9. What does a subclass gain from inheritance in the basic model used this week?
+### 9. What does a subclass gain from inheritance in the basic model used this module?
 
-### 10. Why is method overriding intentionally postponed until Week 7?
+### 10. Why is method overriding intentionally postponed until Module 7?
