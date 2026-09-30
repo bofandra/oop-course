@@ -103,4 +103,4 @@ Do not override inherited methods yet.
 
 Do not implement polymorphism, abstract classes, or multiple inheritance.
 
-Those topics appear in later weeks.
+Those topics appear in later modules.
