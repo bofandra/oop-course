@@ -337,6 +337,7 @@ Read **3.3 Variables revisited** for Python variable/object identity and aliasin
 - [Quiz](quiz.md)
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## Next module
 
