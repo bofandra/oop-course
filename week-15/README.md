@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. distinguish **code reuse** from **design reuse**;
 2. explain a design pattern as a reusable design idea for a recurring problem in a particular context;
@@ -10,7 +10,7 @@ By the end of this session, students should be able to:
 4. recognize when object creation may benefit from a Factory Method-style design;
 5. refactor a small OO solution to make selected variation points more reusable;
 6. explain why a pattern should solve a real design problem rather than merely add abstraction;
-7. complete a small end-to-end OOP case study using concepts from previous weeks.
+7. complete a small end-to-end OOP case study using concepts from previous modules.
 
 ## Source alignment
 
@@ -161,7 +161,7 @@ Delivery Strategy
 
 The variation is moved out of Order.
 
-This reuses ideas students already know:
+This reuses ideas learners already know:
 
 - object relationships;
 - polymorphism;
@@ -430,7 +430,7 @@ This module does not introduce an additional formal OpenStax design-pattern chap
 
 ## Next module
 
-Module 15 asks students to integrate and reuse design ideas.
+Module 15 asks learners to integrate and reuse design ideas.
 
 Module 16 asks them to create and defend a complete OO solution:
 
