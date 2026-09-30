@@ -13,7 +13,8 @@ By the end of this module, learners should be able to:
 5. explain exception propagation at a high level;
 6. distinguish **precondition**, **postcondition**, and **class invariant**;
 7. use Python `assert` for internal correctness assumptions;
-8. distinguish **invalid external input → exception** from **internal program assumption → assertion**.
+8. distinguish **invalid external input → exception** from **internal program assumption → assertion**;
+9. express a state-transition rule as a state-dependent precondition for an operation.
 
 ## Source alignment
 
@@ -255,7 +256,40 @@ stock >= 0
 
 We introduced this idea informally in Module 4. Module 13 now connects it explicitly to contracts and assertions.
 
-## 9. Python assert
+## 9. State-transition rules as preconditions
+
+Module 4 distinguished an invariant from a state-transition rule.
+
+For a Rental:
+
+```text
+Invariant:
+status is one of created / active / completed
+
+Transition rule:
+complete() is allowed only from active
+```
+
+At the operation level, that transition rule can be expressed as a **state-dependent precondition**:
+
+```text
+complete() precondition:
+status == active
+```
+
+A Python implementation can reject an invalid request explicitly:
+
+```python
+def complete(self):
+    if self.status != "active":
+        raise ValueError("Only an active rental can be completed")
+
+    self.status = "completed"
+```
+
+This connects the earlier state-machine idea to contract thinking without turning every business rule into an invariant.
+
+## 10. Python assert
 
 For an internal correctness assumption:
 
@@ -283,7 +317,7 @@ The exception handles an invalid request.
 
 The assertion checks an internal condition that should be true if the method logic is correct.
 
-## 10. Exception or assertion?
+## 11. Exception or assertion?
 
 Use this working distinction:
 
@@ -309,9 +343,9 @@ versus:
 assert self._balance >= 0
 ```
 
-Do not use `assert` as the main mechanism for validating normal user input.
+Do not use `assert` as the main mechanism for validating normal user input or enforcing business rules that must always execute. Python assertions can be disabled when optimization is enabled, so required validation should use ordinary control flow and exceptions.
 
-## 11. Contract thinking
+## 12. Contract thinking
 
 For:
 
@@ -334,6 +368,13 @@ new balance = old balance - amount
 
 INVARIANT
 balance >= 0
+```
+
+For stateful workflows, a current-state requirement can also be part of a precondition:
+
+```text
+complete() PRE:
+status == active
 ```
 
 This is the Client–Supplier contract view emphasized in the Diktat.
