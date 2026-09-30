@@ -142,7 +142,7 @@ Use:
 
 ```python
 class Student:
-    university = "TANRI ABENG UNIVERSITY"
+    university = "Example University"
 
     def __init__(self, student_id, name):
         self.student_id = student_id
@@ -153,7 +153,7 @@ Draw:
 
 ```text
 Student class
-- university = TAU
+- university = Example University
 
 student_1
 - student_id = S001
@@ -218,7 +218,7 @@ Do not jump directly to a fully finished class.
 
 ## Quiz administration
 
-The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.
 
 ## Assignment grading notes
 
