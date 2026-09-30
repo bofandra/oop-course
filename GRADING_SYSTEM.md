@@ -60,7 +60,7 @@ If all 14 are included, one quiz contributes approximately:
 
 to the final course grade.
 
-The assessment registry can disable a weekly quiz if the lecturer decides a particular week is formative only.
+The assessment registry can disable a weekly quiz if the instructor decides a particular week is formative only.
 
 ## 3. Weekly coding-lab aggregation
 
@@ -141,7 +141,7 @@ penalty_percent = 0
 
 ### Excused work
 
-Use `EXC` only when the lecturer has formally waived that assessment for the student.
+Use `EXC` only when the instructor has formally waived that assessment for the student.
 
 The remaining included assessments in the component determine the component average.
 
