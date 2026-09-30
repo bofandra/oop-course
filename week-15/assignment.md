@@ -57,6 +57,8 @@ Write plain `assert` tests for:
 5. Order total with different delivery strategies;
 6. at least one notification creator flow.
 
+As in Module 14, plain `assert` statements are lightweight test checks; they are not the application's required runtime validation mechanism.
+
 ## Part 5 — Design explanation
 
 Answer:
