@@ -12,7 +12,7 @@ Implement an `InventoryItem` class.
 
 - `sku`
 - `name`
-- internal `_quantity`
+- internal `_quantity`, initialized to `0`
 
 ### Public interface
 
@@ -33,7 +33,7 @@ Use a read-only `quantity` property.
 quantity >= 0
 ```
 
-For this module, invalid add/remove requests may simply leave the object unchanged. Exception handling is studied later.
+A newly created item must already satisfy the invariant. For this module, invalid add/remove requests may simply leave the object unchanged. Exception handling is studied later.
 
 ## Required demonstration
 
