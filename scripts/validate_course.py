@@ -338,6 +338,41 @@ def validate_colab_index(errors: list[str]) -> None:
             fail(errors, f"COLAB.md: missing launch link for {rel}")
 
 
+def validate_module_colab_navigation(errors: list[str]) -> None:
+    module_targets = {}
+
+    primer = ROOT / "00-python-primer" / "00_python_primer.ipynb"
+    if primer.exists():
+        module_targets[ROOT / "00-python-primer" / "README.md"] = primer
+
+    for week in list(range(1, 8)) + list(range(9, 17)):
+        folder = ROOT / f"week-{week:02d}"
+        notebooks = sorted(folder.glob("*.ipynb"))
+        if notebooks:
+            module_targets[folder / "README.md"] = notebooks[0]
+
+    midterm = ROOT / "assessments" / "midterm" / "midterm_exam.ipynb"
+    if midterm.exists():
+        module_targets[ROOT / "week-08" / "README.md"] = midterm
+        module_targets[ROOT / "assessments" / "midterm" / "README.md"] = midterm
+
+    for readme, notebook in module_targets.items():
+        if not readme.exists():
+            continue
+        rel = notebook.relative_to(ROOT).as_posix()
+        expected_url = (
+            "https://colab.research.google.com/github/"
+            "bofandra/oop-course/blob/main/"
+            + rel
+        )
+        text = readme.read_text(encoding="utf-8")
+        if expected_url not in text:
+            fail(
+                errors,
+                f"{readme.relative_to(ROOT)}: missing direct Colab launch for {rel}",
+            )
+
+
 def validate_reference_map(errors: list[str]) -> None:
     path = ROOT / "REFERENCE_MAP.md"
     if not path.exists():
@@ -504,6 +539,7 @@ def main() -> int:
     validate_gradebook_tool(errors)
     validate_markdown_links(errors)
     validate_colab_index(errors)
+    validate_module_colab_navigation(errors)
     validate_reference_map(errors)
     validate_publication_navigation(errors)
     validate_assessment_structure(errors)
@@ -530,6 +566,7 @@ def main() -> int:
     print("- notebook compilation/execution: OK")
     print("- relative Markdown links: OK")
     print("- Colab launch coverage: OK")
+    print("- direct module Colab navigation: OK")
     print("- reference-map coverage: OK")
     print("- publication navigation: OK")
     print("- assignment rubric / quiz structure: OK")
