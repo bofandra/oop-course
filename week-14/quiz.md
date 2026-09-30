@@ -1,4 +1,4 @@
-# Week 14 Quiz — OOA, OOD, OOP & OOT
+# Module 14 Quiz — OOA, OOD, OOP & OOT
 
 **Suggested duration:** 15–20 minutes
 
@@ -32,7 +32,7 @@ B. independent classes, related classes, then entire system
 C. skip classes and test only UI  
 D. only test exceptions
 
-### 5. Which is the best description of a class diagram in this week's scope?
+### 5. Which is the best description of a class diagram in this module's scope?
 
 A. a replacement for all design reasoning  
 B. a way to make classes and relationships visible before implementation  
