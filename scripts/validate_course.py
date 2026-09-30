@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import contextlib
+import csv
 import io
 import json
 import os
@@ -31,6 +32,13 @@ def required_structure(errors: list[str]) -> None:
         "TEACHING_CALENDAR.md",
         "RELEASE_PLAN.md",
         "EXECUTION_AUDIT.md",
+        "GRADING_SYSTEM.md",
+        "GRADEBOOK_GUIDE.md",
+        "grading_config.json",
+        "templates/assessment_registry.csv",
+        "templates/gradebook_scores.csv",
+        "assessments/demo-participation-rubric.md",
+        "scripts/calculate_grades.py",
         "templates/colab_template.ipynb",
         "00-python-primer/README.md",
         "00-python-primer/00_python_primer.ipynb",
@@ -168,6 +176,104 @@ def validate_python_files(errors: list[str]) -> None:
             )
 
 
+def validate_gradebook_tool(errors: list[str]) -> None:
+    script = ROOT / "scripts" / "calculate_grades.py"
+    registry = ROOT / "templates" / "assessment_registry.csv"
+    config = ROOT / "grading_config.json"
+
+    try:
+        with registry.open(newline="", encoding="utf-8-sig") as handle:
+            assessment_ids = [
+                row["assessment_id"]
+                for row in csv.DictReader(handle)
+                if row.get("included", "true").strip().lower() in {"true", "1", "yes"}
+            ]
+    except Exception as exc:
+        fail(errors, f"Could not read assessment registry: {exc}")
+        return
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        score_path = Path(temp_dir) / "scores.csv"
+        output_path = Path(temp_dir) / "summary.csv"
+
+        with score_path.open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(
+                [
+                    "student_id",
+                    "student_name",
+                    "assessment_id",
+                    "raw_score",
+                    "status",
+                    "penalty_percent",
+                    "notes",
+                ]
+            )
+            for assessment_id in assessment_ids:
+                writer.writerow(
+                    [
+                        "TEST001",
+                        "Validation Student",
+                        assessment_id,
+                        "80",
+                        "SUBMITTED",
+                        "0",
+                        "",
+                    ]
+                )
+
+        process = subprocess.run(
+            [
+                sys.executable,
+                str(script),
+                "--scores",
+                str(score_path),
+                "--registry",
+                str(registry),
+                "--config",
+                str(config),
+                "--mode",
+                "final",
+                "--output",
+                str(output_path),
+            ],
+            cwd=ROOT,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            timeout=30,
+        )
+
+        if process.returncode != 0:
+            fail(
+                errors,
+                "gradebook calculator self-test failed: "
+                + (process.stderr.strip() or f"exit {process.returncode}"),
+            )
+            return
+
+        try:
+            with output_path.open(newline="", encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+        except Exception as exc:
+            fail(errors, f"Could not read gradebook self-test output: {exc}")
+            return
+
+        if len(rows) != 1:
+            fail(errors, "gradebook calculator self-test produced unexpected row count")
+            return
+
+        row = rows[0]
+        if row.get("finalizable") != "YES":
+            fail(errors, "gradebook calculator self-test did not finalize complete data")
+        if row.get("final_numeric") != "80.00":
+            fail(
+                errors,
+                "gradebook calculator self-test expected final_numeric=80.00; "
+                f"found {row.get('final_numeric')!r}",
+            )
+
+
 def normalize_relative_link(source: Path, link: str) -> Path | None:
     link = link.strip()
     if not link or link.startswith("#"):
@@ -226,6 +332,7 @@ def main() -> int:
     required_structure(errors)
     validate_notebooks(errors)
     validate_python_files(errors)
+    validate_gradebook_tool(errors)
     validate_markdown_links(errors)
     validate_public_assessment_safety(errors)
 
@@ -249,6 +356,7 @@ def main() -> int:
     print("- notebook compilation/execution: OK")
     print("- relative Markdown links: OK")
     print("- public assessment-key guard: OK")
+    print("- gradebook calculator self-test: OK")
     return 0
 
 
