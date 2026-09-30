@@ -22,7 +22,7 @@ Final project
 Portfolio-ready OOP evidence
 ```
 
-Use quizzes, exercises, notebooks, assignments, rubrics, and the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) to decide when to move forward.
+Use quizzes, exercises, notebooks, assignments, rubrics, [Mastery Checks with worked feedback](MASTERY_CHECKS.md), and the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) to decide when to move forward.
 
 ### Facilitated cohort / study group
 
@@ -72,4 +72,5 @@ Keep completed notebooks, selected exercises, coding assignments, design explana
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
+- [Mastery Checks](MASTERY_CHECKS.md)
 - [Course Map](COURSE_MAP.md)
