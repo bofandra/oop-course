@@ -38,7 +38,7 @@ The Final Project integrates the full course, but does **not** require every opt
 | 10 | multiple inheritance, MRO, mixins, repeated inheritance | lookup/design reasoning | capability mixins + MRO conflict experiment | no custom MRO/C3 implementation |
 | 11 | references, identity, aliasing, mutation, reassignment, lifecycle | predict runtime reference behavior | demonstrate shared references and reassignment | no deepcopy implementation |
 | 12 | operator overloading, genericity concept, modules | special-method/genericity concepts | value-object operators + module organization | no advanced typing/generics |
-| 13 | exceptions, assertions, pre/postconditions, invariants | contract/error-path reasoning | robust state-changing object with explicit failure paths | no custom exception hierarchy required |
+| 13 | exceptions, assertions, pre/postconditions, invariants, state-dependent transition preconditions | contract/error-path reasoning | robust state-changing object with explicit failure paths and workflow preconditions | no custom exception hierarchy required |
 | 14 | OOA → OOD → OOP → OOT | lifecycle/design distinctions | requirement-to-test integrated solution | no advanced UML/testing framework |
 | 15 | code/design reuse, Strategy-style and Factory Method-style reasoning | pattern-selection reasoning | refactor real variation points and test result | do not reward pattern count |
 | 16 | complete OO solution + ownership | — | Final Project artifact + separate demo/viva evidence | optional techniques only when justified |
