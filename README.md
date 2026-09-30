@@ -17,6 +17,17 @@ Primary lab environment: **Google Colab**
 
 No enrollment or fixed calendar is required.
 
+### Start in 10 minutes
+
+If this is your first visit:
+
+1. Open the [Python Readiness Check](00-python-primer/readiness-check.md).
+2. If the prerequisite feels comfortable, go directly to [Module 1](week-01/) and open its Colab notebook.
+3. If the prerequisite is difficult, complete [Module 0 — Python Primer](00-python-primer/) first.
+4. For each module, use this loop: **README → notebook → exercises → quiz → assignment → mastery check**.
+
+You do not need to clone the repository to begin; Google Colab is the default zero-setup path.
+
 ## Course approach
 
 This course is designed as **OOP thinking using Python**, not as a syntax-only Python course.
