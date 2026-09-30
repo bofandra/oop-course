@@ -9,9 +9,9 @@ By the end of this module, learners should be able to:
 1. explain why useful OO systems are built from **collaborating objects**;
 2. explain a **Client–Supplier** relationship;
 3. model one object holding a reference to another object;
-4. recognize and implement a simple **has-a** relationship;
+4. distinguish a general object-reference/association relationship from a whole–part **has-a** relationship;
 5. distinguish **has-a** from **is-a** at a conceptual level;
-6. use composition when one object is built from or contains other objects;
+6. use composition-style modelling when one object is meaningfully built from or contains component objects;
 7. assign collaboration responsibilities to appropriate objects.
 
 ## Source alignment
@@ -20,7 +20,7 @@ Inggriani Liem states that relationships among classes include **Client–Suppli
 
 The Diktat also distinguishes **has-a** from **is-a**. A has-a relationship reflects a whole/component relationship; its example is a Car having an Engine and Wheels. It warns that beginners often incorrectly implement has-a using inheritance.
 
-This module concentrates on Client–Supplier, has-a, composition, and collaboration. Inheritance is introduced formally in Module 6.
+This module concentrates on Client–Supplier, object references/associations, has-a, composition-style modelling, and collaboration. A stored reference does not automatically imply whole–part composition. Inheritance is introduced formally in Module 6.
 
 ## From Module 4 to Module 5
 
@@ -123,6 +123,8 @@ class Appointment:
 
 The second model lets the Appointment refer to the Patient and Doctor objects rather than duplicate selected text values.
 
+This is a **reference/association relationship**. Do not automatically call every stored object reference composition: Patient and Doctor have their own identities and lifecycles outside this Appointment.
+
 ## 3. Client–Supplier
 
 A simple teaching interpretation:
@@ -162,9 +164,20 @@ The focus is simply:
 
 > One object can use a service supplied by another object.
 
-## 4. Has-a
+## 4. Reference/association vs has-a whole–part relationship
 
-Use the Diktat's classic example:
+A class may refer to another object without the second object being one of its components.
+
+For example:
+
+```text
+Appointment → Patient
+Rental → Customer
+```
+
+These are useful object references/associations.
+
+By contrast, the Diktat's classic whole–part example is:
 
 ```text
 Car has an Engine
@@ -203,9 +216,9 @@ because Car **has an** Engine; a Car **is not an** Engine.
 
 The formal inheritance treatment comes next module.
 
-## 5. Composition
+## 5. Composition-style modelling
 
-A practical composition example:
+A practical whole–part example:
 
 ```text
 Order
@@ -250,13 +263,15 @@ The objects collaborate:
 
 ```text
 Order
-  │ contains
+  │ contains / whole–part
   ▼
 OrderItem
-  │ refers to
+  │ refers to / association
   ▼
 Product
 ```
+
+Here, the Order–OrderItem relationship is composition-style whole–part modelling. The OrderItem–Product relationship is a reference to an independently meaningful Product.
 
 ## 6. Collaboration and responsibility
 
@@ -287,11 +302,15 @@ is-a
 Examples:
 
 ```text
+Appointment refers to Patient
+→ reference / association
+
 Car has-a Engine
-Order has-a OrderItem
-Appointment has-a Patient reference
+Order contains OrderItem
+→ whole–part / composition-style relationship
 
 Doctor is-a Person
+→ inheritance
 ```
 
 Do not implement inheritance deeply this module. That is Module 6.
@@ -317,7 +336,7 @@ class Loan:
 
 Add a simple `display_info()` method that reads information from the related objects.
 
-Then explain which object is the Client, which objects act as Suppliers, and which relationships are has-a/reference relationships.
+Then explain which object is the Client, which objects act as Suppliers, and which links are general references/associations rather than whole–part composition.
 
 ## Challenge — Student / Course / Enrollment
 
