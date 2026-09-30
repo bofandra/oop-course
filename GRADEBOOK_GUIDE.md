@@ -18,7 +18,7 @@ Do not enter real student data into the public repository.
 Example local/private copy:
 
 ```bash
-cp templates/gradebook_scores.csv ~/private-gradebook/oop-2026-scores.csv
+cp templates/gradebook_scores.csv ~/private-gradebook/oop-scores.csv
 ```
 
 ## 2. Add one row per student per assessment
@@ -37,7 +37,7 @@ S002,Student B,quiz_w01,0,MISSING,0,
 
 ```bash
 python scripts/calculate_grades.py \
-  --scores ~/private-gradebook/oop-2026-scores.csv \
+  --scores ~/private-gradebook/oop-scores.csv \
   --mode progress \
   --output ~/private-gradebook/oop-progress.csv
 ```
@@ -55,7 +55,7 @@ Then:
 
 ```bash
 python scripts/calculate_grades.py \
-  --scores ~/private-gradebook/oop-2026-scores.csv \
+  --scores ~/private-gradebook/oop-scores.csv \
   --mode final \
   --output ~/private-gradebook/oop-final.csv
 ```
