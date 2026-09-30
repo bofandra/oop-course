@@ -78,7 +78,7 @@ Answer:
 
 ---
 
-## Exercise 5 — Appointment Invariant
+## Exercise 5 — Appointment Invariant and Transition Rule
 
 For a simple Appointment:
 
@@ -89,7 +89,10 @@ confirmed
 cancelled
 ```
 
-Propose one invariant describing valid status.
+Propose:
+
+1. one invariant describing valid status values;
+2. one state-transition rule describing a move that should not be allowed.
 
 Then redesign:
 
@@ -104,6 +107,8 @@ into an interface using:
 - `cancel()`.
 
 A cancelled appointment must not later become confirmed.
+
+Explain why the valid-status condition is an invariant, while the cancelled-to-confirmed restriction is a transition rule.
 
 ---
 
