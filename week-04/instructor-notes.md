@@ -1,8 +1,8 @@
-# Week 4 Instructor Notes — Encapsulation & Abstraction
+# Module 4 Instructor Notes — Encapsulation & Abstraction
 
 ## Teaching goal
 
-Week 3 deliberately exposed a weakness:
+Module 3 deliberately exposed a weakness:
 
 ```python
 book.borrow()
@@ -15,7 +15,7 @@ or:
 appointment.status = "banana"
 ```
 
-Week 4 should answer:
+Module 4 should answer:
 
 > How can an object expose useful behavior while keeping its state meaningful?
 
@@ -82,7 +82,7 @@ The `@property` examples are a practical Python bridge used in this course; do n
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 3 deliberate flaw |
+| 15 min | Review Module 3 deliberate flaw |
 | 25 min | Encapsulation concept |
 | 20 min | Public interface vs internal state |
 | 20 min | Python underscore convention |
@@ -178,7 +178,7 @@ Ask:
 
 > Does every normal public operation leave the object in a state where this remains true?
 
-Do not yet formalize preconditions/postconditions or Python `assert`; Week 13 covers that.
+Do not yet formalize preconditions/postconditions or Python `assert`; Module 13 covers that.
 
 ## Why `@property`?
 
@@ -247,4 +247,4 @@ End with:
 
 That leads directly to:
 
-**Week 5 — Object Relationships.**
+**Module 5 — Object Relationships.**
