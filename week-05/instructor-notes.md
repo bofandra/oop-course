@@ -1,8 +1,8 @@
-# Week 5 Instructor Notes — Object Relationships
+# Module 5 Instructor Notes — Object Relationships
 
 ## Teaching goal
 
-Students can now design one object reasonably well. Week 5 changes the scale:
+Students can now design one object reasonably well. Module 5 changes the scale:
 
 ```text
 one object
@@ -29,7 +29,7 @@ Use the Diktat directly:
 - a Supplier entity may appear as an attribute, formal routine argument, or function result;
 - has-a represents a whole/component relationship;
 - the Diktat explicitly uses Car–Engine/Wheel and warns against treating has-a as inheritance;
-- is-a is the inheritance relationship and is only previewed this week.
+- is-a is the inheritance relationship and is only previewed this module.
 
 ### OpenStax
 
@@ -76,7 +76,7 @@ Ask:
 
 Expected answer: no. Appointment holds references to those objects.
 
-Do not go deep into reference identity or aliasing; Week 11 covers runtime reference semantics in depth.
+Do not go deep into reference identity or aliasing; Module 11 covers runtime reference semantics in depth.
 
 ## Client–Supplier
 
@@ -128,7 +128,7 @@ The teaching value is responsibility:
 - OrderItem knows Product + quantity and can calculate subtotal;
 - Order knows its items and can calculate the whole total.
 
-This revisits Week 3 responsibility in a multi-object setting.
+This revisits Module 3 responsibility in a multi-object setting.
 
 ## Common misconceptions
 
@@ -178,4 +178,4 @@ End with:
 
 That leads directly to:
 
-**Week 6 — Inheritance.**
+**Module 6 — Inheritance.**
