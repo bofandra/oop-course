@@ -1,10 +1,9 @@
-# Object Oriented Programming
+# Object Oriented Programming — Open Course
 
-**TANRI ABENG UNIVERSITY — Faculty of Engineering and Technology**  
-Semester: Odd 2026/2027  
-Lecturer: Bofandra Muhammad  
-Credits: 4  
-Class: Saturday, 08:30–11:50  
+A self-paced, open course for learning **object-oriented thinking using Python**.
+
+This course is designed for anyone to use **at any time**. There is no institutional affiliation, semester, fixed class schedule, or required cohort timeline.
+
 Primary implementation language: **Python**  
 Primary lab environment: **Google Colab**
 
@@ -12,7 +11,7 @@ Primary lab environment: **Google Colab**
 
 This course is designed as **OOP thinking using Python**, not as a syntax-only Python course.
 
-The semester storyline is:
+The learning storyline is:
 
 ```text
 Problem
@@ -40,9 +39,9 @@ Reusability & Patterns
 Complete OOP Solution
 ```
 
-## Course Learning Outcomes
+## Learning outcomes
 
-By the end of the course, students should be able to:
+By the end of the course, learners should be able to:
 
 1. Explain object-oriented concepts and model a problem using objects, classes, identity, state, and behavior.
 2. Design collaborating objects using encapsulation, abstraction, responsibilities, and object relationships.
@@ -51,21 +50,22 @@ By the end of the course, students should be able to:
 5. Perform object-oriented analysis, design, implementation, and testing (OOA → OOD → OOP → OOT).
 6. Build, test, demonstrate, and defend a complete object-oriented solution and recognize opportunities for code/design reuse.
 
-See [Course Map](COURSE_MAP.md) for the detailed weekly learning-outcome, assessment, and source alignment.
+See [Course Map](COURSE_MAP.md) for the detailed module, learning-outcome, assessment, and source alignment.
 
-Teaching operations:
+Open-course guidance:
 
-- [Teaching Readiness Audit](TEACHING_READINESS_AUDIT.md)
-- [Lecturer Operational Kit](LECTURER_OPERATIONAL_KIT.md)
-- [Semester Teaching Calendar](TEACHING_CALENDAR.md)
-- [Course Material Release Plan](RELEASE_PLAN.md)
+- [Open Course Guide](OPEN_COURSE_GUIDE.md)
+- [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
+- [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
 - [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
 
-## Weekly Plan
+## Suggested learning sequence
 
-| Week | Topic |
+The numbered weeks are **modules in a recommended order**, not calendar weeks. Learners may move faster or slower as needed.
+
+| Module | Topic |
 |---:|---|
 | [0](00-python-primer/) | Python Primer / Prerequisite |
 | [1](week-01/) | Introduction to OOP & Thinking in Objects |
@@ -75,7 +75,7 @@ Teaching operations:
 | [5](week-05/) | Object Relationships |
 | [6](week-06/) | Inheritance |
 | [7](week-07/) | Overriding, Polymorphism & Dynamic Binding |
-| [8](week-08/) | Mid Test |
+| [8](week-08/) | Mid-Course Assessment |
 | [9](week-09/) | Abstract Classes & Inheritance Structures |
 | [10](week-10/) | Multiple Inheritance & Mixins |
 | [11](week-11/) | Object Lifecycle, References & Object Identity |
@@ -83,20 +83,24 @@ Teaching operations:
 | [13](week-13/) | Exception Handling & Assertions |
 | [14](week-14/) | OOP Analysis, Design, Class Diagram & Testing |
 | [15](week-15/) | Reusability, Design Patterns & OOP Case Study |
-| [16](week-16/) | Final Project / Final Test |
+| [16](week-16/) | Final Project / Final Assessment |
 
-## Assessment
+## Optional assessment model
+
+The repository includes a complete assessment model for learners or instructors who want structured evaluation.
 
 | Component | Weight | Main repository evidence |
 |---|---:|---|
-| Quiz / Concept Exercises | 15% | weekly `quiz.md` / `exercises.md` |
-| Weekly Coding Labs | 20% | weekly notebooks and `assignment.md` |
-| Mid Test | 20% | [Mid Test package](assessments/midterm/) |
+| Quiz / Concept Exercises | 15% | module `quiz.md` / `exercises.md` |
+| Coding Labs | 20% | notebooks and `assignment.md` |
+| Mid-Course Assessment | 20% | [assessment package](assessments/midterm/) |
 | Final Project | 35% | [Final Project package](assessments/final-project/) |
-| Demo / Code Explanation / Participation | 10% | [rubric](assessments/demo-participation-rubric.md) + weekly discussion + final demo/viva |
+| Demo / Code Explanation / Participation | 10% | [rubric](assessments/demo-participation-rubric.md) |
 | **Total** | **100%** | |
 
-## Primary References
+Self-paced learners may instead use the quizzes, labs, and rubrics purely for self-assessment.
+
+## Primary references
 
 1. Inggriani Liem. *Diktat Kuliah Pemrograman Berorientasi Objek*. Departemen Teknik Informatika ITB, 2003.
 2. OpenStax. *Introduction to Python Programming*. 2024.
@@ -105,14 +109,11 @@ The formal course scope is intentionally aligned to these two references.
 
 The Diktat is used primarily for OOP concepts and terminology. OpenStax is used primarily for Python-facing implementation.
 
-## Repository Structure
+## Repository structure
 
 ```text
 oop-course/
 ├── 00-python-primer/
-│   ├── README.md
-│   ├── 00_python_primer.ipynb
-│   └── readiness-check.md
 ├── week-01/
 ├── week-02/
 ├── ...
@@ -121,61 +122,56 @@ oop-course/
 │   ├── midterm/
 │   └── final-project/
 ├── templates/
-│   └── colab_template.ipynb
+├── scripts/
 ├── COURSE_MAP.md
-├── TEACHING_READINESS_AUDIT.md
-├── LECTURER_OPERATIONAL_KIT.md
-├── TEACHING_CALENDAR.md
-├── RELEASE_PLAN.md
+├── OPEN_COURSE_GUIDE.md
+├── SELF_PACED_GUIDE.md
+├── INSTRUCTOR_GUIDE.md
 ├── EXECUTION_AUDIT.md
 ├── GRADING_SYSTEM.md
-├── GRADEBOOK_GUIDE.md
-├── grading_config.json
-└── scripts/
-    ├── validate_course.py
-    └── calculate_grades.py
+└── GRADEBOOK_GUIDE.md
 ```
 
-### Standard teaching-week package
+## Standard module package
 
-Most instructional weeks contain:
+Most instructional modules contain:
 
 ```text
 README.md
-<week notebook>.ipynb
+<module notebook>.ipynb
 exercises.md
 quiz.md
 assignment.md
 instructor-notes.md
 ```
 
-Assessment weeks use dedicated material under `assessments/`.
+The folder names remain `week-01` through `week-16` for repository stability, but they should be read as a **recommended module sequence**, not as fixed dates.
 
-Week 12 also contains small Python module files to demonstrate multi-file organization.
+## Self-paced learner workflow
 
-## Student workflow
-
-A recommended weekly workflow is:
+A recommended workflow is:
 
 ```text
-Read weekly README
+Read module README
       ↓
-Run Colab examples
+Run notebook examples
       ↓
 Complete TODO cells
       ↓
-Do exercises
+Do selected exercises
       ↓
 Take concept quiz
       ↓
-Complete assignment/lab
+Complete coding lab
       ↓
 Write reflection
+      ↓
+Move to next module when ready
 ```
 
 ## Using the notebooks
 
-Open the notebook in Google Colab, save a personal copy, run the examples, complete the TODO cells, and submit the requested notebook/file according to the weekly instructions.
+Open the notebook in Google Colab, save a personal copy, run the examples, complete the TODO cells, and compare your work against the stated requirements and rubrics.
 
 ## Scope discipline
 
