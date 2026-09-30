@@ -135,7 +135,7 @@ class Doctor(Person):
 
 For Module 6, read this simply as:
 
-> Initialize the Person part of this Doctor, then initialize Doctor-specific state.
+> Reuse Person's initialization logic for the shared Person state, then initialize Doctor-specific state.
 
 Do not go into method resolution order or cooperative multiple inheritance here.
 
