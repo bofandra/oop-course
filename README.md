@@ -85,6 +85,7 @@ Open-course guidance:
 - [Reference Map](REFERENCE_MAP.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
+- [Changelog](CHANGELOG.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
 - [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
 - [Contributing](CONTRIBUTING.md)
