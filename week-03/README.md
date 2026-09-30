@@ -367,3 +367,7 @@ Encapsulation
       ↓
 Abstraction
 ```
+
+## Course navigation
+
+[← Module 2](../week-02/) · [Course Map](../COURSE_MAP.md) · [Module 4 →](../week-04/)
