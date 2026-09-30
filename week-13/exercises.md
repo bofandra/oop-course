@@ -125,6 +125,25 @@ Choose **exception** or **assertion** and explain each answer.
 
 ---
 
+## Exercise 8 — Transition Rule as a Precondition
+
+Consider a Rental lifecycle:
+
+```text
+created → active → completed
+```
+
+For `complete()`:
+
+1. write the valid-status invariant;
+2. write the state-transition rule;
+3. express that rule as a precondition;
+4. show how `ValueError` could reject `complete()` when status is not `active`.
+
+Explain why “status is one of created/active/completed” is an invariant, while “complete only from active” is a precondition/transition rule.
+
+---
+
 ## Challenge — Inventory Transaction
 
 Implement a Product with:
