@@ -142,7 +142,7 @@ What is wrong with this design if different students should have different names
 ```python
 class Student:
     name = "Unknown"
-    university = "TAU"
+    university = "Example University"
 ```
 
 Rewrite the class so that the student's name belongs to each instance.
