@@ -266,5 +266,6 @@ See:
 
 - [Detailed rubric](final_project_rubric.md)
 - [Demo / viva guide](demo-viva-guide.md)
+- [Separate 10% Demo / Code Explanation / Participation rubric](../demo-participation-rubric.md)
 
 The final project contributes **35%** of the course grade according to the course assessment plan.
