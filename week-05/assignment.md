@@ -53,9 +53,10 @@ Answer:
 1. Which objects does Enrollment refer to?
 2. Why is Enrollment not a subclass of Student?
 3. Why is Enrollment not a subclass of Course?
-4. Which relationships are has-a/reference relationships?
-5. In what sense is Enrollment a Client of Student/Course in this model?
-6. What information would be duplicated if Enrollment stored only names instead of object references?
+4. Which relationships are object-reference/association relationships?
+5. Are Student and Course components owned by Enrollment, or independently meaningful objects? Explain why you would not automatically call these relationships composition.
+6. In what sense is Enrollment a Client of Student/Course in this model?
+7. What information would be duplicated if Enrollment stored only names instead of object references?
 
 ## Rubric
 
