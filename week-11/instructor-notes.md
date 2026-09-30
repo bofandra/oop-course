@@ -54,20 +54,20 @@ Use **3.3 Variables revisited** for the Python-facing explanation of:
 
 Keep the conceptual source distinction clear.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Runtime review: objects vs classes |
-| 08:45–09:10 | References and object identity |
-| 09:10–09:35 | `is` vs `==` |
-| 09:35–10:00 | Aliasing and mutation |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Mutation vs reassignment |
-| 10:35–10:55 | Custom-object aliasing |
-| 10:55–11:20 | Lifecycle and reachability |
-| 11:20–11:40 | Shared Enrollment lab |
-| 11:40–11:50 | Quiz / Week 12 bridge |
+| 15 min | Runtime review: objects vs classes |
+| 25 min | References and object identity |
+| 25 min | `is` vs `==` |
+| 25 min | Aliasing and mutation |
+| 10 min | Break |
+| 25 min | Mutation vs reassignment |
+| 20 min | Custom-object aliasing |
+| 25 min | Lifecycle and reachability |
+| 20 min | Shared Enrollment lab |
+| 10 min | Quiz / Week 12 bridge |
 
 ## Opening demonstration
 
