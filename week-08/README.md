@@ -26,7 +26,7 @@ The exam uses one integrated case study:
 
 > **Vehicle Rental System**
 
-Students are expected to move through:
+Learners are expected to move through:
 
 ```text
 Requirement
@@ -59,7 +59,7 @@ Recommended duration: **150–180 minutes**.
 | E. Concept Explanation | 15% |
 | **Total** | **100%** |
 
-## Student materials
+## Learner materials
 
 - [Mid Test brief](../assessments/midterm/README.md)
 - [Mid Test notebook](../assessments/midterm/midterm_exam.ipynb)
@@ -76,4 +76,4 @@ The assessment only uses concepts already taught from the two formal course refe
 
 The Mid Test is intended to measure object-oriented modelling and implementation, not web development, databases, APIs, GUI programming, or advanced Python features.
 
-Students should solve the problem using the simplest OOP design that satisfies the stated requirements.
+Learners should solve the problem using the simplest OOP design that satisfies the stated requirements.

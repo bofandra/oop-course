@@ -1,6 +1,6 @@
 # Module 15 Assignment — Food Ordering Reuse Case Study
 
-> **Teaching workload note:** When the Final Project is active, use this primarily as an in-class design-reuse lab. Grade selected evidence if needed rather than requiring a second complete take-home mini-project alongside Final Project implementation.
+> **Teaching workload note:** When the Final Project is active, use this primarily as a focused design-reuse lab. Grade selected evidence if needed rather than requiring a second complete take-home mini-project alongside Final Project implementation.
 
 ## Objective
 

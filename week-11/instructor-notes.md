@@ -1,10 +1,10 @@
-# Week 11 Instructor Notes — Object Lifecycle, References & Object Identity
+# Module 11 Instructor Notes — Object Lifecycle, References & Object Identity
 
 ## Teaching goal
 
-Weeks 6–10 emphasized class hierarchies.
+Modules 6–10 emphasized class hierarchies.
 
-Week 11 deliberately shifts from:
+Module 11 deliberately shifts from:
 
 ```text
 class structure
@@ -67,7 +67,7 @@ Keep the conceptual source distinction clear.
 | 20 min | Custom-object aliasing |
 | 25 min | Lifecycle and reachability |
 | 20 min | Shared Enrollment lab |
-| 10 min | Quiz / Week 12 bridge |
+| 10 min | Quiz / Module 12 bridge |
 
 ## Opening demonstration
 
@@ -92,7 +92,7 @@ student_a ──┐
 student_b ──┘
 ```
 
-This drawing is the key Week 11 teaching device.
+This drawing is the key Module 11 teaching device.
 
 ## Identity vs equality
 
@@ -116,7 +116,7 @@ is
 object identity
 ```
 
-Do not teach custom `__eq__()` yet; operator overloading belongs to Week 12.
+Do not teach custom `__eq__()` yet; operator overloading belongs to Module 12.
 
 ## Aliasing
 
@@ -277,4 +277,4 @@ End with:
 
 That leads directly to:
 
-**Week 12 — Operator Overloading, Genericity & Organizing Classes into Modules.**
+**Module 12 — Operator Overloading, Genericity & Organizing Classes into Modules.**

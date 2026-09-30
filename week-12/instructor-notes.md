@@ -1,8 +1,8 @@
-# Week 12 Instructor Notes — Operator Overloading, Genericity & Modules
+# Module 12 Instructor Notes — Operator Overloading, Genericity & Modules
 
 ## Teaching goal
 
-Week 11 distinguished object identity from value equality. Week 12 lets students define selected object semantics explicitly and then organize classes into reusable modules.
+Module 11 distinguished object identity from value equality. Module 12 lets students define selected object semantics explicitly and then organize classes into reusable modules.
 
 ```text
 object semantics
@@ -42,7 +42,7 @@ Use **11.5 Using Modules with Classes** for moving class definitions into module
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 11 identity vs equality |
+| 15 min | Review Module 11 identity vs equality |
 | 25 min | Overloading concept vs overriding |
 | 25 min | `__str__()` and `__eq__()` |
 | 25 min | `__add__()` |
@@ -51,9 +51,9 @@ Use **11.5 Using Modules with Classes** for moving class definitions into module
 | 20 min | Genericity concept |
 | 25 min | Modules with classes |
 | 20 min | Point / Money lab |
-| 10 min | Quiz / Week 13 bridge |
+| 10 min | Quiz / Module 13 bridge |
 
-## Opening bridge from Week 11
+## Opening bridge from Module 11
 
 Use:
 
@@ -81,7 +81,7 @@ Keep the goal semantic, not memorization of dunder names.
 
 ## `__eq__()`
 
-Connect to Week 11:
+Connect to Module 11:
 
 ```text
 is
@@ -93,7 +93,7 @@ is
 
 Explain that `__eq__()` lets the class define the second concept.
 
-Do not introduce hashing rules this week.
+Do not introduce hashing rules this module.
 
 ## `__add__()`
 
@@ -111,11 +111,11 @@ Write side by side:
 
 ```text
 Overriding
-Week 7
+Module 7
 subclass changes inherited method behavior
 
 Overloading
-Week 12
+Module 12
 same operation/name can have different meaning/forms
 ```
 
@@ -211,4 +211,4 @@ End with:
 
 That leads directly to:
 
-**Week 13 — Exception Handling & Assertions.**
+**Module 13 — Exception Handling & Assertions.**

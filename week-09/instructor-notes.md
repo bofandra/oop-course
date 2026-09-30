@@ -1,4 +1,4 @@
-# Week 9 Instructor Notes — Abstract Classes & Inheritance Structures
+# Module 9 Instructor Notes — Abstract Classes & Inheritance Structures
 
 ## Teaching goal
 
@@ -11,7 +11,7 @@ Polymorphism
 Dynamic Binding
 ```
 
-Week 9 adds a design-level distinction:
+Module 9 adds a design-level distinction:
 
 ```text
 Concrete superclass
@@ -27,7 +27,7 @@ The key question is:
 
 ### Inggriani Liem
 
-This week is primarily grounded in the Diktat.
+This module is primarily grounded in the Diktat.
 
 Use these source ideas:
 
@@ -43,7 +43,7 @@ Preserve the Diktat terms **deferred**, **effecting**, and **concrete/effective 
 
 Use OpenStax only for inheritance-structure reinforcement, especially hierarchical inheritance.
 
-Do **not** claim that OpenStax provides a standalone abstract-class chapter or directly teaches Python `abc.ABC` as the source of this week's concept.
+Do **not** claim that OpenStax provides a standalone abstract-class chapter or directly teaches Python `abc.ABC` as the source of this module's concept.
 
 ### Python bridge
 
@@ -67,7 +67,7 @@ State explicitly:
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Post-UTS review: superclass problems |
+| 15 min | Post-Mid Test review: superclass problems |
 | 25 min | Concrete vs abstract/deferred class |
 | 25 min | Deferred feature and effecting |
 | 25 min | Python ABC implementation bridge |
@@ -76,7 +76,7 @@ State explicitly:
 | 25 min | Hierarchical inheritance |
 | 30 min | Payment lab |
 | 10 min | Abstract-or-concrete challenge |
-| 10 min | Quiz / bridge to Week 10 |
+| 10 min | Quiz / bridge to Module 10 |
 
 ## Opening example
 
@@ -251,4 +251,4 @@ End with:
 
 That leads directly to:
 
-**Week 10 — Multiple Inheritance & Mixins.**
+**Module 10 — Multiple Inheritance & Mixins.**

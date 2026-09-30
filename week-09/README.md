@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. distinguish **concrete** classes from **abstract/deferred** classes;
 2. explain why some superclass concepts are useful as specifications but should not be instantiated directly;
@@ -32,7 +32,7 @@ Python ABC / @abstractmethod
 
 ## From Module 7–8 to Module 9
 
-Before UTS, students used concrete inheritance:
+Before the Mid Test, learners used concrete inheritance:
 
 ```text
 Employee
@@ -193,7 +193,7 @@ class FullTimeEmployee(Employee):
         return self.salary
 ```
 
-This combines concepts students already know:
+This combines concepts learners already know:
 
 - inheritance;
 - `super()`;

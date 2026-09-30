@@ -1,15 +1,15 @@
-# Week 7 Instructor Notes — Overriding, Polymorphism & Dynamic Binding
+# Module 7 Instructor Notes — Overriding, Polymorphism & Dynamic Binding
 
 ## Teaching goal
 
-Week 6 established:
+Module 6 established:
 
 ```text
 Doctor is a Person
 Developer is an Employee
 ```
 
-Week 7 adds:
+Module 7 adds:
 
 ```text
 same inherited operation name
@@ -64,7 +64,7 @@ The Python term **overriding** is the implementation term used throughout the st
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review inheritance from Week 6 |
+| 15 min | Review inheritance from Module 6 |
 | 25 min | Redefinition / overriding |
 | 20 min | Replace vs extend with `super()` |
 | 30 min | Polymorphism |
@@ -73,7 +73,7 @@ The Python term **overriding** is the implementation term used throughout the st
 | 30 min | Notification live coding |
 | 30 min | Payroll lab |
 | 10 min | Shape challenge |
-| 5 min | UTS bridge |
+| 5 min | Mid Test bridge |
 
 ## Opening example
 
@@ -213,7 +213,7 @@ Overloading
 - same operation name has multiple meanings/forms
 ```
 
-Do not teach Python operator overloading in depth here. Week 12 covers that.
+Do not teach Python operator overloading in depth here. Module 12 covers that.
 
 ## Common misconceptions
 
@@ -223,7 +223,7 @@ No. The classes must be in an inheritance relationship for the Python/OpenStax o
 
 ### 2. Polymorphism requires an abstract class
 
-No. Week 7 examples work without abstract classes.
+No. Module 7 examples work without abstract classes.
 
 ### 3. super() is mandatory in every overridden method
 
@@ -264,28 +264,28 @@ Avoid:
 - operator overloading;
 - design patterns.
 
-## UTS preparation
+## Mid Test preparation
 
-Week 7 is the last new teaching week before the Mid Test.
+Module 7 is the last new teaching module before the Mid Test.
 
-Use the final minutes to remind students that UTS integrates:
+Use the final minutes to remind learners that the Mid Test integrates:
 
 ```text
-Week 1 — objects
-Week 2 — classes/instances
-Week 3 — state/behavior
-Week 4 — encapsulation
-Week 5 — relationships
-Week 6 — inheritance
-Week 7 — overriding/polymorphism
+Module 1 — objects
+Module 2 — classes/instances
+Module 3 — state/behavior
+Module 4 — encapsulation
+Module 5 — relationships
+Module 6 — inheritance
+Module 7 — overriding/polymorphism
 ```
 
 ## Closing question
 
 End with:
 
-> Can you receive a new problem and decide which concepts from Weeks 1–7 actually belong in the solution?
+> Can you receive a new problem and decide which concepts from Modules 1–7 actually belong in the solution?
 
 That is the purpose of:
 
-**Week 8 — Mid Test.**
+**Module 8 — Mid Test.**

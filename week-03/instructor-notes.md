@@ -1,10 +1,10 @@
-# Week 3 Instructor Notes — Attributes, Methods, State & Behavior
+# Module 3 Instructor Notes — Attributes, Methods, State & Behavior
 
 ## Teaching goal
 
 Students already know how to create objects with attributes.
 
-This week should make the conceptual transition:
+This module should make the conceptual transition:
 
 ```text
 Object has state
@@ -29,7 +29,7 @@ Use the Diktat framing that:
 - methods have a signature and executable body;
 - services are associated with object interaction.
 
-The Diktat also introduces preconditions/postconditions in the same broad section, but do **not** teach contracts formally here. They receive dedicated attention in Week 13.
+The Diktat also introduces preconditions/postconditions in the same broad section, but do **not** teach contracts formally here. They receive dedicated attention in Module 13.
 
 ### OpenStax
 
@@ -54,7 +54,7 @@ Focus on calling instance methods and working with instance attributes.
 
 ## Opening example
 
-Start from a Week 2 object:
+Start from a Module 2 object:
 
 ```python
 class Appointment:
@@ -162,7 +162,7 @@ Then move to `Book` and let students implement the same idea independently.
 
 ## The deliberate flaw
 
-The Week 3 Book implementation should probably allow:
+The Module 3 Book implementation should probably allow:
 
 ```python
 book.borrow()
@@ -177,7 +177,7 @@ Ask:
 
 Do **not** solve the whole issue yet.
 
-Use it to create the need for Week 4:
+Use it to create the need for Module 4:
 
 ```text
 State + Behavior
@@ -203,7 +203,7 @@ Reward:
 
 Do not reward unnecessary advanced syntax.
 
-A student may observe that confirming a cancelled order should be invalid. That is a good observation, but the Week 3 implementation does not need to solve it yet.
+A student may observe that confirming a cancelled order should be invalid. That is a good observation, but the Module 3 implementation does not need to solve it yet.
 
 ## What not to teach yet
 
@@ -216,7 +216,7 @@ Avoid detailed treatment of:
 - Client–Supplier relationships;
 - inheritance.
 
-Those belong to later weeks.
+Those belong to later modules.
 
 ## Closing question
 
@@ -226,4 +226,4 @@ End with:
 
 That leads directly to:
 
-**Week 4 — Encapsulation & Abstraction.**
+**Module 4 — Encapsulation & Abstraction.**

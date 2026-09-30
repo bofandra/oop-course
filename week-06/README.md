@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain inheritance as an **is-a** relationship between a more general class and a more specific class;
 2. distinguish **superclass** and **subclass**;

@@ -70,7 +70,7 @@ Use evidence such as:
 - preparedness for guided labs;
 - participation in modelling discussions;
 - ability to explain module code;
-- completion of in-class reasoning/reflection work.
+- completion of reasoning/reflection work.
 
 Do not turn this into a personality/popularity score.
 

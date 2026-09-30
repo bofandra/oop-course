@@ -1,4 +1,4 @@
-# Week 1 Instructor Notes — Introduction to OOP & Thinking in Objects
+# Module 1 Instructor Notes — Introduction to OOP & Thinking in Objects
 
 ## Teaching goal
 
@@ -21,13 +21,13 @@ and recognize that objects collaborate with other objects.
 
 Use the introductory sections that frame an OO system as components that encapsulate data and functions, and that distinguish the static definition of a class from runtime objects. Also emphasize that objects have state/behavior and interact with other objects.
 
-Do not introduce later concepts such as inheritance, genericity, assertions, or design patterns in detail during Week 1.
+Do not introduce later concepts such as inheritance, genericity, assertions, or design patterns in detail during Module 1.
 
 ### OpenStax
 
 Use **11.1 Object-Oriented Programming Basics** as the Python-facing introductory reading.
 
-The Python syntax shown in class should remain minimal. Detailed `__init__`, `self`, and instance attributes belong to Week 2.
+The Python syntax shown in teaching examples should remain minimal. Detailed `__init__`, `self`, and instance attributes belong to Module 2.
 
 ## Suggested session flow
 
@@ -42,7 +42,7 @@ The Python syntax shown in class should remain minimal. Detailed `__init__`, `se
 | 20 min | Object collaboration |
 | 30 min | Library exercise |
 | 15 min | Challenge discussion |
-| 10 min | Reflection + bridge to Week 2 |
+| 10 min | Reflection + bridge to Module 2 |
 
 ## Opening script
 
@@ -111,7 +111,7 @@ patient_1 → object/instance
 patient_2 → object/instance
 ```
 
-Python nuance: classes themselves are also objects in Python, but this is **not necessary** for the Week 1 mental model.
+Python nuance: classes themselves are also objects in Python, but this is **not necessary** for the Module 1 mental model.
 
 ## Important misconception: every noun becomes a class
 
@@ -193,7 +193,7 @@ Avoid detailed coverage of:
 - abstract classes;
 - UML notation.
 
-Those topics have dedicated weeks.
+Those topics have dedicated modules.
 
 ## Closing question
 
@@ -203,4 +203,4 @@ End with:
 
 That question creates the transition to:
 
-**Week 2 — Classes, Objects & Instances.**
+**Module 2 — Classes, Objects & Instances.**

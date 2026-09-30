@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain the relationship between a class and its instances;
 2. define a Python class;
@@ -237,7 +237,7 @@ Create a `Product` class with:
 
 Create three products with different values.
 
-Add a simple `display_info()` method only to show current state. Do not add stock rules or validation yet; those belong to later weeks.
+Add a simple `display_info()` method only to show current state. Do not add stock rules or validation yet; those belong to later modules.
 
 ## Reflection
 

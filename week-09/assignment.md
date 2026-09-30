@@ -79,7 +79,7 @@ Answer:
 3. Which features are concrete/shared?
 4. What happens if a subclass does not implement `pay()`?
 5. Why can an abstract class still contain shared state and concrete methods?
-6. How does the design reuse inheritance and polymorphism from previous weeks?
+6. How does the design reuse inheritance and polymorphism from previous modules?
 7. Would every superclass in every system need to be abstract? Why not?
 
 ## Rubric

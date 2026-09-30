@@ -1,10 +1,10 @@
-# Week 13 Instructor Notes — Exception Handling & Assertions
+# Module 13 Instructor Notes — Exception Handling & Assertions
 
 ## Teaching goal
 
 Students already know how to preserve state through encapsulation.
 
-Week 13 adds the failure path:
+Module 13 adds the failure path:
 
 ```text
 operation requested
@@ -58,7 +58,7 @@ Python `assert` is used as a course implementation bridge for internal correctne
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 4 invariant idea |
+| 15 min | Review Module 4 invariant idea |
 | 25 min | Runtime failure & exceptions |
 | 25 min | `raise` and built-in exception types |
 | 25 min | `try` / `except` |
@@ -67,7 +67,7 @@ Python `assert` is used as a course implementation bridge for internal correctne
 | 25 min | Preconditions/postconditions |
 | 20 min | Class invariant & assertions |
 | 25 min | BankAccount/Product lab |
-| 10 min | Quiz / Week 14 bridge |
+| 10 min | Quiz / Module 14 bridge |
 
 ## Opening demonstration
 
@@ -243,4 +243,4 @@ End with:
 
 That leads directly to:
 
-**Week 14 — OOP Analysis, Design, Class Diagram & Testing.**
+**Module 14 — OOP Analysis, Design, Class Diagram & Testing.**

@@ -1,10 +1,10 @@
 # Module 0 — Python Primer
 
-This is prerequisite/self-study material so class time can focus on object-oriented programming.
+This is prerequisite/self-study material so the main course can focus on object-oriented programming.
 
 ## Minimum Python prerequisites
 
-Students should be comfortable with:
+Learners should be comfortable with:
 
 - variables and expressions;
 - `if` / `elif` / `else`;

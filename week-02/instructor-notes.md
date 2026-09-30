@@ -1,8 +1,8 @@
-# Week 2 Instructor Notes — Classes, Objects & Instances
+# Module 2 Instructor Notes — Classes, Objects & Instances
 
 ## Teaching goal
 
-Week 1 established the mental model:
+Module 1 established the mental model:
 
 ```text
 Object
@@ -11,7 +11,7 @@ Object
 └── Behavior
 ```
 
-Week 2 turns that model into Python.
+Module 2 turns that model into Python.
 
 The key learning transition is:
 
@@ -45,13 +45,13 @@ Use **11.2 Classes and instances** for the Python implementation:
 - instance attributes;
 - class attributes.
 
-Use only the beginning of **11.3 Instance methods** to show a simple method that reads/displays state. Save meaningful state-changing behavior and responsibility reasoning for Week 3.
+Use only the beginning of **11.3 Instance methods** to show a simple method that reads/displays state. Save meaningful state-changing behavior and responsibility reasoning for Module 3.
 
 ## Suggested session flow
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 1: class vs object concept |
+| 15 min | Review Module 1: class vs object concept |
 | 25 min | Python class definition and instantiation |
 | 30 min | `__init__()` and instance state |
 | 20 min | Understanding `self` |
@@ -59,7 +59,7 @@ Use only the beginning of **11.3 Instance methods** to show a simple method that
 | 25 min | Instance attributes vs class attributes |
 | 35 min | Live coding: Student |
 | 25 min | Colab exercise + Product challenge |
-| 15 min | Quiz / reflection / bridge to Week 3 |
+| 15 min | Quiz / reflection / bridge to Module 3 |
 
 ## Opening review
 
@@ -83,7 +83,7 @@ Ask:
 - How many runtime objects?
 - Are the two objects the same object?
 
-Do not yet explain object references in depth; that belongs to Week 11.
+Do not yet explain object references in depth; that belongs to Module 11.
 
 ## Teaching `__init__()`
 
@@ -194,7 +194,7 @@ Ask whether changing one student's email should change every student's email.
 
 ### Misconception 4: `__init__()` should contain all program logic
 
-Week 2 uses `__init__()` to establish initial state. Behavior design comes later.
+Module 2 uses `__init__()` to establish initial state. Behavior design comes later.
 
 ## Live coding sequence
 
@@ -231,7 +231,7 @@ Focus on whether students understand:
 
 Do not reward extra complexity.
 
-If a student introduces inheritance, property decorators, validation frameworks, dataclasses, or other advanced mechanisms, grade only what is relevant to Week 2 and encourage a simpler solution.
+If a student introduces inheritance, property decorators, validation frameworks, dataclasses, or other advanced mechanisms, grade only what is relevant to Module 2 and encourage a simpler solution.
 
 ## What not to teach yet
 
@@ -258,4 +258,4 @@ First answer the simpler part:
 
 That leads directly to:
 
-**Week 3 — Attributes, Methods, State & Behavior.**
+**Module 3 — Attributes, Methods, State & Behavior.**

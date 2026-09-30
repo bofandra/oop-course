@@ -1,10 +1,10 @@
-# Week 14 Instructor Notes — OOA, OOD, OOP & OOT
+# Module 14 Instructor Notes — OOA, OOD, OOP & OOT
 
 ## Teaching goal
 
-Weeks 1–13 mostly taught object-oriented concepts one topic at a time.
+Modules 1–13 mostly taught object-oriented concepts one topic at a time.
 
-Week 14 integrates them into a development workflow:
+Module 14 integrates them into a development workflow:
 
 ```text
 Requirement
@@ -24,7 +24,7 @@ The most important skill is resisting the urge to code immediately.
 
 ### Inggriani Liem
 
-This week is grounded primarily in the Diktat.
+This module is grounded primarily in the Diktat.
 
 Use the source framing that:
 
@@ -34,7 +34,7 @@ Use the source framing that:
 - OOP implements the classes in a chosen language;
 - OOT first tests independent classes, then classes with relationships, then the entire system.
 
-The Diktat mentions additional diagrams for dynamics and user interaction. For this course, keep Week 14 to a minimal class diagram because formal sequence/dynamic-diagram teaching is outside the agreed scope.
+The Diktat mentions additional diagrams for dynamics and user interaction. For this course, keep Module 14 to a minimal class diagram because formal sequence/dynamic-diagram teaching is outside the agreed scope.
 
 ### OpenStax
 
@@ -46,7 +46,7 @@ Do not present the OOA/OOD/OOP/OOT lifecycle as coming from OpenStax.
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 13 contracts |
+| 15 min | Review Module 13 contracts |
 | 25 min | Requirement → OOA |
 | 25 min | Candidate classes / responsibilities |
 | 25 min | Minimal class diagram |
@@ -55,7 +55,7 @@ Do not present the OOA/OOD/OOP/OOT lifecycle as coming from OpenStax.
 | 20 min | OOP implementation |
 | 25 min | OOT: independent + collaboration tests |
 | 20 min | University Registration lab |
-| 10 min | Quiz / Week 15 bridge |
+| 10 min | Quiz / Module 15 bridge |
 
 ## Opening exercise
 
@@ -165,7 +165,7 @@ assert enrollment.course is course
 
 Test one complete registration journey.
 
-## Contracts from Week 13
+## Contracts from Module 13
 
 Bring forward the existing concepts:
 
@@ -204,7 +204,7 @@ No. Candidate objects require modelling judgment.
 
 ### 5. Testing means pytest
 
-No. Plain assertions are sufficient for this week's learning objective.
+No. Plain assertions are sufficient for this module's learning objective.
 
 ## Quiz administration
 
@@ -247,4 +247,4 @@ End with:
 
 That leads directly to:
 
-**Week 15 — Reusability, Design Patterns & OOP Case Study.**
+**Module 15 — Reusability, Design Patterns & OOP Case Study.**

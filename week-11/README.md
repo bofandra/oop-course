@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain that Python variables refer to objects rather than storing independent copies of every object;
 2. distinguish **object identity** from **value equality**;

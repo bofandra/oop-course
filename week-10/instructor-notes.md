@@ -1,10 +1,10 @@
-# Week 10 Instructor Notes — Multiple Inheritance & Mixins
+# Module 10 Instructor Notes — Multiple Inheritance & Mixins
 
 ## Teaching goal
 
-Week 9 used one general parent with several descendants.
+Module 9 used one general parent with several descendants.
 
-Week 10 introduces:
+Module 10 introduces:
 
 ```text
 one child
@@ -45,7 +45,7 @@ Keep this distinction explicit for students.
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 9 inheritance structures |
+| 15 min | Review Module 9 inheritance structures |
 | 25 min | Basic multiple inheritance |
 | 25 min | Conflicting inherited methods |
 | 25 min | Python MRO |
@@ -54,7 +54,7 @@ Keep this distinction explicit for students.
 | 25 min | Mixin concept |
 | 30 min | Employee + capabilities lab |
 | 10 min | Diamond challenge |
-| 10 min | Quiz / Week 11 bridge |
+| 10 min | Quiz / Module 11 bridge |
 
 ## Opening example
 
@@ -114,7 +114,7 @@ Use:
 
 > MRO is Python's method-search order across the inheritance hierarchy.
 
-For Week 10, that is enough.
+For Module 10, that is enough.
 
 Avoid:
 
@@ -221,8 +221,8 @@ Avoid deep treatment of:
 
 End with:
 
-> We have spent several weeks reasoning about class hierarchies. At runtime, however, variables do not contain classes—they refer to objects. What exactly happens when two variables refer to the same object?
+> We have spent several modules reasoning about class hierarchies. At runtime, however, variables do not contain classes—they refer to objects. What exactly happens when two variables refer to the same object?
 
 That leads directly to:
 
-**Week 11 — Object Lifecycle, References & Object Identity.**
+**Module 11 — Object Lifecycle, References & Object Identity.**

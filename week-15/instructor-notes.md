@@ -1,10 +1,10 @@
-# Week 15 Instructor Notes — Reusability, Patterns & Case Study
+# Module 15 Instructor Notes — Reusability, Patterns & Case Study
 
 ## Teaching goal
 
-Week 14 taught students to build a coherent OO solution.
+Module 14 taught students to build a coherent OO solution.
 
-Week 15 adds one question:
+Module 15 adds one question:
 
 > Which parts of a proven design idea can be reused when a similar problem appears again?
 
@@ -34,7 +34,7 @@ Use the Diktat for these claims:
 - patterns are common solutions to problems in specific contexts;
 - the pattern appendix lists names including Strategy and Factory Method.
 
-Do not imply that the Diktat provides the exact Python implementations used this week.
+Do not imply that the Diktat provides the exact Python implementations used this module.
 
 ### Python examples
 
@@ -53,7 +53,7 @@ Do not introduce an external design-pattern catalogue as a third formal course r
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 14 complete-design flow |
+| 15 min | Review Module 14 complete-design flow |
 | 20 min | Code reuse vs design reuse |
 | 20 min | Pattern concept from Diktat |
 | 35 min | Strategy-style delivery refactor |
@@ -230,4 +230,4 @@ End with:
 
 That leads directly to:
 
-**Week 16 — Final Project / Final Test.**
+**Module 16 — Final Project / Final Test.**
