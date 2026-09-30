@@ -78,21 +78,21 @@ This should be stated explicitly.
 
 The `@property` examples are a practical Python bridge used in this course; do not imply that the Diktat itself teaches Python properties.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 3 deliberate flaw |
-| 08:45–09:10 | Encapsulation concept |
-| 09:10–09:30 | Public interface vs internal state |
-| 09:30–09:50 | Python underscore convention |
-| 09:50–10:00 | Abstraction |
-| 10:00–10:10 | Break |
-| 10:10–10:30 | Read-only `@property` |
-| 10:30–10:50 | Invariant concept |
-| 10:50–11:30 | Product Inventory lab |
-| 11:30–11:40 | Appointment challenge |
-| 11:40–11:50 | Quiz / bridge to relationships |
+| 15 min | Review Week 3 deliberate flaw |
+| 25 min | Encapsulation concept |
+| 20 min | Public interface vs internal state |
+| 20 min | Python underscore convention |
+| 10 min | Abstraction |
+| 10 min | Break |
+| 20 min | Read-only `@property` |
+| 20 min | Invariant concept |
+| 40 min | Product Inventory lab |
+| 10 min | Appointment challenge |
+| 10 min | Quiz / bridge to relationships |
 
 ## Opening demonstration
 
