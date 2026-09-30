@@ -1,4 +1,4 @@
-# Week 9 Exercises — Abstract Classes & Inheritance Structures
+# Module 9 Exercises — Abstract Classes & Inheritance Structures
 
 ## Exercise 1 — Concrete or Abstract?
 
