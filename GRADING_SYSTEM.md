@@ -13,7 +13,7 @@ Quiz / Concept Exercises             15%
 Module Coding Labs                   20%
 Mid Test                             20%
 Final Project                        35%
-Demo / Code Explanation / Participation
+Demo / Code Explanation / Learning Evidence
                                       10%
 -----------------------------------------
 Total                               100%
@@ -32,7 +32,7 @@ Final Numeric
 +
 (Final Project × 0.35)
 +
-(Demo/Explanation/Participation × 0.10)
+(Demo/Explanation/Learning Evidence × 0.10)
 ```
 
 ## 2. Module quiz aggregation
@@ -99,11 +99,11 @@ Use the raw score from:
 
 [Final Project rubric](assessments/final-project/final_project_rubric.md)
 
-### Demo / Code Explanation / Participation — 10%
+### Demo / Code Explanation / Learning Evidence — 10%
 
 Use:
 
-[Demo / Code Explanation / Participation rubric](assessments/demo-participation-rubric.md)
+[Demo / Code Explanation / Learning Evidence rubric](assessments/demo-participation-rubric.md)
 
 This is intentionally separate from the 35% Final Project artifact score. Use [Assessment Alignment](ASSESSMENT_ALIGNMENT.md) to avoid double-counting artifact quality and ownership/explanation evidence.
 
