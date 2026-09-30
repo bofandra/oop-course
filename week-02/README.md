@@ -237,7 +237,7 @@ Create a `Product` class with:
 
 Create three products with different values.
 
-Add a simple `display_info()` method only to show current state. Do not add stock rules or validation yet; those belong to later weeks.
+Add a simple `display_info()` method only to show current state. Do not add stock rules or validation yet; those belong to later modules.
 
 ## Reflection
 
