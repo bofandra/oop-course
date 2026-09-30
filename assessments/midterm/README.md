@@ -198,11 +198,11 @@ Recommended: **150–180 minutes**.
 
 ## Allowed materials
 
-Follow the lecturer's exam-day instructions regarding notes, documentation, internet access, and AI tools.
+Follow the instructor's exam-day instructions regarding notes, documentation, internet access, and AI tools.
 
 ## Submission
 
-Submit the completed notebook or Python file according to the lecturer's instructions.
+Submit the completed notebook or Python file according to the instructor's instructions.
 
 ## Files
 
