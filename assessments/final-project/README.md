@@ -98,7 +98,7 @@ Document:
 - responsibilities;
 - important relationships.
 
-Do not begin from a instructor-provided class list.
+Do not begin from an instructor-provided class list.
 
 Your analysis choices are part of the assessment.
 
@@ -205,7 +205,9 @@ Submit:
 2. class diagram — PNG/PDF or Markdown/text;
 3. Python source files;
 4. `tests.py` or equivalent executable test file;
-5. demo / viva.
+5. demo / viva evidence.
+
+The **project artifact** is scored with the 100-point Final Project rubric and contributes **35%** of the course grade. The learner's **demo / code explanation / ownership evidence** is scored separately in the 10% Demo / Code Explanation / Participation component; do not double-count the same artifact quality in both components.
 
 Suggested repository shape:
 
