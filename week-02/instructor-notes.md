@@ -47,19 +47,19 @@ Use **11.2 Classes and instances** for the Python implementation:
 
 Use only the beginning of **11.3 Instance methods** to show a simple method that reads/displays state. Save meaningful state-changing behavior and responsibility reasoning for Week 3.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 1: class vs object concept |
-| 08:45–09:10 | Python class definition and instantiation |
-| 09:10–09:40 | `__init__()` and instance state |
-| 09:40–10:00 | Understanding `self` |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Instance attributes vs class attributes |
-| 10:35–11:10 | Live coding: Student |
-| 11:10–11:35 | Colab exercise + Product challenge |
-| 11:35–11:50 | Quiz / reflection / bridge to Week 3 |
+| 15 min | Review Week 1: class vs object concept |
+| 25 min | Python class definition and instantiation |
+| 30 min | `__init__()` and instance state |
+| 20 min | Understanding `self` |
+| 10 min | Break |
+| 25 min | Instance attributes vs class attributes |
+| 35 min | Live coding: Student |
+| 25 min | Colab exercise + Product challenge |
+| 15 min | Quiz / reflection / bridge to Week 3 |
 
 ## Opening review
 
