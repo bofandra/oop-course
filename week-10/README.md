@@ -1,4 +1,4 @@
-# Week 10 — Multiple Inheritance & Mixins
+# Module 10 — Multiple Inheritance & Mixins
 
 ## Learning outcomes
 
@@ -34,9 +34,9 @@ MRO demonstration, mixin examples
 → OpenStax + course implementation
 ```
 
-## From Week 9 to Week 10
+## From Module 9 to Module 10
 
-Week 9 used a single inheritance hierarchy:
+Module 9 used a single inheritance hierarchy:
 
 ```text
 Payment
@@ -45,7 +45,7 @@ Payment
 └── EWalletPayment
 ```
 
-Week 10 asks:
+Module 10 asks:
 
 > What happens if one class legitimately needs behavior from more than one parent?
 
@@ -125,7 +125,7 @@ A useful introductory interpretation:
 
 > MRO is the order Python uses when searching for an inherited method or attribute.
 
-For Week 10, students only need to understand the observable lookup order.
+For Module 10, students only need to understand the observable lookup order.
 
 Do not teach the full C3 linearization algorithm.
 
@@ -242,7 +242,7 @@ contains
 
 composition may be clearer.
 
-This continues the design caution from Week 5–6.
+This continues the design caution from Module 5–6.
 
 ## Main exercise — Employee with capabilities
 
@@ -316,7 +316,7 @@ Focus on:
 
 Read **13.5 Multiple Inheritance and Mixin Classes**.
 
-## Week 10 package
+## Module 10 package
 
 - [Colab notebook](10_multiple_inheritance_mixins.ipynb)
 - [Exercises](exercises.md)
@@ -324,14 +324,14 @@ Read **13.5 Multiple Inheritance and Mixin Classes**.
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 10 focuses on inheritance structure.
+Module 10 focuses on inheritance structure.
 
-Week 11 moves from class structure back to runtime objects:
+Module 11 moves from class structure back to runtime objects:
 
 > When two variables refer to objects, what exactly are they referring to?
 
 That leads to:
 
-**Week 11 — Object Lifecycle, References & Object Identity.**
+**Module 11 — Object Lifecycle, References & Object Identity.**
