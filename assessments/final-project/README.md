@@ -207,7 +207,7 @@ Submit:
 4. `tests.py` or equivalent executable test file;
 5. demo / viva evidence.
 
-The **project artifact** is scored with the 100-point Final Project rubric and contributes **35%** of the course grade. The learner's **demo / code explanation / ownership evidence** is scored separately in the 10% Demo / Code Explanation / Participation component; do not double-count the same artifact quality in both components.
+The **project artifact** is scored with the 100-point Final Project rubric and contributes **35%** of the course grade. The learner's **demo / code explanation / ownership evidence** is scored separately in the 10% Demo / Code Explanation / Learning Evidence component; do not double-count the same artifact quality in both components.
 
 Suggested repository shape:
 
@@ -242,7 +242,7 @@ The goal is to show ownership of the design, not memorization.
 
 For self-paced study, document any AI or external assistance you use and make sure you can explain every submitted design decision and line of code. In a facilitated cohort, follow the facilitator's applicable rules for AI and external assistance.
 
-If AI assistance is permitted, students remain responsible for understanding and defending every design decision and every submitted line of code.
+If AI assistance is permitted, learners remain responsible for understanding and defending every design decision and every submitted line of code.
 
 ## Scope
 
@@ -268,6 +268,6 @@ See:
 
 - [Detailed rubric](final_project_rubric.md)
 - [Demo / viva guide](demo-viva-guide.md)
-- [Separate 10% Demo / Code Explanation / Participation rubric](../demo-participation-rubric.md)
+- [Separate 10% Demo / Code Explanation / Learning Evidence rubric](../demo-participation-rubric.md)
 
 The final project contributes **35%** of the course grade according to the course assessment plan.
