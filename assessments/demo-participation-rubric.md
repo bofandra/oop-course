@@ -15,7 +15,7 @@ It is separate from the **Final Project artifact — 35%**.
 | Explains inheritance / polymorphism using the submitted code | 20 |
 | Explains contracts, exceptions, and testing evidence | 15 |
 | Responds to viva questions / performs a small live modification | 15 |
-| Weekly preparation, participation, and code explanation throughout the semester | 10 |
+| Weekly preparation, participation, and code explanation throughout the course | 10 |
 | **Total** | **100** |
 
 ## Performance guidance
@@ -76,7 +76,7 @@ Do not turn this into a personality/popularity score.
 
 ## AI-assisted work
 
-If AI use is permitted by the course/institutional policy, AI use does not automatically reduce this score.
+If AI use is permitted by the course/applicable policy, AI use does not automatically reduce this score.
 
 The scoring question is:
 
