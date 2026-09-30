@@ -1,4 +1,4 @@
-# Week 13 Exercises — Exception Handling & Assertions
+# Module 13 Exercises — Exception Handling & Assertions
 
 ## Exercise 1 — Identify the Failure
 
