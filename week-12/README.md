@@ -395,3 +395,7 @@ Module 13 asks:
 That leads to:
 
 **Module 13 — Exception Handling & Assertions.**
+
+## Course navigation
+
+[← Module 11](../week-11/) · [Course Map](../COURSE_MAP.md) · [Module 13 →](../week-13/)
