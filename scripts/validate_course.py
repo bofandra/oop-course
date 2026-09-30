@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+import ast
 import contextlib
 import csv
 import io
@@ -661,8 +662,6 @@ def validate_assessment_concept_progression(errors: list[str]) -> None:
         (9, "@abstractmethod", "abstract/deferred class implementation"),
         (9, "from abc import", "abstract/deferred class implementation"),
         (10, "__mro__", "method resolution order"),
-        (12, "__eq__", "operator overloading/equality implementation"),
-        (12, "__add__", "operator overloading/addition implementation"),
         (13, "raise ValueError", "explicit exception raising"),
         (13, "except ValueError", "exception handling"),
         (13, "try:", "exception handling"),
@@ -670,6 +669,28 @@ def validate_assessment_concept_progression(errors: list[str]) -> None:
         (15, "Strategy-style", "design-pattern implementation"),
         (15, "Factory Method-style", "design-pattern implementation"),
     ]
+
+    implementation_patterns = [
+        (12, re.compile(r"def\\s+__eq__\\s*\\("), "operator overloading/equality implementation"),
+        (12, re.compile(r"implement[^\\n]*`__eq__\\(\\)`", re.IGNORECASE), "operator overloading/equality implementation"),
+        (12, re.compile(r"def\\s+__add__\\s*\\("), "operator overloading/addition implementation"),
+        (12, re.compile(r"implement[^\\n]*`__add__\\(\\)`", re.IGNORECASE), "operator overloading/addition implementation"),
+    ]
+
+    def uses_identity_operator(source: str) -> bool:
+        try:
+            tree = ast.parse(source)
+        except SyntaxError:
+            try:
+                tree = ast.parse(source, mode="eval")
+            except SyntaxError:
+                return False
+
+        return any(
+            isinstance(node, ast.Compare)
+            and any(isinstance(op, (ast.Is, ast.IsNot)) for op in node.ops)
+            for node in ast.walk(tree)
+        )
 
     for module in list(range(1, 8)) + list(range(9, 16)):
         folder = ROOT / f"week-{module:02d}"
@@ -688,6 +709,13 @@ def validate_assessment_concept_progression(errors: list[str]) -> None:
                         f"{rel}: requires {label} before Module {introduced_in}",
                     )
 
+            for introduced_in, pattern, label in implementation_patterns:
+                if module < introduced_in and pattern.search(text):
+                    fail(
+                        errors,
+                        f"{rel}: requires {label} before Module {introduced_in}",
+                    )
+
             if module < 11:
                 code_fragments = re.findall(r"`([^`\n]+)`", text)
                 python_blocks = re.findall(
@@ -696,7 +724,7 @@ def validate_assessment_concept_progression(errors: list[str]) -> None:
                     flags=re.DOTALL,
                 )
                 for fragment in code_fragments + python_blocks:
-                    if re.search(r"\s+is(?:\s+not)?\s+", fragment):
+                    if uses_identity_operator(fragment):
                         fail(
                             errors,
                             f"{rel}: uses Python identity operator before Module 11",
