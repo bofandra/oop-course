@@ -1,4 +1,4 @@
-# Week 1 Exercises — Thinking in Objects
+# Module 1 Exercises — Thinking in Objects
 
 These exercises focus on **object-oriented thinking**, not detailed Python syntax.
 
