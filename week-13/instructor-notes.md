@@ -54,20 +54,20 @@ for Python:
 
 Python `assert` is used as a course implementation bridge for internal correctness assumptions.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 4 invariant idea |
-| 08:45–09:10 | Runtime failure & exceptions |
-| 09:10–09:35 | `raise` and built-in exception types |
-| 09:35–10:00 | `try` / `except` |
-| 10:00–10:10 | Break |
-| 10:10–10:30 | Exception propagation |
-| 10:30–10:55 | Preconditions/postconditions |
-| 10:55–11:15 | Class invariant & assertions |
-| 11:15–11:40 | BankAccount/Product lab |
-| 11:40–11:50 | Quiz / Week 14 bridge |
+| 15 min | Review Week 4 invariant idea |
+| 25 min | Runtime failure & exceptions |
+| 25 min | `raise` and built-in exception types |
+| 25 min | `try` / `except` |
+| 10 min | Break |
+| 20 min | Exception propagation |
+| 25 min | Preconditions/postconditions |
+| 20 min | Class invariant & assertions |
+| 25 min | BankAccount/Product lab |
+| 10 min | Quiz / Week 14 bridge |
 
 ## Opening demonstration
 
