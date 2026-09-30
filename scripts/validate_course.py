@@ -27,6 +27,7 @@ def required_structure(errors: list[str]) -> None:
         "README.md",
         "COURSE_MAP.md",
         "TEACHING_READINESS_AUDIT.md",
+        "LECTURER_OPERATIONAL_KIT.md",
         "TEACHING_CALENDAR.md",
         "RELEASE_PLAN.md",
         "EXECUTION_AUDIT.md",
