@@ -198,6 +198,10 @@ No. In this course example, creation is represented as a method whose concrete c
 
 No. Analysis/design should reveal the problem before choosing a pattern.
 
+## Cohort workload guidance
+
+If the Final Project is already active, Module 15 can be used as selected design-reuse evidence rather than requiring a second complete case-study submission. The public assignment remains useful as a full self-paced exercise.
+
 ## Quiz administration
 
 The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.
