@@ -1,6 +1,6 @@
 # Execution Audit
 
-Last full audit: **29 September 2026**
+Audit status: **validated against the current repository state**
 
 ## Scope
 
