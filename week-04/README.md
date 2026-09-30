@@ -1,4 +1,4 @@
-# Week 4 — Encapsulation & Abstraction
+# Module 4 — Encapsulation & Abstraction
 
 ## Learning outcomes
 
@@ -10,7 +10,7 @@ By the end of this session, students should be able to:
 4. use Python naming conventions such as a leading underscore to communicate internal-use attributes;
 5. use methods and a simple read-only `@property` to provide controlled access to state;
 6. identify a simple class invariant such as `stock >= 0`;
-7. redesign Week 3 classes so invalid state transitions are harder to create.
+7. redesign Module 3 classes so invalid state transitions are harder to create.
 
 ## Source alignment
 
@@ -20,9 +20,9 @@ OpenStax 11.1 explicitly introduces both encapsulation and abstraction. It descr
 
 Python does not enforce visibility in the same way as languages with strict `private` access modifiers. In this course, a leading underscore (for example, `_balance`) is used as a **Python convention** to communicate that an attribute is intended for internal use. The `@property` examples below are a Python implementation technique used to create a simple public read interface.
 
-## From Week 3 to Week 4
+## From Module 3 to Module 4
 
-Week 3 gave objects meaningful behavior:
+Module 3 gave objects meaningful behavior:
 
 ```text
 state
@@ -40,7 +40,7 @@ appointment.status = "anything"
 book.is_available = "maybe"
 ```
 
-Week 4 asks:
+Module 4 asks:
 
 > How should an object expose useful behavior while reducing accidental invalid state changes?
 
@@ -190,7 +190,7 @@ without directly using:
 product._stock
 ```
 
-For Week 4, use `@property` only as a small implementation technique. Do not turn this week into an advanced lesson about descriptors.
+For Module 4, use `@property` only as a small implementation technique. Do not turn this module into an advanced lesson about descriptors.
 
 ## 5. Preserve a valid state
 
@@ -235,7 +235,7 @@ After valid operation:
 stock >= 0
 ```
 
-Formal assertion/contracts are studied later in Week 13. Here the point is simply to recognize and preserve a class rule.
+Formal assertion/contracts are studied later in Module 13. Here the point is simply to recognize and preserve a class rule.
 
 ## 6. Encapsulation vs abstraction
 
@@ -267,16 +267,16 @@ The object also controls its own balance through its methods instead of encourag
 
 That is useful encapsulation.
 
-## 7. Improve the Week 3 Appointment
+## 7. Improve the Module 3 Appointment
 
-Week 3:
+Module 3:
 
 ```python
 appointment.status = "cancelled"
 appointment.status = "banana"
 ```
 
-Week 4:
+Module 4:
 
 ```python
 class Appointment:
@@ -306,7 +306,7 @@ appointment.cancel()
 print(appointment.status)
 ```
 
-We are still keeping error handling simple. Raising and handling exceptions is studied in Week 13.
+We are still keeping error handling simple. Raising and handling exceptions is studied in Module 13.
 
 ## Main exercise — Product Inventory
 
@@ -334,7 +334,7 @@ Demonstrate that normal use of the public methods preserves the rule.
 
 ## Challenge — Appointment
 
-Improve the Week 3 Appointment so that:
+Improve the Module 3 Appointment so that:
 
 - status starts as `waiting`;
 - status is stored internally;
@@ -368,7 +368,7 @@ Read **11.1 Object-Oriented Programming Basics**, especially the Encapsulation a
 
 Review **11.3 Instance Methods** for methods that access and modify instance state.
 
-## Week 4 package
+## Module 4 package
 
 - [Colab notebook](04_encapsulation_abstraction.ipynb)
 - [Exercises](exercises.md)
@@ -376,7 +376,7 @@ Review **11.3 Instance Methods** for methods that access and modify instance sta
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
 Once one object controls its own state, the next question is:
 
@@ -384,4 +384,4 @@ Once one object controls its own state, the next question is:
 
 That leads to:
 
-**Week 5 — Object Relationships.**
+**Module 5 — Object Relationships.**
