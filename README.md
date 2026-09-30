@@ -83,6 +83,7 @@ Open-course guidance:
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Reference Map](REFERENCE_MAP.md)
+- [Source Boundary](SOURCE_BOUNDARY.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Accessibility Guide](ACCESSIBILITY.md)
@@ -140,7 +141,7 @@ The formal course scope is intentionally aligned to these two references.
 
 The Diktat is used primarily for OOP concepts and terminology. OpenStax is used primarily for Python-facing implementation.
 
-See the [Reference Map](REFERENCE_MAP.md) for module-by-module source alignment.
+See the [Reference Map](REFERENCE_MAP.md) for module-by-module source alignment and the [Source Boundary](SOURCE_BOUNDARY.md) for the rule that separates formal course concepts, minimal Python implementation bridges, and out-of-scope additions.
 
 ## Repository structure
 
@@ -158,6 +159,7 @@ oop-course/
 ├── scripts/
 ├── COURSE_MAP.md
 ├── REFERENCE_MAP.md
+├── SOURCE_BOUNDARY.md
 ├── COLAB.md
 ├── CONTRIBUTING.md
 ├── OPEN_COURSE_GUIDE.md
