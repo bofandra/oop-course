@@ -1,4 +1,4 @@
-# Week 1 Quiz — OOP Fundamentals
+# Module 1 Quiz — OOP Fundamentals
 
 **Suggested duration:** 15–20 minutes  
 **Purpose:** concept check before moving to Python class mechanics.
@@ -70,4 +70,4 @@ How many classes and how many `Patient` instances are represented by this code?
 
 ## Submission
 
-Submit answers according to the instructor's instructions. Focus on **reasoning**, not memorized wording.
+For self-paced study, record your answers and use the module learning outcomes, examples, exercises, and mastery checklist to review uncertain reasoning. In a facilitated cohort, follow the facilitator's submission instructions. Focus on **reasoning**, not memorized wording.
