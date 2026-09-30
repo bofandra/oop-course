@@ -1,4 +1,4 @@
-# Week 15 Quiz — Reusability & Design Patterns
+# Module 15 Quiz — Reusability & Design Patterns
 
 **Suggested duration:** 15–20 minutes
 

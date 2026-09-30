@@ -1,24 +1,24 @@
-# Week 8 — Mid Test
+# Module 8 — Mid Test
 
 ## Learning outcome
 
-Integrate concepts from Weeks 1–7 by analysing a new problem, modelling objects and relationships, implementing a Python solution, and explaining the resulting OOP design.
+Integrate concepts from Modules 1–7 by analysing a new problem, modelling objects and relationships, implementing a Python solution, and explaining the resulting OOP design.
 
 ## Scope
 
 The Mid Test covers:
 
 ```text
-Week 1  Thinking in Objects
-Week 2  Classes, Objects & Instances
-Week 3  State & Behavior
-Week 4  Encapsulation & Abstraction
-Week 5  Object Relationships
-Week 6  Inheritance
-Week 7  Overriding, Polymorphism & Dynamic Binding
+Module 1  Thinking in Objects
+Module 2  Classes, Objects & Instances
+Module 3  State & Behavior
+Module 4  Encapsulation & Abstraction
+Module 5  Object Relationships
+Module 6  Inheritance
+Module 7  Overriding, Polymorphism & Dynamic Binding
 ```
 
-No new OOP topic is introduced in Week 8.
+No new OOP topic is introduced in Module 8.
 
 ## Assessment format
 

@@ -1,4 +1,4 @@
-# Week 3 Quiz — State & Behavior
+# Module 3 Quiz — State & Behavior
 
 **Suggested duration:** 15–20 minutes
 
@@ -68,4 +68,4 @@ lamp = Lamp()
 lamp.turn_on()
 ```
 
-### 10. A Book can be borrowed twice in your current Week 3 implementation. What kind of design concern does this reveal for the next week?
+### 10. A Book can be borrowed twice in your current Module 3 implementation. What kind of design concern does this reveal for the next module?

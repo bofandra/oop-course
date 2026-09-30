@@ -1,4 +1,4 @@
-# Week 6 Exercises — Inheritance
+# Module 6 Exercises — Inheritance
 
 ## Exercise 1 — Identify the is-a Relationship
 
@@ -191,4 +191,4 @@ Each subclass adds one attribute and one behavior.
 
 Use `super().__init__()` in every subclass.
 
-Do not override superclass methods yet. That is the focus of Week 7.
+Do not override superclass methods yet. That is the focus of Module 7.

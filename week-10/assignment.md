@@ -1,4 +1,4 @@
-# Week 10 Assignment — Employee Capabilities with Mixins
+# Module 10 Assignment — Employee Capabilities with Mixins
 
 ## Objective
 

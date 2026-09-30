@@ -1,4 +1,4 @@
-# Week 0 — Python Primer
+# Module 0 — Python Primer
 
 This is prerequisite/self-study material so class time can focus on object-oriented programming.
 
@@ -21,13 +21,13 @@ Students should be comfortable with:
 
 ## Reference
 
-OpenStax, *Introduction to Python Programming*: use the relevant introductory chapters before Week 1.
+OpenStax, *Introduction to Python Programming*: use the relevant introductory chapters before Module 1.
 
-Week 0 is intentionally Python prerequisite material. It does not introduce formal OOP concepts yet.
+Module 0 is intentionally Python prerequisite material. It does not introduce formal OOP concepts yet.
 
 ## Readiness example
 
-Before Week 1, you should be able to read and explain code like:
+Before Module 1, you should be able to read and explain code like:
 
 ```python
 students = ["Aisyah", "Budi", "Siti"]
@@ -41,8 +41,8 @@ for student in students:
 
 You should also be able to modify a list/dictionary, write a short function, use a conditional, and interpret a basic Python error message.
 
-If this is difficult, review the primer notebook and introductory Python material before continuing to Week 1.
+If this is difficult, review the primer notebook and introductory Python material before continuing to Module 1.
 
 ## Next
 
-Continue to [Week 1 — Introduction to OOP & Thinking in Objects](../week-01/).
+Continue to [Module 1 — Introduction to OOP & Thinking in Objects](../week-01/).

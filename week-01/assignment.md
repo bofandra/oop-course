@@ -1,4 +1,4 @@
-# Week 1 Assignment — Model a Small Real-World Problem
+# Module 1 Assignment — Model a Small Real-World Problem
 
 ## Objective
 
@@ -86,7 +86,7 @@ A very small Python class example is allowed, but it is not the main assessment 
 
 ## Reference focus
 
-Use the Week 1 reading:
+Use the Module 1 reading:
 
 - Inggriani Liem — introductory OOP definitions, object/class distinction, object state/behavior and interaction;
 - OpenStax — 11.1 Object-Oriented Programming Basics.

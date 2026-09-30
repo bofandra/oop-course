@@ -1,4 +1,4 @@
-# Week 9 — Abstract Classes & Inheritance Structures
+# Module 9 — Abstract Classes & Inheritance Structures
 
 ## Learning outcomes
 
@@ -18,7 +18,7 @@ Inggriani Liem explicitly discusses **deferred feature & class** as a mechanism 
 
 The Diktat's hierarchy discussion also notes that abstract classes are often placed near the top of an inheritance hierarchy, while classes become more specific toward the bottom and can then be instantiated.
 
-OpenStax is used this week for inheritance-structure context, especially hierarchical inheritance. OpenStax does **not** provide a standalone treatment of Python `abc.ABC` as the formal source for abstract classes in this course.
+OpenStax is used this module for inheritance-structure context, especially hierarchical inheritance. OpenStax does **not** provide a standalone treatment of Python `abc.ABC` as the formal source for abstract classes in this course.
 
 Therefore:
 
@@ -30,7 +30,7 @@ Python ABC / @abstractmethod
 → implementation translation used in this course
 ```
 
-## From Week 7–8 to Week 9
+## From Module 7–8 to Module 9
 
 Before UTS, students used concrete inheritance:
 
@@ -200,7 +200,7 @@ This combines concepts students already know:
 - overriding;
 - polymorphism.
 
-Week 9 adds one design idea:
+Module 9 adds one design idea:
 
 > The superclass may define behavior that must exist without providing its concrete implementation.
 
@@ -318,7 +318,7 @@ Review the inheritance hierarchy material, especially hierarchical inheritance.
 
 Python `ABC` / `@abstractmethod` is used as a course implementation technique rather than as a formal OpenStax topic.
 
-## Week 9 package
+## Module 9 package
 
 - [Colab notebook](09_abstract_classes.ipynb)
 - [Exercises](exercises.md)
@@ -326,16 +326,16 @@ Python `ABC` / `@abstractmethod` is used as a course implementation technique ra
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 9 asks:
+Module 9 asks:
 
 > How can one general abstraction require concrete behavior from several descendants?
 
-Week 10 asks:
+Module 10 asks:
 
 > What happens when a class inherits from **more than one parent**?
 
 That leads directly to:
 
-**Week 10 — Multiple Inheritance & Mixins.**
+**Module 10 — Multiple Inheritance & Mixins.**

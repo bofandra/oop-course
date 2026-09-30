@@ -4,6 +4,8 @@ This repository is a **self-paced open course** designed for flexible, asynchron
 
 Anyone may begin at any time and choose a pace that fits their needs.
 
+New learners should begin with [Start Here](START_HERE.md).
+
 ## How to use the course
 
 The folders `week-01` through `week-16` represent a recommended learning sequence.

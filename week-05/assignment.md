@@ -1,4 +1,4 @@
-# Week 5 Assignment — Enrollment Relationships
+# Module 5 Assignment — Enrollment Relationships
 
 ## Objective
 
@@ -73,4 +73,4 @@ Answer:
 
 Do not use inheritance.
 
-Week 6 is where `is-a` and inheritance are implemented formally.
+Module 6 is where `is-a` and inheritance are implemented formally.

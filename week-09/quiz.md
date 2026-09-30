@@ -1,4 +1,4 @@
-# Week 9 Quiz — Abstract Classes & Inheritance Structures
+# Module 9 Quiz — Abstract Classes & Inheritance Structures
 
 **Suggested duration:** 15–20 minutes
 
@@ -51,4 +51,4 @@ D. Order → Customer
 
 ### 9. Why is returning a fake default such as `0` from `Shape.area()` sometimes weaker than requiring subclasses to implement `area()`?
 
-### 10. How does abstract-class design relate to polymorphism from Week 7?
+### 10. How does abstract-class design relate to polymorphism from Module 7?

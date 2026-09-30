@@ -1,4 +1,4 @@
-# Week 7 Quiz — Overriding, Polymorphism & Dynamic Binding
+# Module 7 Quiz — Overriding, Polymorphism & Dynamic Binding
 
 **Suggested duration:** 15–20 minutes
 
@@ -11,7 +11,7 @@ B. two unrelated variables have the same value
 C. a class contains another object  
 D. a method has many parameters
 
-### 2. What does `super()` allow in this week's examples?
+### 2. What does `super()` allow in this module's examples?
 
 A. deleting the superclass  
 B. calling superclass behavior from the subclass  

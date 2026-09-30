@@ -1,4 +1,4 @@
-# Week 12 — Operator Overloading, Genericity & Organizing Classes into Modules
+# Module 12 — Operator Overloading, Genericity & Organizing Classes into Modules
 
 ## Learning outcomes
 
@@ -17,7 +17,7 @@ By the end of this session, students should be able to:
 
 Inggriani Liem defines **overloading** broadly as the ability for one name to be associated with more than one meaning in a program. The Diktat gives language examples such as routines with the same name but different parameters and multiple constructor forms.
 
-Python **operator overloading** in this week is the implementation-facing topic from OpenStax 11.4. We use selected special methods to define what operators mean for our own objects.
+Python **operator overloading** in this module is the implementation-facing topic from OpenStax 11.4. We use selected special methods to define what operators mean for our own objects.
 
 Inggriani Liem also discusses **genericity** as an important OOP concept and contrasts it with inheritance:
 
@@ -42,13 +42,13 @@ This course keeps genericity **conceptual**. We do not introduce advanced Python
 
 Organizing classes into Python modules is based on OpenStax 11.5.
 
-## From Week 11 to Week 12
+## From Module 11 to Module 12
 
-Week 11 asked:
+Module 11 asked:
 
 > What object does a variable refer to at runtime?
 
-Week 12 asks:
+Module 12 asks:
 
 > How can our objects participate naturally in Python expressions, and how do we organize growing class definitions into modules?
 
@@ -94,7 +94,7 @@ can display:
 
 ## 2. Equality with __eq__()
 
-From Week 11:
+From Module 11:
 
 ```text
 is
@@ -197,9 +197,9 @@ Overloading
 → same name/operator can represent different behavior/forms
 ```
 
-Week 7 focused on overriding.
+Module 7 focused on overriding.
 
-Week 12 focuses on selected operator overloading in Python.
+Module 12 focuses on selected operator overloading in Python.
 
 ## 6. Genericity concept
 
@@ -298,7 +298,7 @@ For this course, understand the basic purpose:
 
 > Modules help organize related code and make class definitions reusable across files.
 
-Do not turn Week 12 into package management or deployment.
+Do not turn Module 12 into package management or deployment.
 
 ## Main exercise — Point
 
@@ -341,7 +341,7 @@ Create a simple `Money` class with:
 - `__eq__()`;
 - `__add__()`.
 
-For this week's simple model, only demonstrate addition between Money objects with the same currency.
+For this module's simple model, only demonstrate addition between Money objects with the same currency.
 
 Do not build currency conversion or exception architecture.
 
@@ -369,7 +369,7 @@ Read:
 - **11.4 Overloading Operators**
 - **11.5 Using Modules with Classes**
 
-## Week 12 package
+## Module 12 package
 
 - [Colab notebook](12_operator_overloading_genericity_modules.ipynb)
 - [Exercises](exercises.md)
@@ -379,14 +379,14 @@ Read:
 - [Example module](models.py)
 - [Example runner](main.py)
 
-## Next week
+## Next module
 
-Week 12 gives our classes richer language-level behavior and organization.
+Module 12 gives our classes richer language-level behavior and organization.
 
-Week 13 asks:
+Module 13 asks:
 
 > What should happen when an operation cannot satisfy its expected conditions?
 
 That leads to:
 
-**Week 13 — Exception Handling & Assertions.**
+**Module 13 — Exception Handling & Assertions.**

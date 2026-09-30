@@ -1,10 +1,10 @@
-# Mid Test — Week 8
+# Mid Test — Module 8
 
 ## Case Study: Vehicle Rental System
 
 ### Purpose
 
-This assessment checks whether you can integrate the concepts from Weeks 1–7 into one coherent object-oriented solution.
+This assessment checks whether you can integrate the concepts from Modules 1–7 into one coherent object-oriented solution.
 
 You are not being tested on web development, databases, APIs, GUIs, or advanced Python.
 
@@ -198,11 +198,11 @@ Recommended: **150–180 minutes**.
 
 ## Allowed materials
 
-Follow the instructor's exam-day instructions regarding notes, documentation, internet access, and AI tools.
+For self-paced study, attempt the assessment without notes first, then review your work using the course materials and rubric. In a facilitated cohort, follow the facilitator's rules regarding notes, documentation, internet access, and AI tools.
 
 ## Submission
 
-Submit the completed notebook or Python file according to the instructor's instructions.
+For self-paced study, keep the completed notebook or Python file as portfolio evidence and assess it with the supplied rubric. In a facilitated cohort, submit it according to the facilitator's instructions.
 
 ## Files
 

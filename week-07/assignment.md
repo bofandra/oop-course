@@ -1,6 +1,6 @@
-# Week 7 Assignment — Polymorphic Payroll
+# Module 7 Assignment — Polymorphic Payroll
 
-> **Teaching schedule note:** Week 7 is immediately before the Mid Test. Prefer completing most of this work in class or set any submission deadline no later than Thursday before the Mid Test so the assignment does not compete with exam preparation.
+> **Teaching schedule note:** Module 7 is immediately before the Mid Test. Prefer completing most of this work in class or set any submission deadline no later than Thursday before the Mid Test so the assignment does not compete with exam preparation.
 
 ## Objective
 
@@ -25,7 +25,7 @@ Employee
 - `name`
 - `display_info()`
 
-It may also define a basic `calculate_pay()` placeholder behavior for this week's exercise.
+It may also define a basic `calculate_pay()` placeholder behavior for this module's exercise.
 
 ## FullTimeEmployee
 

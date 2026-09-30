@@ -1,4 +1,4 @@
-# Week 3 Assignment — Model State Transitions
+# Module 3 Assignment — Model State Transitions
 
 ## Objective
 
@@ -33,7 +33,7 @@ confirm()
 cancel()
 ```
 
-For this week's assignment, `confirm()` and `cancel()` may simply change the status. Validation rules are intentionally postponed to Week 4.
+For this module's assignment, `confirm()` and `cancel()` may simply change the status. Validation rules are intentionally postponed to Module 4.
 
 ## Required demonstration
 
@@ -73,4 +73,4 @@ Answer:
 
 Do not add inheritance, property decorators, custom exceptions, or complex validation.
 
-The missing state-protection rules are part of the learning objective for Week 4.
+The missing state-protection rules are part of the learning objective for Module 4.

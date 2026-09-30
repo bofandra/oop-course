@@ -1,4 +1,4 @@
-# Week 2 Exercises — Classes, Objects & Instances
+# Module 2 Exercises — Classes, Objects & Instances
 
 ## Exercise 1 — Count Classes and Instances
 

@@ -10,7 +10,7 @@ The course grade is calculated as:
 
 ```text
 Quiz / Concept Exercises             15%
-Weekly Coding Labs                   20%
+Module Coding Labs                   20%
 Mid Test                             20%
 Final Project                        35%
 Demo / Code Explanation / Participation
@@ -35,22 +35,22 @@ Final Numeric
 (Demo/Explanation/Participation × 0.10)
 ```
 
-## 2. Weekly quiz aggregation
+## 2. Module quiz aggregation
 
-Graded quiz weeks:
+Graded quiz modules:
 
 ```text
 1–7
 9–15
 ```
 
-Week 8 is the Mid Test and Week 16 is the Final Project / Final Test.
+Module 8 is the Mid Test and Module 16 is the Final Project / Final Test.
 
-There are therefore **14 normal weekly quiz slots**.
+There are therefore **14 normal module quiz slots**.
 
 Default rule:
 
-> Every included weekly quiz has equal weight inside the 15% Quiz / Concept Exercises component.
+> Every included module quiz has equal weight inside the 15% Quiz / Concept Exercises component.
 
 If all 14 are included, one quiz contributes approximately:
 
@@ -60,11 +60,11 @@ If all 14 are included, one quiz contributes approximately:
 
 to the final course grade.
 
-The assessment registry can disable a weekly quiz if the instructor decides a particular week is formative only.
+The assessment registry can disable a module quiz if the instructor decides a particular module is formative only.
 
-## 3. Weekly coding-lab aggregation
+## 3. Module coding-lab aggregation
 
-Graded lab slots use the same teaching weeks:
+Graded lab slots use the same teaching modules:
 
 ```text
 1–7
@@ -73,7 +73,7 @@ Graded lab slots use the same teaching weeks:
 
 Default rule:
 
-> Every included weekly coding lab has equal weight inside the 20% Weekly Coding Labs component.
+> Every included module coding lab has equal weight inside the 20% Module Coding Labs component.
 
 If all 14 are included, one lab contributes approximately:
 
@@ -83,7 +83,7 @@ If all 14 are included, one lab contributes approximately:
 
 to the final course grade.
 
-For Weeks 14–15, the score may come from **selected in-class evidence** rather than requiring the entire Markdown assignment as a separate large take-home project.
+For Modules 14–15, the score may come from **selected assessment evidence** rather than requiring the entire Markdown assignment as a separate large take-home project.
 
 ## 4. Major assessments
 
@@ -213,7 +213,7 @@ Current planned scale:
 | D | 45–55.99 |
 | E | <45 |
 
-**Operational warning:** confirm this scale against the the grading scale you intend to use before publishing final grades. If the official scale changes, edit `grading_config.json`; do not hand-edit calculated totals.
+**Operational warning:** confirm this scale against the grading scale you intend to use before publishing final grades. If the official scale changes, edit `grading_config.json`; do not hand-edit calculated totals.
 
 ## 8. Attendance / eligibility
 
@@ -221,11 +221,11 @@ Attendance eligibility is deliberately **not hard-coded** into the grade calcula
 
 Why:
 
-- attendance policy is an facilitator-defined or organization-defined rule;
+- attendance policy is a facilitator-defined or organization-defined rule;
 - exceptions may require administrative approval;
 - attendance eligibility should not silently change a numeric grade formula.
 
-Before final grade release, perform a separate eligibility check according to the the applicable learning environment policy.
+Before final grade release, perform a separate eligibility check according to the applicable learning environment policy.
 
 ## 9. Gradebook files
 
@@ -295,4 +295,4 @@ The repository should contain only:
 - grading logic;
 - documentation.
 
-Keep real student records in an a private location appropriate for your learning environment.
+Keep real student records in a private location appropriate for your learning environment.

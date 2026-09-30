@@ -1,4 +1,4 @@
-# Week 16 — Final Project Submission Checklist
+# Module 16 — Final Project Submission Checklist
 
 Use this checklist before submission.
 

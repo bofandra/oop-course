@@ -1,4 +1,4 @@
-# Week 6 — Inheritance
+# Module 6 — Inheritance
 
 ## Learning outcomes
 
@@ -18,11 +18,11 @@ Inggriani Liem describes inheritance as a relationship in which a descendant/chi
 
 OpenStax 13.1 covers **is-a vs has-a**, superclass/subclass terminology, Python inheritance syntax, and inherited attributes/methods. OpenStax 13.2 covers inherited instance attributes and subclass-specific attributes.
 
-This week also uses `super().__init__()` only as a small Python implementation bridge for superclass initialization; OpenStax introduces `super()` in 13.3. Method overriding and polymorphism remain the formal focus of Week 7.
+This module also uses `super().__init__()` only as a small Python implementation bridge for superclass initialization; OpenStax introduces `super()` in 13.3. Method overriding and polymorphism remain the formal focus of Module 7.
 
-## From Week 5 to Week 6
+## From Module 5 to Module 6
 
-Week 5:
+Module 5:
 
 ```text
 Car has an Engine
@@ -30,7 +30,7 @@ Order has OrderItems
 Appointment has Patient/Doctor references
 ```
 
-Week 6 asks:
+Module 6 asks:
 
 > What if one class really is a more specialized kind of another class?
 
@@ -131,7 +131,7 @@ class Doctor(Person):
         self.specialty = specialty
 ```
 
-For Week 6, read this simply as:
+For Module 6, read this simply as:
 
 > Initialize the Person part of this Doctor, then initialize Doctor-specific state.
 
@@ -264,7 +264,7 @@ Use this only to reinforce:
 Doctor is a Person.
 ```
 
-Do not turn Week 6 into a Python type-system lesson.
+Do not turn Module 6 into a Python type-system lesson.
 
 ## Reflection
 
@@ -293,7 +293,7 @@ Read:
 
 For `super().__init__()`, read only the relevant `super()` subsection of **13.3 Methods** as a Python implementation bridge.
 
-## Week 6 package
+## Module 6 package
 
 - [Colab notebook](06_inheritance.ipynb)
 - [Exercises](exercises.md)
@@ -301,16 +301,16 @@ For `super().__init__()`, read only the relevant `super()` subsection of **13.3 
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 6 asks:
+Module 6 asks:
 
 > How can a subclass inherit behavior?
 
-Week 7 asks:
+Module 7 asks:
 
 > What if the subclass needs a **different implementation of the same behavior**?
 
 That leads directly to:
 
-**Week 7 — Overriding, Polymorphism & Dynamic Binding.**
+**Module 7 — Overriding, Polymorphism & Dynamic Binding.**

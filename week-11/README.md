@@ -1,4 +1,4 @@
-# Week 11 — Object Lifecycle, References & Object Identity
+# Module 11 — Object Lifecycle, References & Object Identity
 
 ## Learning outcomes
 
@@ -24,13 +24,13 @@ Inggriani Liem treats objects as **runtime entities** that are dynamically creat
 - copying versus reference assignment;
 - object destruction and garbage collection.
 
-The Diktat's reference examples use Eiffel/C++/Java terminology. This week translates the same runtime ideas into Python.
+The Diktat's reference examples use Eiffel/C++/Java terminology. This module translates the same runtime ideas into Python.
 
 OpenStax **3.3 Variables revisited** is the Python-facing source for variables, object identity, aliasing, and identity checks. The course uses Python's `id()`, `is`, mutable objects, and reassignment to make these ideas observable.
 
-## From Week 10 to Week 11
+## From Module 10 to Module 11
 
-Weeks 6–10 focused heavily on class structures:
+Modules 6–10 focused heavily on class structures:
 
 ```text
 classes
@@ -40,7 +40,7 @@ abstract classes
 multiple inheritance
 ```
 
-Week 11 returns to runtime:
+Module 11 returns to runtime:
 
 > When we write two variable names, do we have two objects—or two references to one object?
 
@@ -207,7 +207,7 @@ reference assignment
 object copy
 ```
 
-Copying is a separate operation and may be shallow or deep depending on the language/tool. Week 11 only introduces that distinction conceptually; advanced copying mechanics are not the focus.
+Copying is a separate operation and may be shallow or deep depending on the language/tool. Module 11 only introduces that distinction conceptually; advanced copying mechanics are not the focus.
 
 ## 8. Object lifecycle
 
@@ -330,7 +330,7 @@ Focus on:
 
 Read **3.3 Variables revisited** for Python variable/object identity and aliasing concepts.
 
-## Week 11 package
+## Module 11 package
 
 - [Colab notebook](11_object_identity_references.ipynb)
 - [Exercises](exercises.md)
@@ -338,14 +338,14 @@ Read **3.3 Variables revisited** for Python variable/object identity and aliasin
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 11 explains how objects behave at runtime.
+Module 11 explains how objects behave at runtime.
 
-Week 12 moves to several language-level class features:
+Module 12 moves to several language-level class features:
 
 > How can our own classes interact naturally with operators, represent generic ideas, and be organized across modules?
 
 That leads to:
 
-**Week 12 — Operator Overloading, Genericity & Organizing Classes into Modules.**
+**Module 12 — Operator Overloading, Genericity & Organizing Classes into Modules.**

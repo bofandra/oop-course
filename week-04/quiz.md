@@ -1,4 +1,4 @@
-# Week 4 Quiz — Encapsulation & Abstraction
+# Module 4 Quiz — Encapsulation & Abstraction
 
 **Suggested duration:** 15–20 minutes
 
@@ -47,7 +47,7 @@ D. `stock is always 100`
 
 ### 7. Why is `_balance` not the same as strict `private` access in some other languages?
 
-### 8. What benefit does a read-only `@property` provide in our Week 4 examples?
+### 8. What benefit does a read-only `@property` provide in our Module 4 examples?
 
 ### 9. A caller uses:
 

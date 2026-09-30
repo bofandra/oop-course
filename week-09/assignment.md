@@ -1,4 +1,4 @@
-# Week 9 Assignment — Abstract Payment Hierarchy
+# Module 9 Assignment — Abstract Payment Hierarchy
 
 ## Objective
 
@@ -98,6 +98,6 @@ Answer:
 
 Do not use multiple inheritance or mixins.
 
-Those are Week 10 topics.
+Those are Module 10 topics.
 
 The use of Python `ABC` is an implementation technique for the abstract/deferred-class concept taught from the Diktat.

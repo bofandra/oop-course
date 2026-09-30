@@ -222,7 +222,7 @@ You may split code differently if the structure is clearer.
 
 ## Demo / viva
 
-Each student should be ready for a **5–7 minute** demonstration and explanation.
+Each learner should be ready for a **5–7 minute** demonstration and explanation.
 
 You may be asked to:
 
@@ -238,7 +238,7 @@ The goal is to show ownership of the design, not memorization.
 
 ## AI / external assistance
 
-Follow the instructor's and applicable rules for AI and external assistance.
+For self-paced study, document any AI or external assistance you use and make sure you can explain every submitted design decision and line of code. In a facilitated cohort, follow the facilitator's applicable rules for AI and external assistance.
 
 If AI assistance is permitted, students remain responsible for understanding and defending every design decision and every submitted line of code.
 

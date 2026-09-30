@@ -1,4 +1,4 @@
-# Week 16 — Final Project / Final Test
+# Module 16 — Final Project / Final Test
 
 ## Learning outcome
 
@@ -9,20 +9,20 @@ Design, implement, test, demonstrate, and defend a complete object-oriented solu
 The final project integrates:
 
 ```text
-Week 1   Thinking in Objects
-Week 2   Classes, Objects & Instances
-Week 3   State & Behavior
-Week 4   Encapsulation & Abstraction
-Week 5   Object Relationships
-Week 6   Inheritance
-Week 7   Overriding, Polymorphism & Dynamic Binding
-Week 9   Abstract Classes
-Week 10  Multiple Inheritance / Mixins when justified
-Week 11  References & Object Identity
-Week 12  Operator Overloading / Modules when useful
-Week 13  Exceptions, Assertions & Contracts
-Week 14  OOA → OOD → OOP → OOT
-Week 15  Reusability & Design Patterns when useful
+Module 1   Thinking in Objects
+Module 2   Classes, Objects & Instances
+Module 3   State & Behavior
+Module 4   Encapsulation & Abstraction
+Module 5   Object Relationships
+Module 6   Inheritance
+Module 7   Overriding, Polymorphism & Dynamic Binding
+Module 9   Abstract Classes
+Module 10  Multiple Inheritance / Mixins when justified
+Module 11  References & Object Identity
+Module 12  Operator Overloading / Modules when useful
+Module 13  Exceptions, Assertions & Contracts
+Module 14  OOA → OOD → OOP → OOT
+Module 15  Reusability & Design Patterns when useful
 ```
 
 Not every optional technique must appear. Students should use an abstraction only when it improves the model.

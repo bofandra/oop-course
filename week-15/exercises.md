@@ -1,4 +1,4 @@
-# Week 15 Exercises — Reusability, Patterns & Case Study
+# Module 15 Exercises — Reusability, Patterns & Case Study
 
 ## Exercise 1 — Code Reuse or Design Reuse?
 
@@ -100,7 +100,7 @@ Do not inspect the strategy type in Order.
 
 ## Challenge — Remove the Pattern
 
-Take one of your Week 15 pattern-based solutions and rewrite it in the simplest possible form without the pattern.
+Take one of your Module 15 pattern-based solutions and rewrite it in the simplest possible form without the pattern.
 
 Compare both versions:
 

@@ -1,4 +1,4 @@
-# Week 11 Assignment — Shared References in a Course Model
+# Module 11 Assignment — Shared References in a Course Model
 
 ## Objective
 

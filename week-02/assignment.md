@@ -1,4 +1,4 @@
-# Week 2 Assignment — Build a Small Object Model
+# Module 2 Assignment — Build a Small Object Model
 
 ## Objective
 

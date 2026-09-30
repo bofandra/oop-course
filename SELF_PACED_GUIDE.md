@@ -2,6 +2,8 @@
 
 There is no fixed schedule for this course.
 
+Use the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) to decide when you are ready to move forward.
+
 Progress when you can explain and apply the current module, not merely when you have read it.
 
 ## Suggested rhythm per module
@@ -54,6 +56,22 @@ Your Final Project should have a working object model, polymorphism, contracts, 
 ### Module 16
 
 Complete the project, run the tests, and explain the design.
+
+## Mastery loop
+
+Before moving to the next module:
+
+1. attempt the concept quiz without notes;
+2. mark every answer you are unsure about, even if you guessed correctly;
+3. revisit the relevant explanation or executable example;
+4. modify or rerun at least one example to verify your understanding;
+5. complete one core exercise or coding task from a blank start;
+6. explain one important design decision in your own words;
+7. reattempt the uncertain quiz items after a short break.
+
+A correct answer that cannot be explained is not yet strong evidence of mastery.
+
+The public repository intentionally avoids publishing direct keys for assessment items that may also be used by facilitated cohorts. Self-paced learners should use the module outcomes, executable examples, exercises, rubrics, and the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) as feedback evidence.
 
 ## When to repeat a module
 

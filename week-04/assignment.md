@@ -1,4 +1,4 @@
-# Week 4 Assignment — Encapsulated Inventory Item
+# Module 4 Assignment — Encapsulated Inventory Item
 
 ## Objective
 
@@ -33,7 +33,7 @@ Use a read-only `quantity` property.
 quantity >= 0
 ```
 
-For this week, invalid add/remove requests may simply leave the object unchanged. Exception handling is studied later.
+For this module, invalid add/remove requests may simply leave the object unchanged. Exception handling is studied later.
 
 ## Required demonstration
 

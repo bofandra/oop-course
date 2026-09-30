@@ -1,4 +1,4 @@
-# Week 13 Quiz — Exception Handling & Assertions
+# Module 13 Quiz — Exception Handling & Assertions
 
 **Suggested duration:** 15–20 minutes
 
