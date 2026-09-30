@@ -61,12 +61,12 @@ Student runs one test and answers one design question.
 The instructor may ask questions such as:
 
 1. Which class owns this responsibility, and why?
-2. Why is this relationship inheritance rather than composition?
+2. Is this relationship inheritance, a general reference/association, or a whole–part composition-style relationship, and why?
 3. Why did you *not* use inheritance here?
 4. Show where two runtime objects respond differently to the same operation.
 5. What is the actual runtime object in this polymorphic call?
 6. What is one precondition of this method?
-7. What invariant are you protecting?
+7. What invariant are you protecting, and is there a separate lifecycle/transition precondition?
 8. What happens when the operation fails?
 9. Which test verifies collaboration rather than an isolated class?
 10. If course capacity changes, which class should change?
