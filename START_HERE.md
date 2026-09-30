@@ -2,6 +2,29 @@
 
 Welcome. This repository is designed so you can start at any time and learn at your own pace.
 
+## Start now
+
+For the fastest path:
+
+```text
+Python readiness check
+        ↓
+Module 0 only if needed
+        ↓
+Module 1 README + Colab
+        ↓
+exercise / quiz / assignment
+        ↓
+mastery check
+```
+
+- [Take the Python Readiness Check](00-python-primer/readiness-check.md)
+- [Open Module 0 — Python Primer](00-python-primer/)
+- [Start Module 1 — Thinking in Objects](week-01/)
+- [Open the full Colab notebook index](COLAB.md)
+
+You can begin entirely in the browser. Cloning the repository is optional.
+
 ## 1. Choose your learning mode
 
 ### Self-paced
@@ -13,11 +36,11 @@ Python readiness check
       ↓
 Module 1–7
       ↓
-Mid-course mastery checkpoint
+Module 8 — Mid-Course Assessment
       ↓
 Module 9–15
       ↓
-Final project
+Module 16 — Final Project
       ↓
 Portfolio-ready OOP evidence
 ```
@@ -74,6 +97,7 @@ Keep completed notebooks, selected exercises, coding assignments, design explana
 
 ## 7. Continue
 
+- [Start Module 1](week-01/)
 - [Open in Google Colab](COLAB.md)
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
