@@ -109,11 +109,16 @@ Emphasize:
 
 ```text
 stable responsibility:
-Order asks for a fee
+Order asks a DeliveryStrategy for a fee
+
+common contract:
+DeliveryStrategy.fee(subtotal)
 
 varying responsibility:
-how fee is calculated
+concrete strategies override how fee is calculated
 ```
+
+Use `ABC` / `@abstractmethod` here to reuse Module 9's explicit contract model. This avoids quietly introducing duck typing or protocols as a new, untaught mechanism.
 
 ## Factory Method-style example
 
@@ -188,7 +193,7 @@ No.
 
 ### 3. Strategy requires a long inheritance hierarchy
 
-No. The essential idea here is interchangeable behavior objects with a common operation.
+No. The course uses one small abstract `DeliveryStrategy` contract plus concrete strategy objects. The point is interchangeable behavior behind a common operation, not hierarchy depth.
 
 ### 4. Factory Method means any function named factory
 
