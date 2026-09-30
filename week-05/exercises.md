@@ -1,4 +1,4 @@
-# Week 5 Exercises — Object Relationships
+# Module 5 Exercises — Object Relationships
 
 ## Exercise 1 — Reference Another Object
 
