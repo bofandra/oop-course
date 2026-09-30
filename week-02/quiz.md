@@ -1,4 +1,4 @@
-# Week 2 Quiz — Classes, Objects & Instances
+# Module 2 Quiz — Classes, Objects & Instances
 
 **Suggested duration:** 15–20 minutes
 
@@ -24,7 +24,7 @@ B. a method
 C. an instance/object  
 D. a class attribute
 
-### 3. What is the role of `__init__()` in the examples used this week?
+### 3. What is the role of `__init__()` in the examples used this module?
 
 A. Delete an instance  
 B. Initialize instance state when an instance is created  
