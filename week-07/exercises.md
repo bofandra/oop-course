@@ -1,4 +1,4 @@
-# Week 7 Exercises — Overriding, Polymorphism & Dynamic Binding
+# Module 7 Exercises — Overriding, Polymorphism & Dynamic Binding
 
 ## Exercise 1 — Override a Method
 
@@ -145,7 +145,7 @@ vs
 overloading
 ```
 
-For Week 7, focus on overriding. Operator overloading is taught in Week 12.
+For Module 7, focus on overriding. Operator overloading is taught in Module 12.
 
 ---
 
