@@ -223,7 +223,7 @@ For this week, phrase it operationally as a way to reuse superclass initializati
 
 ## Quiz administration
 
-The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.
 
 ## Assignment grading notes
 
