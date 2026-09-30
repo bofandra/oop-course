@@ -37,7 +37,7 @@ Final Numeric
 
 ## 2. Module quiz aggregation
 
-Graded quiz weeks:
+Graded quiz modules:
 
 ```text
 1–7
@@ -60,11 +60,11 @@ If all 14 are included, one quiz contributes approximately:
 
 to the final course grade.
 
-The assessment registry can disable a module quiz if the instructor decides a particular week is formative only.
+The assessment registry can disable a module quiz if the instructor decides a particular module is formative only.
 
 ## 3. Module coding-lab aggregation
 
-Graded lab slots use the same teaching weeks:
+Graded lab slots use the same teaching modules:
 
 ```text
 1–7
@@ -83,7 +83,7 @@ If all 14 are included, one lab contributes approximately:
 
 to the final course grade.
 
-For Modules 14–15, the score may come from **selected in-class evidence** rather than requiring the entire Markdown assignment as a separate large take-home project.
+For Modules 14–15, the score may come from **selected assessment evidence** rather than requiring the entire Markdown assignment as a separate large take-home project.
 
 ## 4. Major assessments
 
@@ -221,7 +221,7 @@ Attendance eligibility is deliberately **not hard-coded** into the grade calcula
 
 Why:
 
-- attendance policy is an facilitator-defined or organization-defined rule;
+- attendance policy is a facilitator-defined or organization-defined rule;
 - exceptions may require administrative approval;
 - attendance eligibility should not silently change a numeric grade formula.
 
