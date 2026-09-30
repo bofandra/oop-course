@@ -70,4 +70,4 @@ How many classes and how many `Patient` instances are represented by this code?
 
 ## Submission
 
-Submit answers according to the lecturer's instructions. Focus on **reasoning**, not memorized wording.
+Submit answers according to the instructor's instructions. Focus on **reasoning**, not memorized wording.
