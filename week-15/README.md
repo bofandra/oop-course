@@ -1,4 +1,4 @@
-# Week 15 — Reusability, Design Patterns & OOP Case Study
+# Module 15 — Reusability, Design Patterns & OOP Case Study
 
 ## Learning outcomes
 
@@ -20,7 +20,7 @@ The Diktat describes patterns as larger building blocks than individual classes 
 
 Important scope note:
 
-> The Diktat provides the pattern concept and terminology, but it does not provide the detailed Python implementations used in this week.
+> The Diktat provides the pattern concept and terminology, but it does not provide the detailed Python implementations used in this module.
 
 Therefore:
 
@@ -33,11 +33,11 @@ Detailed Python examples
 → course illustrations built from previously taught OOP concepts
 ```
 
-This week does **not** attempt to teach a catalogue of design patterns.
+This module does **not** attempt to teach a catalogue of design patterns.
 
-## From Week 14 to Week 15
+## From Module 14 to Module 15
 
-Week 14 gave us the lifecycle:
+Module 14 gave us the lifecycle:
 
 ```text
 Requirement
@@ -47,7 +47,7 @@ Requirement
 → OOT
 ```
 
-Week 15 asks:
+Module 15 asks:
 
 > When a design problem appears repeatedly, can we reuse the design idea instead of reinventing it?
 
@@ -418,9 +418,9 @@ Focus on:
 
 Use previously studied Python OOP chapters as implementation support.
 
-This week does not introduce an additional formal OpenStax design-pattern chapter.
+This module does not introduce an additional formal OpenStax design-pattern chapter.
 
-## Week 15 package
+## Module 15 package
 
 - [Colab notebook](15_reusability_patterns_case_study.ipynb)
 - [Exercises](exercises.md)
@@ -428,10 +428,10 @@ This week does not introduce an additional formal OpenStax design-pattern chapte
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 15 asks students to integrate and reuse design ideas.
+Module 15 asks students to integrate and reuse design ideas.
 
-Week 16 asks them to create and defend a complete OO solution:
+Module 16 asks them to create and defend a complete OO solution:
 
-**Week 16 — Final Project / Final Test.**
+**Module 16 — Final Project / Final Test.**
