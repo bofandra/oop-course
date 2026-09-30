@@ -2,7 +2,7 @@
 
 A self-paced, open course for learning **object-oriented thinking using Python**.
 
-This course is designed for anyone to use **at any time**. There is no institutional affiliation, semester, fixed class schedule, or required cohort timeline.
+This course is designed for anyone to use **at any time**, with a flexible self-paced learning path.
 
 Primary implementation language: **Python**  
 Primary lab environment: **Google Colab**
