@@ -56,6 +56,7 @@ See [Course Map](COURSE_MAP.md) for the detailed weekly learning-outcome, assess
 Teaching operations:
 
 - [Teaching Readiness Audit](TEACHING_READINESS_AUDIT.md)
+- [Lecturer Operational Kit](LECTURER_OPERATIONAL_KIT.md)
 - [Semester Teaching Calendar](TEACHING_CALENDAR.md)
 - [Course Material Release Plan](RELEASE_PLAN.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
@@ -121,6 +122,7 @@ oop-course/
 │   └── colab_template.ipynb
 ├── COURSE_MAP.md
 ├── TEACHING_READINESS_AUDIT.md
+├── LECTURER_OPERATIONAL_KIT.md
 ├── TEACHING_CALENDAR.md
 ├── RELEASE_PLAN.md
 └── EXECUTION_AUDIT.md
