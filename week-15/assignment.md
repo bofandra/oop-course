@@ -23,13 +23,13 @@ Order must calculate the order subtotal from its OrderItems.
 
 ## Part 2 — Strategy-style delivery
 
-Implement at least:
+Define an abstract/common `DeliveryStrategy` with required operation `fee(subtotal)`, then implement at least:
 
 - `PickupDelivery`;
 - `StandardDelivery`;
 - `ExpressDelivery`.
 
-Each must support:
+Each concrete strategy must implement:
 
 ```python
 fee(subtotal)
