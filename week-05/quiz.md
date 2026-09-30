@@ -1,4 +1,4 @@
-# Week 5 Quiz — Object Relationships
+# Module 5 Quiz — Object Relationships
 
 **Suggested duration:** 15–20 minutes
 
