@@ -35,20 +35,20 @@ Use the Diktat directly:
 
 Use 13.1 only as a preview of inheritance terminology so students can contrast `is-a` with the object relationships being studied.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review: one object owns state/behavior |
-| 08:45–09:15 | Objects referencing other objects |
-| 09:15–09:40 | Client–Supplier |
-| 09:40–10:00 | has-a vs is-a |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Car–Engine and whole/component modelling |
-| 10:35–11:00 | Order / OrderItem / Product composition |
-| 11:00–11:35 | Library Loan lab |
-| 11:35–11:45 | Enrollment challenge |
-| 11:45–11:50 | Bridge to inheritance |
+| 15 min | Review: one object owns state/behavior |
+| 30 min | Objects referencing other objects |
+| 25 min | Client–Supplier |
+| 20 min | has-a vs is-a |
+| 10 min | Break |
+| 25 min | Car–Engine and whole/component modelling |
+| 25 min | Order / OrderItem / Product composition |
+| 35 min | Library Loan lab |
+| 10 min | Enrollment challenge |
+| 5 min | Bridge to inheritance |
 
 ## Opening demonstration
 
