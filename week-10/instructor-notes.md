@@ -41,20 +41,20 @@ Use **13.5 Multiple Inheritance and Mixin Classes** for the Python-facing treatm
 
 Keep this distinction explicit for students.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 9 inheritance structures |
-| 08:45–09:10 | Basic multiple inheritance |
-| 09:10–09:35 | Conflicting inherited methods |
-| 09:35–10:00 | Python MRO |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Repeated/diamond inheritance |
-| 10:35–11:00 | Mixin concept |
-| 11:00–11:30 | Employee + capabilities lab |
-| 11:30–11:40 | Diamond challenge |
-| 11:40–11:50 | Quiz / Week 11 bridge |
+| 15 min | Review Week 9 inheritance structures |
+| 25 min | Basic multiple inheritance |
+| 25 min | Conflicting inherited methods |
+| 25 min | Python MRO |
+| 10 min | Break |
+| 25 min | Repeated/diamond inheritance |
+| 25 min | Mixin concept |
+| 30 min | Employee + capabilities lab |
+| 10 min | Diamond challenge |
+| 10 min | Quiz / Week 11 bridge |
 
 ## Opening example
 
