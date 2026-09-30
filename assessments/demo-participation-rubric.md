@@ -15,7 +15,7 @@ It is separate from the **Final Project artifact — 35%**.
 | Explains inheritance / polymorphism using the submitted code | 20 |
 | Explains contracts, exceptions, and testing evidence | 15 |
 | Responds to viva questions / performs a small live modification | 15 |
-| Module preparation, participation, and code explanation throughout the course | 10 |
+| Module preparation / learning evidence and code explanation throughout the course | 10 |
 | **Total** | **100** |
 
 ## Performance guidance
@@ -25,7 +25,7 @@ It is separate from the **Final Project artifact — 35%**.
 Full credit:
 
 - program runs;
-- student demonstrates the required journey;
+- learner demonstrates the required journey;
 - important state changes are visible;
 - demonstration is focused rather than a tour of every file.
 
@@ -33,7 +33,7 @@ Full credit:
 
 Full credit:
 
-- student can explain why major classes exist;
+- learner can explain why major classes exist;
 - distinguishes is-a from has-a/reference relationships;
 - connects explanation to actual submitted code.
 
@@ -42,15 +42,15 @@ Full credit:
 Full credit:
 
 - inheritance is semantically justified;
-- student can point to overriding;
-- student demonstrates the same operation producing different runtime behavior;
+- learner can point to overriding;
+- learner demonstrates the same operation producing different runtime behavior;
 - explanation is not merely memorized terminology.
 
 ### Contracts, exceptions & testing — 15
 
 Full credit:
 
-- student states at least one precondition/invariant;
+- learner states at least one precondition/invariant;
 - shows an invalid operation being rejected;
 - shows relevant executable test evidence;
 - understands why object state remains valid.
@@ -63,16 +63,17 @@ Full credit:
 - can make a small requested change or test adjustment;
 - demonstrates ownership of the code.
 
-### Module preparation / participation — 10
+### Module preparation / learning evidence — 10
 
 Use evidence such as:
 
-- preparedness for guided labs;
-- participation in modelling discussions;
-- ability to explain module code;
-- completion of reasoning/reflection work.
+- completed reasoning/reflection work;
+- mastery-check or lab evidence;
+- ability to explain module code and modelling decisions;
+- version history or other learning artifacts;
+- for facilitated cohorts, preparedness and constructive participation in modelling/lab discussions.
 
-Do not turn this into a personality/popularity score.
+Self-paced learners do not need live classroom participation to earn this criterion. Do not turn it into a personality/popularity score.
 
 ## AI-assisted work
 
@@ -80,9 +81,9 @@ If AI use is permitted by the course/applicable policy, AI use does not automati
 
 The scoring question is:
 
-> Can the student explain, defend, and modify the submitted solution?
+> Can the learner explain, defend, and modify the submitted solution?
 
-If the code works but the student cannot explain it, reduce the relevant explanation/ownership criteria.
+If the code works but the learner cannot explain it, reduce the relevant explanation/ownership criteria.
 
 ## Grading boundary
 
@@ -91,4 +92,4 @@ Do not double-count artifact quality here.
 For example:
 
 - code architecture belongs primarily in the 35% Final Project rubric;
-- the student's ability to **explain and defend** that architecture belongs here.
+- the learner's ability to **explain and defend** that architecture belongs here.
