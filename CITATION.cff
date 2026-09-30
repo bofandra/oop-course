@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this open course in teaching, training, research, or adapted learning materials, please cite it as below."
+title: "Object Oriented Programming — Open Course"
+type: software
+authors:
+  - family-names: "Muhammad"
+    given-names: "Bofandra"
+repository-code: "https://github.com/bofandra/oop-course"
+url: "https://github.com/bofandra/oop-course"
+abstract: "A self-paced open course for learning object-oriented thinking using Python, with executable notebooks, assessments, mastery checks, and a complete capstone."
+keywords:
+  - object-oriented-programming
+  - python
+  - open-course
+  - education
+  - jupyter-notebook
