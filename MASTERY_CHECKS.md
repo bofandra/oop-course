@@ -186,7 +186,7 @@ Classify each relationship: “Car–Engine” and “Doctor–Person.”
 <details>
 <summary>Feedback</summary>
 
-Car **has an** Engine, so composition/reference is appropriate. Doctor **is a** Person, so inheritance may be appropriate if that specialization is meaningful in the model.
+Car **has an** Engine, so a whole–part has-a relationship is appropriate; the Python implementation will typically hold an Engine reference, while exact lifecycle ownership depends on the model. Doctor **is a** Person, so inheritance may be appropriate if that specialization is meaningful in the model.
 
 </details>
 
