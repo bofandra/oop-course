@@ -64,8 +64,9 @@ Python `assert` is used as a course implementation bridge for internal correctne
 | 25 min | `try` / `except` |
 | 10 min | Break |
 | 20 min | Exception propagation |
-| 25 min | Preconditions/postconditions |
-| 20 min | Class invariant & assertions |
+| 20 min | Preconditions/postconditions |
+| 10 min | Transition rules as state-dependent preconditions |
+| 15 min | Class invariant & assertions |
 | 25 min | BankAccount/Product lab |
 | 10 min | Quiz / Module 14 bridge |
 
@@ -162,6 +163,33 @@ balance >= 0
 
 Connect this explicitly to the Diktat's Client–Supplier contract wording.
 
+## Transition rules as state-dependent preconditions
+
+Reconnect Module 4's distinction:
+
+```text
+Invariant
+→ valid-state condition
+
+Transition rule
+→ which move is allowed
+
+State-dependent precondition
+→ condition on current state before the operation may succeed
+```
+
+Example:
+
+```text
+Rental invariant:
+status ∈ {created, active, completed}
+
+complete() precondition:
+status == active
+```
+
+This prevents learners from labelling every workflow rule as an invariant.
+
 ## Assertion guidance
 
 Use this working distinction:
@@ -186,6 +214,8 @@ assert self._balance >= 0
 ```
 
 Do not use `assert` as the primary user-input validation mechanism.
+
+Also state explicitly that Python assertions can be disabled under optimization. Therefore, an assertion must not be the only mechanism enforcing required input validation, authorization, financial rules, or other business behavior that must always run.
 
 ## Common misconceptions
 
