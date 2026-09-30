@@ -1,4 +1,4 @@
-# Week 12 Assignment — Domain Value Object in Modules
+# Module 12 Assignment — Domain Value Object in Modules
 
 ## Objective
 
@@ -34,7 +34,7 @@ __add__()
 
 `__add__()` should return a **new Money object** representing the total.
 
-For this week's assignment, only demonstrate addition between Money objects using the same currency. Do not build exchange-rate conversion.
+For this module's assignment, only demonstrate addition between Money objects using the same currency. Do not build exchange-rate conversion.
 
 ## Required demonstration
 
@@ -83,4 +83,4 @@ Answer:
 
 Do not implement currency conversion, advanced error architecture, `typing.Generic`, `TypeVar`, packages, `pip`, or metaprogramming.
 
-Exception handling is the topic of Week 13.
+Exception handling is the topic of Module 13.
