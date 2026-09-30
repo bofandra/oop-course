@@ -63,20 +63,20 @@ State explicitly:
 
 > This is the Python implementation technique we are using. The conceptual basis comes from the Diktat.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Post-UTS review: superclass problems |
-| 08:45–09:10 | Concrete vs abstract/deferred class |
-| 09:10–09:35 | Deferred feature and effecting |
-| 09:35–10:00 | Python ABC implementation bridge |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Abstract class with shared concrete behavior |
-| 10:35–11:00 | Hierarchical inheritance |
-| 11:00–11:30 | Payment lab |
-| 11:30–11:40 | Abstract-or-concrete challenge |
-| 11:40–11:50 | Quiz / bridge to Week 10 |
+| 15 min | Post-UTS review: superclass problems |
+| 25 min | Concrete vs abstract/deferred class |
+| 25 min | Deferred feature and effecting |
+| 25 min | Python ABC implementation bridge |
+| 10 min | Break |
+| 25 min | Abstract class with shared concrete behavior |
+| 25 min | Hierarchical inheritance |
+| 30 min | Payment lab |
+| 10 min | Abstract-or-concrete challenge |
+| 10 min | Quiz / bridge to Week 10 |
 
 ## Opening example
 
