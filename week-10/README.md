@@ -1,5 +1,7 @@
 # Module 10 — Multiple Inheritance & Mixins
 
+> **Run the notebook:** [Open Module 10 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-10/10_multiple_inheritance_mixins.ipynb)
+
 ## Learning outcomes
 
 By the end of this module, learners should be able to:
