@@ -1,4 +1,4 @@
-# Week 2 — Classes, Objects & Instances
+# Module 2 — Classes, Objects & Instances
 
 ## Learning outcomes
 
@@ -15,15 +15,15 @@ By the end of this session, students should be able to:
 
 Inggriani Liem describes a class as a **static description** of the set of objects that may be created from it; at runtime, the program works with objects instantiated from the class. The Diktat also connects attributes with an object's runtime state and discusses constructors as the mechanism used to create/initialize objects.
 
-OpenStax 11.2 covers the Python implementation used this week: classes, instances, `__init__()`, `self`, instance attributes, and class attributes. The beginning of 11.3 is useful only as a light preview of instance methods; deeper state-changing behavior is reserved for Week 3.
+OpenStax 11.2 covers the Python implementation used this module: classes, instances, `__init__()`, `self`, instance attributes, and class attributes. The beginning of 11.3 is useful only as a light preview of instance methods; deeper state-changing behavior is reserved for Module 3.
 
-## From Week 1 to Week 2
+## From Module 1 to Module 2
 
-Week 1 asked:
+Module 1 asked:
 
 > What objects exist in this problem?
 
-Week 2 asks:
+Module 2 asks:
 
 > How do we define one kind of object and create many independent instances of it?
 
@@ -118,7 +118,7 @@ patient_2.display_info()
 
 The same method definition operates on different instance state.
 
-Detailed responsibility and state-changing behavior are covered in Week 3. This week focuses on how instances and their attributes work.
+Detailed responsibility and state-changing behavior are covered in Module 3. This module focuses on how instances and their attributes work.
 
 ## 4. Instance attributes
 
@@ -264,7 +264,7 @@ Read:
 - **11.2 Classes and instances**
 - the opening part of **11.3 Instance methods** as a preview.
 
-## Week 2 package
+## Module 2 package
 
 - [Colab notebook](02_classes_objects_instances.ipynb)
 - [Exercises](exercises.md)
@@ -272,11 +272,11 @@ Read:
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 2 gives objects state.
+Module 2 gives objects state.
 
-Week 3 asks:
+Module 3 asks:
 
 > What should those objects actually **do** with that state?
 
