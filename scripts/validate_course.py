@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+import ast
 import contextlib
 import csv
 import io
@@ -652,6 +653,84 @@ def validate_assessment_structure(errors: list[str]) -> None:
                 )
                 break
 
+
+def validate_assessment_concept_progression(errors: list[str]) -> None:
+    """Keep learner-facing assessments from requiring concepts before they are taught."""
+
+    rules = [
+        (4, "@property", "property-based encapsulation"),
+        (9, "@abstractmethod", "abstract/deferred class implementation"),
+        (9, "from abc import", "abstract/deferred class implementation"),
+        (10, "__mro__", "method resolution order"),
+        (13, "raise ValueError", "explicit exception raising"),
+        (13, "except ValueError", "exception handling"),
+        (13, "try:", "exception handling"),
+        (13, "assert ", "assertion-based internal checks"),
+        (15, "Strategy-style", "design-pattern implementation"),
+        (15, "Factory Method-style", "design-pattern implementation"),
+    ]
+
+    implementation_patterns = [
+        (12, re.compile(r"def\s+__eq__\s*\("), "operator overloading/equality implementation"),
+        (12, re.compile(r"implement[^\\n]*`__eq__\\(\\)`", re.IGNORECASE), "operator overloading/equality implementation"),
+        (12, re.compile(r"def\s+__add__\s*\("), "operator overloading/addition implementation"),
+        (12, re.compile(r"implement[^\\n]*`__add__\\(\\)`", re.IGNORECASE), "operator overloading/addition implementation"),
+    ]
+
+    def uses_identity_operator(source: str) -> bool:
+        try:
+            tree = ast.parse(source)
+        except SyntaxError:
+            try:
+                tree = ast.parse(source, mode="eval")
+            except SyntaxError:
+                return False
+
+        return any(
+            isinstance(node, ast.Compare)
+            and any(isinstance(op, (ast.Is, ast.IsNot)) for op in node.ops)
+            for node in ast.walk(tree)
+        )
+
+    for module in list(range(1, 8)) + list(range(9, 16)):
+        folder = ROOT / f"week-{module:02d}"
+        for name in ["exercises.md", "quiz.md", "assignment.md"]:
+            path = folder / name
+            if not path.exists():
+                continue
+
+            text = path.read_text(encoding="utf-8")
+            rel = path.relative_to(ROOT)
+
+            for introduced_in, fragment, label in rules:
+                if module < introduced_in and fragment in text:
+                    fail(
+                        errors,
+                        f"{rel}: requires {label} before Module {introduced_in}",
+                    )
+
+            for introduced_in, pattern, label in implementation_patterns:
+                if module < introduced_in and pattern.search(text):
+                    fail(
+                        errors,
+                        f"{rel}: requires {label} before Module {introduced_in}",
+                    )
+
+            if module < 11:
+                code_fragments = re.findall(r"`([^`\n]+)`", text)
+                python_blocks = re.findall(
+                    r"```python\s*(.*?)```",
+                    text,
+                    flags=re.DOTALL,
+                )
+                for fragment in code_fragments + python_blocks:
+                    if uses_identity_operator(fragment):
+                        fail(
+                            errors,
+                            f"{rel}: uses Python identity operator before Module 11",
+                        )
+                        break
+
 def validate_public_assessment_safety(errors: list[str]) -> None:
     for path in sorted(ROOT.glob("week-*/instructor-notes.md")):
         text = path.read_text(encoding="utf-8").lower()
@@ -686,6 +765,7 @@ def main() -> int:
     validate_local_setup_guide(errors)
     validate_publication_metadata(errors)
     validate_assessment_structure(errors)
+    validate_assessment_concept_progression(errors)
     validate_public_assessment_safety(errors)
     validate_open_course_neutrality(errors)
 
@@ -718,6 +798,7 @@ def main() -> int:
     print("- local reproducibility guide: OK")
     print("- citation/accessibility metadata: OK")
     print("- assignment rubric / quiz structure: OK")
+    print("- assessment concept progression: OK")
     print("- learner-facing assessment neutrality: OK")
     print("- public assessment-key guard: OK")
     print("- gradebook calculator self-test: OK")

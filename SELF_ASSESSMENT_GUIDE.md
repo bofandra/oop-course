@@ -18,7 +18,7 @@ For each module, aim to reach all four levels:
 | 0 | write small Python functions, conditions, loops, and collection operations without step-by-step help |
 | 1 | identify meaningful objects and explain identity, state, behavior, and collaboration |
 | 2 | define classes, create instances, and explain `__init__`, `self`, and instance state |
-| 3 | assign responsibilities and implement behavior that changes valid object state |
+| 3 | assign responsibilities and implement meaningful behavior that reads or changes object state, while recognizing that validation rules are introduced in Module 4 |
 | 4 | protect state behind meaningful operations and distinguish a class invariant from a state-transition rule |
 | 5 | distinguish general references/associations, whole–part has-a relationships, and is-a inheritance |
 | 6 | use inheritance only when the subtype relationship is meaningful |
