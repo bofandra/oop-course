@@ -144,7 +144,7 @@ A **class attribute** belongs to the class and is shared as class-level informat
 
 ```python
 class Student:
-    university = "TANRI ABENG UNIVERSITY"
+    university = "Example University"
 
     def __init__(self, student_id, name):
         self.student_id = student_id
@@ -217,7 +217,7 @@ Instance attributes:
 
 Class attribute:
 
-- `university = "TANRI ABENG UNIVERSITY"`
+- `university = "Example University"`
 
 Create at least three instances and print each student's data.
 
