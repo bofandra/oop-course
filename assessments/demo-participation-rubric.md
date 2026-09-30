@@ -1,8 +1,8 @@
-# Demo / Code Explanation / Participation Rubric
+# Demo / Code Explanation / Learning Evidence Rubric
 
 This rubric produces a raw score out of **100** for the course component:
 
-**Demo / Code Explanation / Participation — 10%**
+**Demo / Code Explanation / Learning Evidence — 10%**
 
 It is separate from the **Final Project artifact — 35%**.
 
