@@ -67,7 +67,7 @@ Write plain Python `assert` tests for:
 6. cancellation;
 7. one end-to-end registration scenario.
 
-No pytest is required.
+No pytest is required. The plain `assert` statements are test checks, not the application's business-rule enforcement. Run the tests without Python optimization (`-O`).
 
 ## Required explanation
 
