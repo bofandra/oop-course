@@ -375,6 +375,7 @@ Review **11.3 Instance Methods** for methods that access and modify instance sta
 - [Quiz](quiz.md)
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## Next module
 
