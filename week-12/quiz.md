@@ -1,4 +1,4 @@
-# Week 12 Quiz — Operator Overloading, Genericity & Modules
+# Module 12 Quiz — Operator Overloading, Genericity & Modules
 
 **Suggested duration:** 15–20 minutes
 
