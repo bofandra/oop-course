@@ -292,3 +292,7 @@ Methods
    ↓
 Behavior
 ```
+
+## Course navigation
+
+[← Module 1](../week-01/) · [Course Map](../COURSE_MAP.md) · [Module 3 →](../week-03/)
