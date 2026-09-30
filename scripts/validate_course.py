@@ -26,6 +26,7 @@ def fail(errors: list[str], message: str) -> None:
 def required_structure(errors: list[str]) -> None:
     required = [
         "README.md",
+        "CHANGELOG.md",
         "COURSE_MAP.md",
         "OPEN_COURSE_GUIDE.md",
         "SELF_PACED_GUIDE.md",
@@ -394,6 +395,7 @@ def validate_publication_navigation(errors: list[str]) -> None:
             "REFERENCE_MAP.md",
             "SELF_PACED_GUIDE.md",
             "SELF_ASSESSMENT_GUIDE.md",
+            "CHANGELOG.md",
             "00-python-primer/readiness-check.md",
             "week-01/",
             "CONTRIBUTING.md",
