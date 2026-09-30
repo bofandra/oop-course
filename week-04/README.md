@@ -74,7 +74,9 @@ Outside code can write:
 account.balance = -1_000_000
 ```
 
-A better object interface can make the intended operations explicit:
+A better object interface can make the intended operations explicit.
+
+For this early example, assume the opening balance supplied to the constructor is non-negative. Module 13 will add explicit exception-based validation of constructor/method inputs.
 
 ```python
 class BankAccount:
@@ -208,9 +210,9 @@ A simple implementation:
 
 ```python
 class Product:
-    def __init__(self, name, stock):
+    def __init__(self, name):
         self.name = name
-        self._stock = stock
+        self._stock = 0
 
     @property
     def stock(self):
@@ -315,7 +317,7 @@ Create a `Product` class with:
 State:
 
 - `name`
-- internal `_stock`
+- internal `_stock`, initialized to `0` so a new object begins in a valid state
 
 Public interface:
 
