@@ -33,14 +33,13 @@ Outside code can write:
 product.stock = -100
 ```
 
-Redesign the class using:
+Redesign the class so a new Product starts with `_stock = 0`, then use:
 
-- `_stock`
 - `add_stock(quantity)`
 - `remove_stock(quantity)`
 - a read-only `stock` property
 
-The normal public interface should preserve:
+The object should satisfy this rule immediately after creation and after every successful public operation:
 
 ```text
 stock >= 0
