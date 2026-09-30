@@ -144,7 +144,7 @@ Doctor
 
 Use a deliberately narrow explanation:
 
-> `super().__init__(...)` lets the subclass reuse the superclass initialization before adding subclass-specific state.
+> `super().__init__(...)` calls the superclass initializer so shared superclass-defined state is established in one place before the subclass adds its own state.
 
 Do not explain:
 
