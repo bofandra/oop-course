@@ -49,20 +49,20 @@ The Strategy-style and Factory Method-style examples are course illustrations bu
 
 Do not introduce an external design-pattern catalogue as a third formal course reference.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review Week 14 complete-design flow |
-| 08:45–09:05 | Code reuse vs design reuse |
-| 09:05–09:25 | Pattern concept from Diktat |
-| 09:25–10:00 | Strategy-style delivery refactor |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Factory Method-style creation example |
-| 10:35–11:10 | Food Ordering case study |
-| 11:10–11:30 | OOT / refactoring comparison |
-| 11:30–11:40 | Pattern-or-overengineering discussion |
-| 11:40–11:50 | Quiz / Final Project bridge |
+| 15 min | Review Week 14 complete-design flow |
+| 20 min | Code reuse vs design reuse |
+| 20 min | Pattern concept from Diktat |
+| 35 min | Strategy-style delivery refactor |
+| 10 min | Break |
+| 25 min | Factory Method-style creation example |
+| 35 min | Food Ordering case study |
+| 20 min | OOT / refactoring comparison |
+| 10 min | Pattern-or-overengineering discussion |
+| 10 min | Quiz / Final Project bridge |
 
 ## Opening question
 
