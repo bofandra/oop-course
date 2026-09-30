@@ -164,11 +164,11 @@ For `01_thinking_in_objects.ipynb`:
 
 ## Quiz administration
 
-The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private lecturer-controlled location.
+The quiz answer key is intentionally not stored in the public repository. Keep the instructor key in a private instructor-controlled location.
 
 ## Assignment grading notes
 
-Do not grade students down merely because their object model differs from the lecturer's model.
+Do not grade students down merely because their object model differs from the instructor's model.
 
 Grade the **reasoning**:
 
