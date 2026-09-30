@@ -1,6 +1,6 @@
 # Course Map — Object Oriented Programming
 
-This document connects module topics, Course Learning Outcomes (CLO/CLO), assessment evidence, and the two formal references.
+This document connects module topics, Course Learning Outcomes (CLO), assessment evidence, and the two formal references.
 
 ## Course Learning Outcomes
 
