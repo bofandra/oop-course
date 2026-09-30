@@ -52,3 +52,6 @@ D. a subclass list
 ### 9. Explain the difference between an exception used for invalid caller input and an assertion used for an internal correctness assumption.
 
 ### 10. For a BankAccount with invariant `balance >= 0`, give one precondition and one postcondition for `withdraw(amount)`.
+
+
+### 11. A Rental has valid statuses `created`, `active`, and `completed`. Explain the difference between the invariant “status is one of these values” and the precondition “`complete()` requires status == active”.

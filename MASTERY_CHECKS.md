@@ -413,6 +413,17 @@ Example: precondition `0 < amount <= balance`; postcondition `new_balance == old
 
 </details>
 
+### Check C
+
+For a Rental lifecycle `created → active → completed`, how would you describe “complete only from active” in contract terms?
+
+<details>
+<summary>Feedback</summary>
+
+Treat `status == "active"` as a state-dependent precondition of `complete()`. The separate invariant is that status must remain within the valid status set. A transition rule constrains a move; it is not automatically a class invariant.
+
+</details>
+
 ---
 
 ## Module 14 — OOA → OOD → OOP → OOT
