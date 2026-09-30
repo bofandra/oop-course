@@ -74,7 +74,7 @@ Explain every answer.
 
 Given caller code that repeatedly chooses between `EmailNotification()` and `SMSNotification()`, explain what responsibility could move into a creator abstraction.
 
-Then implement the small Factory Method-style example from the week material.
+Then implement the small Factory Method-style example from the module material.
 
 ---
 
