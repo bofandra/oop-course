@@ -83,6 +83,13 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 
 ## Unreleased
 
+### Assessment progression
+
+- removed premature use of Python's `is` identity operator from Module 2 exercises; Module 2 now assesses separate-instance reasoning without Module 11 syntax;
+- clarified Module 5 mastery feedback so whole–part has-a is not automatically equated with strict composition/lifecycle ownership;
+- aligned the Module 3 self-assessment checkpoint with the deliberate decision to postpone validation rules until Module 4;
+- added a validator guard that prevents selected later-course mechanisms from becoming learner-facing assessment requirements before their introduction.
+
 ### Reference discipline
 
 - added `SOURCE_BOUNDARY.md` to distinguish formal concepts, minimal Python implementation bridges, and out-of-scope additions;
