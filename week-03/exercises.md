@@ -1,4 +1,4 @@
-# Week 3 Exercises — Attributes, Methods, State & Behavior
+# Module 3 Exercises — Attributes, Methods, State & Behavior
 
 ## Exercise 1 — Identify State and Behavior
 
@@ -167,4 +167,4 @@ If the second call still "works", explain why the class currently allows it.
 
 Do not jump ahead to a complex solution. Write one sentence describing the rule the class should eventually enforce.
 
-This becomes the bridge to Week 4.
+This becomes the bridge to Module 4.
