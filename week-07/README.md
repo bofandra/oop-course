@@ -1,4 +1,4 @@
-# Week 7 — Overriding, Polymorphism & Dynamic Binding
+# Module 7 — Overriding, Polymorphism & Dynamic Binding
 
 ## Learning outcomes
 
@@ -25,16 +25,16 @@ Liem: feature redefinition
 OpenStax/Python: method overriding
 ```
 
-## From Week 6 to Week 7
+## From Module 6 to Module 7
 
-Week 6:
+Module 6:
 
 ```text
 Doctor inherits from Person
 Developer inherits from Employee
 ```
 
-Week 7 asks:
+Module 7 asks:
 
 > What if the subclass needs a different implementation of an inherited behavior?
 
@@ -195,7 +195,7 @@ The caller asks the object to perform its behavior.
 
 ## 6. Related but not identical: overriding vs overloading
 
-For Week 7:
+For Module 7:
 
 ```text
 Overriding
@@ -205,7 +205,7 @@ Overloading
 → one operation name can have multiple meanings/forms
 ```
 
-Python operator overloading is studied formally in Week 12.
+Python operator overloading is studied formally in Module 12.
 
 Do not mix the two concepts.
 
@@ -261,7 +261,7 @@ area()
 
 Call `area()` polymorphically through a list of Shape-related objects.
 
-Do not introduce abstract base classes yet. That is Week 9.
+Do not introduce abstract base classes yet. That is Module 9.
 
 ## Reflection
 
@@ -288,7 +288,7 @@ Read **13.3 Methods**:
 - `super()`;
 - polymorphism.
 
-## Week 7 package
+## Module 7 package
 
 - [Colab notebook](07_overriding_polymorphism.ipynb)
 - [Exercises](exercises.md)
@@ -296,9 +296,9 @@ Read **13.3 Methods**:
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 8 is the **Mid Test**.
+Module 8 is the **Mid Test**.
 
 Students should now be able to integrate:
 
