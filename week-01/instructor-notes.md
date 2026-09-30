@@ -29,20 +29,20 @@ Use **11.1 Object-Oriented Programming Basics** as the Python-facing introductor
 
 The Python syntax shown in class should remain minimal. Detailed `__init__`, `self`, and instance attributes belong to Week 2.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Opening question: how would we represent a clinic appointment? |
-| 08:45–09:10 | Procedural organization vs object-oriented organization |
-| 09:10–09:40 | Object: identity, state, behavior |
-| 09:40–10:00 | Class vs object/instance |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Candidate objects from requirements |
-| 10:35–10:55 | Object collaboration |
-| 10:55–11:25 | Library exercise |
-| 11:25–11:40 | Challenge discussion |
-| 11:40–11:50 | Reflection + bridge to Week 2 |
+| 15 min | Opening question: how would we represent a clinic appointment? |
+| 25 min | Procedural organization vs object-oriented organization |
+| 30 min | Object: identity, state, behavior |
+| 20 min | Class vs object/instance |
+| 10 min | Break |
+| 25 min | Candidate objects from requirements |
+| 20 min | Object collaboration |
+| 30 min | Library exercise |
+| 15 min | Challenge discussion |
+| 10 min | Reflection + bridge to Week 2 |
 
 ## Opening script
 
