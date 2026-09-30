@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain **encapsulation** as grouping state and behavior while controlling how state is accessed or changed;
 2. explain **abstraction** as exposing what a caller needs while hiding unnecessary implementation detail;
