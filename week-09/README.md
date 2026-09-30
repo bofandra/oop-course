@@ -1,5 +1,7 @@
 # Module 9 — Abstract Classes & Inheritance Structures
 
+> **Run the notebook:** [Open Module 9 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-09/09_abstract_classes.ipynb)
+
 ## Learning outcomes
 
 By the end of this module, learners should be able to:
