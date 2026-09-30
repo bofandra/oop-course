@@ -146,6 +146,8 @@ Follow the Diktat progression explicitly:
 
 Use plain `assert` statements so testing does not turn into a pytest lesson.
 
+Make the Module 13 distinction explicit: these are **test assertions**, not the only mechanism enforcing domain rules inside the application. Python can remove assertions under optimization, so required runtime validation still belongs in normal control flow/exceptions. Run course test examples without `python -O`.
+
 ### Independent
 
 ```python
