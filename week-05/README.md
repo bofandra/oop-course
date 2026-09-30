@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain why useful OO systems are built from **collaborating objects**;
 2. explain a **Client–Supplier** relationship;
