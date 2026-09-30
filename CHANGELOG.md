@@ -83,4 +83,10 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 
 ## Unreleased
 
-Future changes should preserve the course progression, assessment guardrails, reference alignment, and self-paced/open-course neutrality described in the repository documentation.
+### Publication polish
+
+- added `CITATION.cff` so the repository has machine-readable citation metadata;
+- added `ACCESSIBILITY.md` with learner and contributor accessibility guidance;
+- added validation guards for citation/accessibility publication assets.
+
+Future changes should preserve the course progression, assessment guardrails, reference alignment, accessibility guidance, and self-paced/open-course neutrality described in the repository documentation.
