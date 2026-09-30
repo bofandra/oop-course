@@ -1,4 +1,4 @@
-# Week 13 — Exception Handling & Assertions
+# Module 13 — Exception Handling & Assertions
 
 ## Learning outcomes
 
@@ -31,7 +31,7 @@ Class invariant
 must remain valid for valid objects
 ```
 
-The Diktat's exception syntax and some statements are language-specific to Eiffel. Python implementation this week follows OpenStax 14.4–14.5 using:
+The Diktat's exception syntax and some statements are language-specific to Eiffel. Python implementation this module follows OpenStax 14.4–14.5 using:
 
 - `try`
 - `except`
@@ -40,11 +40,11 @@ The Diktat's exception syntax and some statements are language-specific to Eiffe
 
 Python `assert` is used as an implementation bridge for checking internal assumptions.
 
-## From Week 12 to Week 13
+## From Module 12 to Module 13
 
-Week 12 gave classes richer behavior.
+Module 12 gave classes richer behavior.
 
-Week 13 asks:
+Module 13 asks:
 
 > What should happen when an operation cannot fulfill what the caller asked?
 
@@ -251,7 +251,7 @@ For Product:
 stock >= 0
 ```
 
-We introduced this idea informally in Week 4. Week 13 now connects it explicitly to contracts and assertions.
+We introduced this idea informally in Module 4. Module 13 now connects it explicitly to contracts and assertions.
 
 ## 9. Python assert
 
@@ -417,7 +417,7 @@ Read:
 - **14.4 Handling Exceptions**
 - **14.5 Raising Exceptions**
 
-## Week 13 package
+## Module 13 package
 
 - [Colab notebook](13_exceptions_assertions.ipynb)
 - [Exercises](exercises.md)
@@ -425,14 +425,14 @@ Read:
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
 
-## Next week
+## Next module
 
-Week 13 makes individual class operations more robust.
+Module 13 makes individual class operations more robust.
 
-Week 14 asks:
+Module 14 asks:
 
 > How do we systematically move from a requirement to object analysis, class design, implementation, and testing?
 
 That leads to:
 
-**Week 14 — OOP Analysis, Design, Class Diagram & Testing.**
+**Module 14 — OOP Analysis, Design, Class Diagram & Testing.**
