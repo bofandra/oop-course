@@ -98,7 +98,7 @@ Document:
 - responsibilities;
 - important relationships.
 
-Do not begin from a lecturer-provided class list.
+Do not begin from a instructor-provided class list.
 
 Your analysis choices are part of the assessment.
 
@@ -238,7 +238,7 @@ The goal is to show ownership of the design, not memorization.
 
 ## AI / external assistance
 
-Follow the lecturer's and university's rules for AI and external assistance.
+Follow the instructor's and applicable rules for AI and external assistance.
 
 If AI assistance is permitted, students remain responsible for understanding and defending every design decision and every submitted line of code.
 
