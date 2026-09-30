@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain **multiple inheritance** as one class inheriting from more than one parent class;
 2. identify method-name conflicts that can arise from multiple inheritance;
@@ -125,7 +125,7 @@ A useful introductory interpretation:
 
 > MRO is the order Python uses when searching for an inherited method or attribute.
 
-For Module 10, students only need to understand the observable lookup order.
+For Module 10, learners only need to understand the observable lookup order.
 
 Do not teach the full C3 linearization algorithm.
 
