@@ -1,5 +1,7 @@
 # Module 16 — Final Project / Final Test
 
+> **Run the notebook:** [Open Module 16 planning notebook in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-16/16_final_project_planning.ipynb)
+
 ## Learning outcome
 
 Design, implement, test, demonstrate, and defend a complete object-oriented solution by integrating the full course.
