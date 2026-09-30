@@ -1,4 +1,4 @@
-# Week 1 — Introduction to OOP & Thinking in Objects
+# Module 1 — Introduction to OOP & Thinking in Objects
 
 ## Learning outcomes
 
@@ -68,7 +68,7 @@ For our introductory model:
 - `Patient` is the class definition.
 - `patient_1` and `patient_2` are two instances/objects.
 
-The detailed mechanics of `__init__`, `self`, and attributes are deliberately postponed to Week 2.
+The detailed mechanics of `__init__`, `self`, and attributes are deliberately postponed to Module 2.
 
 ## State and behavior preview
 
@@ -148,7 +148,7 @@ Focus on:
 
 Read **11.1 Object-Oriented Programming Basics**.
 
-## Next week
+## Next module
 
 ```text
 Class
@@ -165,7 +165,7 @@ Instance state
 ```
 
 
-## Week 1 package
+## Module 1 package
 
 - [Colab notebook](01_thinking_in_objects.ipynb)
 - [Exercises](exercises.md)
