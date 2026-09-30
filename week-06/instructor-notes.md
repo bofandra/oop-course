@@ -1,8 +1,8 @@
-# Week 6 Instructor Notes — Inheritance
+# Module 6 Instructor Notes — Inheritance
 
 ## Teaching goal
 
-Week 5 taught:
+Module 5 taught:
 
 ```text
 Car has an Engine
@@ -10,7 +10,7 @@ Order has OrderItems
 Appointment refers to Patient and Doctor
 ```
 
-Week 6 introduces a different relationship:
+Module 6 introduces a different relationship:
 
 ```text
 Doctor is a Person
@@ -32,7 +32,7 @@ Use the Diktat framing that:
 - a subclass object must still be an object of the superclass concept;
 - has-a should not be confused with inheritance.
 
-The Diktat also discusses many advanced inheritance consequences such as multiple inheritance, renaming, subcontracting, and typing effects. Do **not** teach those in detail in Week 6; later weeks cover selected advanced topics.
+The Diktat also discusses many advanced inheritance consequences such as multiple inheritance, renaming, subcontracting, and typing effects. Do **not** teach those in detail in Module 6; later modules cover selected advanced topics.
 
 ### OpenStax
 
@@ -43,13 +43,13 @@ Use:
 
 Use only the relevant `super()` material from 13.3 as a Python implementation bridge for superclass initialization.
 
-Overriding and polymorphism remain Week 7 topics.
+Overriding and polymorphism remain Module 7 topics.
 
 ## Suggested session flow
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Review Week 5: has-a vs is-a |
+| 15 min | Review Module 5: has-a vs is-a |
 | 25 min | Inheritance concept and terminology |
 | 25 min | Python subclass syntax |
 | 25 min | Inherited attributes and methods |
@@ -80,7 +80,7 @@ Doctor is a Person
 
 Then say:
 
-> Week 5 handled "has-a". Week 6 handles "is-a".
+> Module 5 handled "has-a". Module 6 handles "is-a".
 
 ## Basic inheritance example
 
@@ -152,7 +152,7 @@ Do not explain:
 - cooperative multiple inheritance;
 - zero-argument `super()` implementation details.
 
-Those would distract from the Week 6 goal.
+Those would distract from the Module 6 goal.
 
 ## Important caution
 
@@ -184,7 +184,7 @@ class Car:
         self.engine = engine
 ```
 
-This links Week 5 and Week 6.
+This links Module 5 and Module 6.
 
 ## isinstance()
 
@@ -219,7 +219,7 @@ No. Use inheritance only when the specialized/general relationship makes sense.
 
 ### 4. super() means "the parent class"
 
-For this week, phrase it operationally as a way to reuse superclass initialization. Avoid oversimplified claims about all runtime behavior.
+For this module, phrase it operationally as a way to reuse superclass initialization. Avoid oversimplified claims about all runtime behavior.
 
 ## Quiz administration
 
@@ -253,4 +253,4 @@ End with:
 
 That leads directly to:
 
-**Week 7 — Overriding, Polymorphism & Dynamic Binding.**
+**Module 7 — Overriding, Polymorphism & Dynamic Binding.**
