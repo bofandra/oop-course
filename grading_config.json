@@ -6,7 +6,7 @@
     "final_project": 0.35,
     "demo": 0.10
   },
-  "letter_scale_status": "CONFIRM_WITH_OFFICIAL_TAU_POLICY",
+  "letter_scale_status": "CUSTOMIZABLE_EXAMPLE",
   "letter_scale": [
     {"grade": "A", "minimum": 85.0},
     {"grade": "A-", "minimum": 80.0},
