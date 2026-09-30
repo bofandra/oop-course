@@ -67,7 +67,7 @@ State explicitly:
 
 | Approx. duration | Activity |
 |---|---|
-| 15 min | Post-UTS review: superclass problems |
+| 15 min | Post-Mid Test review: superclass problems |
 | 25 min | Concrete vs abstract/deferred class |
 | 25 min | Deferred feature and effecting |
 | 25 min | Python ABC implementation bridge |
