@@ -399,6 +399,21 @@ def validate_assessment_structure(errors: list[str]) -> None:
         if "## Part A" not in text or "## Part B" not in text:
             fail(errors, f"{rel}: quiz should contain both objective and explanation sections")
 
+    registry_path = ROOT / "templates" / "assessment_registry.csv"
+    with registry_path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        fields = set(reader.fieldnames or [])
+        if "module" not in fields:
+            fail(errors, "templates/assessment_registry.csv: canonical registry should use a module column")
+        for row in reader:
+            title = row.get("title", "")
+            if re.search(r"\\bWeek\\s+\\d+\\b", title, re.IGNORECASE):
+                fail(
+                    errors,
+                    "templates/assessment_registry.csv: assessment titles should use Module, not Week",
+                )
+                break
+
 def validate_public_assessment_safety(errors: list[str]) -> None:
     for path in sorted(ROOT.glob("week-*/instructor-notes.md")):
         text = path.read_text(encoding="utf-8").lower()
