@@ -37,6 +37,8 @@ This document connects module topics, Course Learning Outcomes (CLO), assessment
 
 ## Assessment alignment
 
+See [Assessment Alignment](ASSESSMENT_ALIGNMENT.md) for the module-by-module evidence map, difficulty progression, and assessment guardrails.
+
 | Assessment | Weight | Main CLO |
 |---|---:|---|
 | Quiz / Concept Exercises | 15% | CLO-1–5 progressively |
