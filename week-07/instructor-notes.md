@@ -60,20 +60,20 @@ OpenStax explicitly covers:
 
 The Python term **overriding** is the implementation term used throughout the student material.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review inheritance from Week 6 |
-| 08:45–09:10 | Redefinition / overriding |
-| 09:10–09:30 | Replace vs extend with `super()` |
-| 09:30–10:00 | Polymorphism |
-| 10:00–10:10 | Break |
-| 10:10–10:35 | Dynamic binding |
-| 10:35–11:05 | Notification live coding |
-| 11:05–11:35 | Payroll lab |
-| 11:35–11:45 | Shape challenge |
-| 11:45–11:50 | UTS bridge |
+| 15 min | Review inheritance from Week 6 |
+| 25 min | Redefinition / overriding |
+| 20 min | Replace vs extend with `super()` |
+| 30 min | Polymorphism |
+| 10 min | Break |
+| 25 min | Dynamic binding |
+| 30 min | Notification live coding |
+| 30 min | Payroll lab |
+| 10 min | Shape challenge |
+| 5 min | UTS bridge |
 
 ## Opening example
 
