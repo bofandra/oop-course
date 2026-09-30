@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. transform a short requirement into candidate objects/classes;
 2. distinguish the purposes of **OOA**, **OOD**, **OOP**, and **OOT**;
@@ -360,7 +360,7 @@ read requirement
 immediately write class syntax
 ```
 
-Module 14 instead asks students to pause:
+Module 14 instead asks learners to pause:
 
 ```text
 What are the objects?
@@ -412,7 +412,7 @@ Do not begin with Python syntax.
 
 ## Suggested candidate concepts
 
-Students should derive these first.
+Learners should derive these first.
 
 After discussion, a reasonable model may contain:
 
@@ -426,7 +426,7 @@ The exact design may vary if responsibilities remain coherent.
 
 ## Testing target
 
-Students should test:
+Learners should test:
 
 1. Student independently;
 2. Course independently;
