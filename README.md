@@ -58,6 +58,7 @@ Open-course guidance:
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
+- [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
 - [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
@@ -165,6 +166,10 @@ Do selected exercises
 Take concept quiz
       ↓
 Complete coding lab
+      ↓
+Attempt mastery checks
+      ↓
+Open worked feedback
       ↓
 Write reflection
       ↓

@@ -16,8 +16,10 @@ Progress when you can explain and apply the current module, not merely when you 
 5. Complete selected exercises
 6. Attempt the quiz without looking up answers
 7. Complete the coding lab / assignment
-8. Explain your solution in your own words
-9. Move forward when the core ideas are clear
+8. Attempt the module section in [Mastery Checks](MASTERY_CHECKS.md)
+9. Open the worked feedback only after answering
+10. Explain your solution in your own words
+11. Move forward when the core ideas are clear
 ```
 
 ## Suggested pace
@@ -66,12 +68,13 @@ Before moving to the next module:
 3. revisit the relevant explanation or executable example;
 4. modify or rerun at least one example to verify your understanding;
 5. complete one core exercise or coding task from a blank start;
-6. explain one important design decision in your own words;
-7. reattempt the uncertain quiz items after a short break.
+6. attempt the matching [Mastery Checks](MASTERY_CHECKS.md) prompts before opening their feedback;
+7. explain one important design decision in your own words;
+8. reattempt the uncertain quiz items after a short break.
 
 A correct answer that cannot be explained is not yet strong evidence of mastery.
 
-The public repository intentionally avoids publishing direct keys for assessment items that may also be used by facilitated cohorts. Self-paced learners should use the module outcomes, executable examples, exercises, rubrics, and the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) as feedback evidence.
+The public repository intentionally avoids publishing direct keys for assessment items that may also be used by facilitated cohorts. Self-paced learners should use the module outcomes, executable examples, exercises, rubrics, [Mastery Checks](MASTERY_CHECKS.md), and the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) as feedback evidence.
 
 ## When to repeat a module
 

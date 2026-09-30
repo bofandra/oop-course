@@ -64,6 +64,7 @@ Recommended duration: **150–180 minutes**.
 - [Mid Test brief](../assessments/midterm/README.md)
 - [Mid Test notebook](../assessments/midterm/midterm_exam.ipynb)
 - [Detailed rubric](../assessments/midterm/midterm_rubric.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## References
 

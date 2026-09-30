@@ -29,6 +29,8 @@ def required_structure(errors: list[str]) -> None:
         "COURSE_MAP.md",
         "OPEN_COURSE_GUIDE.md",
         "SELF_PACED_GUIDE.md",
+        "SELF_ASSESSMENT_GUIDE.md",
+        "MASTERY_CHECKS.md",
         "INSTRUCTOR_GUIDE.md",
         "EXECUTION_AUDIT.md",
         "GRADING_SYSTEM.md",
@@ -316,6 +318,8 @@ def validate_open_course_neutrality(errors: list[str]) -> None:
         "fixed Saturday schedule": re.compile(r"\bSaturday\b", re.IGNORECASE),
         "old academic-year label": re.compile(r"2026\s*/\s*2027"),
         "old fixed class time": re.compile(r"08:30\s*[–-]\s*11:50"),
+        "old UTS wording": re.compile(r"\bUTS\b", re.IGNORECASE),
+        "old UAS wording": re.compile(r"\bUAS\b", re.IGNORECASE),
     }
 
     text_suffixes = {".md", ".py", ".json", ".csv", ".yml", ".yaml", ".ipynb"}
@@ -395,7 +399,7 @@ def main() -> int:
     print(f"- notebooks checked: {notebook_count}")
     print(f"- markdown files checked: {markdown_count}")
     print(f"- Python files checked: {python_count}")
-    print("- required Week 0–16 structure: OK")
+    print("- required Module 0–16 structure: OK")
     print("- notebook compilation/execution: OK")
     print("- relative Markdown links: OK")
     print("- public assessment-key guard: OK")

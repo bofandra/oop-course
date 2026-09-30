@@ -18,6 +18,7 @@ Learners should be comfortable with:
 
 - [Python Primer notebook](00_python_primer.ipynb)
 - [Readiness check](readiness-check.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## Reference
 

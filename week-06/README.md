@@ -300,6 +300,7 @@ For `super().__init__()`, read only the relevant `super()` subsection of **13.3 
 - [Quiz](quiz.md)
 - [Assignment](assignment.md)
 - [Instructor notes](instructor-notes.md)
+- [Mastery checks with worked feedback](../MASTERY_CHECKS.md)
 
 ## Next module
 
