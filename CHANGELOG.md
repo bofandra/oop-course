@@ -83,6 +83,12 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 
 ## Unreleased
 
+### Reference discipline
+
+- added `SOURCE_BOUNDARY.md` to distinguish formal concepts, minimal Python implementation bridges, and out-of-scope additions;
+- clarified that implementation bridges must not create hidden learning outcomes or assessment requirements;
+- added CI validation so the two-reference source-boundary policy remains part of the published course baseline.
+
 ### Publication polish
 
 - added `CITATION.cff` so the repository has machine-readable citation metadata;
