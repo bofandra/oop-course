@@ -392,12 +392,21 @@ def validate_publication_navigation(errors: list[str]) -> None:
             "COLAB.md",
             "COURSE_MAP.md",
             "REFERENCE_MAP.md",
+            "SELF_PACED_GUIDE.md",
+            "SELF_ASSESSMENT_GUIDE.md",
+            "00-python-primer/readiness-check.md",
+            "week-01/",
             "CONTRIBUTING.md",
         ],
         ROOT / "START_HERE.md": [
+            "00-python-primer/readiness-check.md",
+            "00-python-primer/",
+            "week-01/",
             "COLAB.md",
             "COURSE_MAP.md",
             "REFERENCE_MAP.md",
+            "SELF_PACED_GUIDE.md",
+            "SELF_ASSESSMENT_GUIDE.md",
         ],
     }
 

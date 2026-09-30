@@ -19,8 +19,8 @@ For each module, aim to reach all four levels:
 | 1 | identify meaningful objects and explain identity, state, behavior, and collaboration |
 | 2 | define classes, create instances, and explain `__init__`, `self`, and instance state |
 | 3 | assign responsibilities and implement behavior that changes valid object state |
-| 4 | explain and demonstrate why state should be protected behind meaningful operations |
-| 5 | distinguish is-a from has-a/reference relationships and model collaborating objects |
+| 4 | protect state behind meaningful operations and distinguish a class invariant from a state-transition rule |
+| 5 | distinguish general references/associations, whole–part has-a relationships, and is-a inheritance |
 | 6 | use inheritance only when the subtype relationship is meaningful |
 | 7 | demonstrate overriding, polymorphism, and runtime method selection without type-based branching |
 | 8 | integrate Modules 1–7 in one coherent solution and explain your design |
@@ -28,8 +28,8 @@ For each module, aim to reach all four levels:
 | 10 | explain multiple inheritance, method resolution, and when a focused mixin is justified |
 | 11 | predict aliasing, mutation, reassignment, identity, and object-lifecycle behavior |
 | 12 | implement useful special methods and organize related classes into modules |
-| 13 | protect object rules using exceptions, assertions, preconditions, postconditions, and invariants |
-| 14 | move from requirement → OOA → OOD → implementation → tests and explain the trace |
+| 13 | protect object rules using exceptions and contracts; distinguish invariants from state-dependent transition preconditions and use `assert` only for internal correctness assumptions |
+| 14 | move from requirement → OOA → OOD → implementation → tests, distinguish test assertions from runtime validation, and explain the trace |
 | 15 | identify a real variation/reuse problem and apply a small reusable design without overengineering |
 | 16 | build, test, demonstrate, and defend a complete object-oriented solution |
 
@@ -63,7 +63,7 @@ Do not count a lucky guess as mastery.
 
 ## Coding review protocol
 
-Ask whether each class has a clear responsibility, objects own the state they should protect, relationships are explicit, inheritance represents a real is-a relationship, polymorphism replaces inappropriate type branching, invalid operations preserve valid state, and important behavior is testable.
+Ask whether each class has a clear responsibility, objects own the state they should protect, relationships distinguish association/reference from whole–part meaning where relevant, inheritance represents a real is-a relationship, polymorphism replaces inappropriate type branching, invariants and transition rules are not confused, invalid operations preserve valid state, and important behavior is testable.
 
 ## Reflection prompt
 

@@ -44,7 +44,7 @@ Each `week-XX/instructor-notes.md` file contains:
 - scope guardrails;
 - assignment grading notes.
 
-Any time labels that once existed in the original classroom version have been removed. The notes now describe sequence and relative emphasis only.
+Institution-specific dates, academic-period labels, and fixed class schedules have been removed. Module notes may still include **optional approximate activity durations** to help a facilitator plan a live session; these are suggestions, not a required calendar or meeting length.
 
 ## Assessment
 
