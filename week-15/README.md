@@ -114,23 +114,34 @@ The design question becomes:
 
 ## 4. Strategy-style design
 
-Define objects with the same operation:
+Make the common operation explicit using the abstract-class technique already learned in Module 9:
 
 ```python
-class PickupDelivery:
+from abc import ABC, abstractmethod
+
+
+class DeliveryStrategy(ABC):
+    @abstractmethod
+    def fee(self, subtotal):
+        pass
+
+
+class PickupDelivery(DeliveryStrategy):
     def fee(self, subtotal):
         return 0
 
 
-class StandardDelivery:
+class StandardDelivery(DeliveryStrategy):
     def fee(self, subtotal):
         return 15_000
 
 
-class ExpressDelivery:
+class ExpressDelivery(DeliveryStrategy):
     def fee(self, subtotal):
         return 30_000
 ```
+
+For this course, the abstract superclass makes the common polymorphic contract visible. We intentionally do not introduce protocols or structural-typing machinery here.
 
 Then Order collaborates with one selected strategy:
 
@@ -166,6 +177,8 @@ The variation is moved out of Order.
 This reuses ideas learners already know:
 
 - object relationships;
+- abstract classes;
+- overriding;
 - polymorphism;
 - dynamic binding;
 - responsibility.
@@ -386,7 +399,8 @@ Refactor the delivery variation into interchangeable strategy objects.
 
 Required:
 
-- at least three delivery strategies;
+- one abstract/common `DeliveryStrategy` contract with `fee(subtotal)`;
+- at least three concrete delivery strategies;
 - one Order class using the strategy;
 - no mode-based branching inside Order total calculation;
 - one polymorphic test loop.
