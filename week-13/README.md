@@ -2,7 +2,7 @@
 
 ## Learning outcomes
 
-By the end of this session, students should be able to:
+By the end of this module, learners should be able to:
 
 1. explain why runtime failures require an exception-handling mechanism;
 2. raise a Python exception when an operation cannot satisfy its required conditions;
