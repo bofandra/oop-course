@@ -105,7 +105,7 @@ Use:
 
 [Demo / Code Explanation / Participation rubric](assessments/demo-participation-rubric.md)
 
-This is intentionally separate from the 35% Final Project artifact score.
+This is intentionally separate from the 35% Final Project artifact score. Use [Assessment Alignment](ASSESSMENT_ALIGNMENT.md) to avoid double-counting artifact quality and ownership/explanation evidence.
 
 ## 5. Missing, late, excused, and pending work
 
