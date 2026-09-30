@@ -37,20 +37,20 @@ Use **11.3 Instance methods** as the Python implementation basis.
 
 Focus on calling instance methods and working with instance attributes.
 
-## Recommended 200-minute flow
+## Suggested session flow
 
-| Time | Activity |
+| Approx. duration | Activity |
 |---|---|
-| 08:30–08:45 | Review: instances and attributes |
-| 08:45–09:10 | Attribute values as object state |
-| 09:10–09:35 | Instance methods as behavior |
-| 09:35–10:00 | Read-only vs state-changing methods |
-| 10:00–10:10 | Break |
-| 10:10–10:30 | Method parameters vs object attributes |
-| 10:30–10:55 | Responsibility: who owns the behavior? |
-| 10:55–11:30 | Colab Book / Appointment lab |
-| 11:30–11:40 | Borrow-twice challenge |
-| 11:40–11:50 | Quiz / bridge to encapsulation |
+| 15 min | Review: instances and attributes |
+| 25 min | Attribute values as object state |
+| 25 min | Instance methods as behavior |
+| 25 min | Read-only vs state-changing methods |
+| 10 min | Break |
+| 20 min | Method parameters vs object attributes |
+| 25 min | Responsibility: who owns the behavior? |
+| 35 min | Colab Book / Appointment lab |
+| 10 min | Borrow-twice challenge |
+| 10 min | Quiz / bridge to encapsulation |
 
 ## Opening example
 
