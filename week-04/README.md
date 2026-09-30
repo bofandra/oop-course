@@ -11,8 +11,8 @@ By the end of this module, learners should be able to:
 3. distinguish a public interface from internal object state;
 4. use Python naming conventions such as a leading underscore to communicate internal-use attributes;
 5. use methods and a simple read-only `@property` to provide controlled access to state;
-6. identify a simple class invariant such as `stock >= 0`;
-7. redesign Module 3 classes so invalid state transitions are harder to create.
+6. identify a simple class invariant such as `stock >= 0` and distinguish an invariant from a state-transition rule;
+7. redesign Module 3 classes so invalid state or invalid transitions are harder to create.
 
 ## Source alignment
 
@@ -78,13 +78,13 @@ account.balance = -1_000_000
 
 A better object interface can make the intended operations explicit.
 
-For this early example, assume the opening balance supplied to the constructor is non-negative. Module 13 will add explicit exception-based validation of constructor/method inputs.
+For this Module 4 example, start the account at zero so the simple invariant `balance >= 0` is already true when the object is created. Module 13 will add explicit exception-based validation when constructors or methods accept caller-supplied values.
 
 ```python
 class BankAccount:
-    def __init__(self, owner, balance):
+    def __init__(self, owner):
         self.owner = owner
-        self._balance = balance
+        self._balance = 0
 
     def deposit(self, amount):
         self._balance += amount
@@ -241,7 +241,36 @@ stock >= 0
 
 Formal assertion/contracts are studied later in Module 13. Here the point is simply to recognize and preserve a class rule.
 
-## 6. Encapsulation vs abstraction
+## 6. Invariant vs state-transition rule
+
+These ideas are related, but they are not the same.
+
+An **invariant** describes a condition that must be true for every valid observable state of an object.
+
+Examples:
+
+```text
+Product:
+stock >= 0
+
+Appointment:
+status is one of waiting / confirmed / cancelled
+```
+
+A **state-transition rule** restricts which moves between otherwise valid states are allowed.
+
+Example:
+
+```text
+cancelled → confirmed
+is not allowed
+```
+
+Both `cancelled` and `confirmed` are individually valid status values, so the problem is not the value itself. The problem is the transition.
+
+This distinction becomes important later when Module 13 introduces contracts and explicit failure handling.
+
+## 7. Encapsulation vs abstraction
 
 Use this distinction:
 
@@ -271,7 +300,7 @@ The object also controls its own balance through its methods instead of encourag
 
 That is useful encapsulation.
 
-## 7. Improve the Module 3 Appointment
+## 8. Improve the Module 3 Appointment
 
 Module 3:
 
@@ -343,9 +372,10 @@ Improve the Module 3 Appointment so that:
 - status starts as `waiting`;
 - status is stored internally;
 - callers can read status;
+- the valid-status invariant remains true;
 - `confirm()` changes `waiting → confirmed`;
 - `cancel()` changes a non-cancelled appointment to `cancelled`;
-- a cancelled appointment cannot later become confirmed.
+- the transition rule prevents a cancelled appointment from later becoming confirmed.
 
 Do not use inheritance or custom exception classes.
 
@@ -353,7 +383,7 @@ Do not use inheritance or custom exception classes.
 
 Answer:
 
-> What is the difference between hiding unnecessary implementation detail and merely renaming an attribute with an underscore?
+> What is the difference between hiding unnecessary implementation detail and merely renaming an attribute with an underscore? Also, how does an invariant differ from a state-transition rule?
 
 ## Reading
 
