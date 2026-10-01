@@ -9,6 +9,18 @@ This course is designed for anyone to use **at any time**, with a flexible self-
 Primary implementation language: **Python**  
 Primary lab environment: **Google Colab**
 
+## Course at a glance
+
+| | |
+|---|---|
+| **Audience** | Anyone who wants to learn object-oriented thinking using Python |
+| **Prerequisite** | Basic Python; use Module 0 if needed |
+| **Format** | Self-paced, browser-first, executable notebooks |
+| **Path** | Module 0 prerequisite + Modules 1–16 |
+| **Checkpoints** | Mid-Course Assessment + Final Project |
+| **Environment** | Google Colab by default; local setup optional |
+| **Pace** | No enrollment, fixed calendar, or institutional schedule |
+
 ## Start learning
 
 - New learner: [Start Here](START_HERE.md)
@@ -75,26 +87,32 @@ By the end of the course, learners should be able to:
 
 See [Course Map](COURSE_MAP.md) for the detailed module, learning-outcome, assessment, and source alignment.
 
-Open-course guidance:
+## Course resources
+
+For learners, the main path is:
 
 - [Start Here](START_HERE.md)
-- [Open in Google Colab](COLAB.md)
-- [Open Course Guide](OPEN_COURSE_GUIDE.md)
+- [Open notebooks in Google Colab](COLAB.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
 - [Learner Progress Tracker](LEARNER_PROGRESS.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
-- [Reading & Reference Access Guide](READING_GUIDE.md)
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
+- [Reading & Reference Access Guide](READING_GUIDE.md)
+- [Course Map](COURSE_MAP.md)
+
+For facilitators, contributors, and course maintainers:
+
+- [Open Course Guide](OPEN_COURSE_GUIDE.md)
+- [Instructor Guide](INSTRUCTOR_GUIDE.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Reference Map](REFERENCE_MAP.md)
 - [Source Boundary](SOURCE_BOUNDARY.md)
-- [Instructor Guide](INSTRUCTOR_GUIDE.md)
-- [Execution Audit](EXECUTION_AUDIT.md)
-- [Accessibility Guide](ACCESSIBILITY.md)
-- [Local Setup & Reproducibility](LOCAL_SETUP.md)
-- [Changelog](CHANGELOG.md)
 - [Grading Operational System](GRADING_SYSTEM.md)
 - [Gradebook Quick Start](GRADEBOOK_GUIDE.md)
+- [Accessibility Guide](ACCESSIBILITY.md)
+- [Local Setup & Reproducibility](LOCAL_SETUP.md)
+- [Execution Audit](EXECUTION_AUDIT.md)
+- [Changelog](CHANGELOG.md)
 - [Contributing](CONTRIBUTING.md)
 
 ## Suggested learning sequence
