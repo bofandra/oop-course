@@ -112,6 +112,8 @@ For facilitators, contributors, and course maintainers:
 - [Accessibility Guide](ACCESSIBILITY.md)
 - [Local Setup & Reproducibility](LOCAL_SETUP.md)
 - [Execution Audit](EXECUTION_AUDIT.md)
+- [Publication Checklist](PUBLICATION_CHECKLIST.md)
+- [Release Notes](RELEASE_NOTES.md)
 - [Changelog](CHANGELOG.md)
 - [Contributing](CONTRIBUTING.md)
 
