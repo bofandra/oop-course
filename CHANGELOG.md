@@ -105,6 +105,10 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 
 ### Publication polish
 
+- simplified the repository landing page with a concise course-at-a-glance section and clearer separation between learner resources and maintainer/facilitator resources;
+- added `PUBLICATION_CHECKLIST.md` with the recommended GitHub description, topics, release checklist, and versioning guidance;
+- added `RELEASE_NOTES.md` as the prepared body for the first stable `v1.0.0` release;
+- extended repository validation so publication/release documentation remains present and linked from the public landing page;
 - added `CITATION.cff` so the repository has machine-readable citation metadata;
 - added `ACCESSIBILITY.md` with learner and contributor accessibility guidance;
 - added validation guards for citation/accessibility publication assets;
