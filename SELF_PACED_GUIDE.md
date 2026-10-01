@@ -2,7 +2,9 @@
 
 There is no fixed schedule for this course.
 
-Use the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) to decide when you are ready to move forward.
+Use the [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md) to decide when you are ready to move forward and the [Learner Progress Tracker](LEARNER_PROGRESS.md) to record evidence and remaining gaps.
+
+Use the [Reading & Reference Access Guide](READING_GUIDE.md) when a module points to one of the two formal references.
 
 Progress when you can explain and apply the current module, not merely when you have read it.
 
@@ -19,7 +21,8 @@ Progress when you can explain and apply the current module, not merely when you 
 8. Attempt the module section in [Mastery Checks](MASTERY_CHECKS.md)
 9. Open the worked feedback only after answering
 10. Explain your solution in your own words
-11. Move forward when the core ideas are clear
+11. Record one evidence link or reflection in the learner tracker
+12. Move forward when the core ideas are clear
 ```
 
 ## Suggested pace

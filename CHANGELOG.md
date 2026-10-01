@@ -83,6 +83,13 @@ The GitHub Actions validation workflow passed on `main` after the audit and lear
 
 ## Unreleased
 
+### Learner journey
+
+- added `LEARNER_PROGRESS.md` so self-paced learners can track module completion, evidence, reflections, and major checkpoints without a fixed calendar;
+- added `READING_GUIDE.md` to make official OpenStax access explicit and clarify that the Diktat is a formal conceptual reference without making an unofficial third-party copy a course dependency;
+- connected the new learner tools from the repository home, Start Here, and self-paced workflow;
+- extended publication validation so learner-progress and reading-access guidance remain part of the public course path.
+
 ### Assessment progression
 
 - removed premature use of Python's `is` identity operator from Module 2 exercises; Module 2 now assesses separate-instance reasoning without Module 11 syntax;

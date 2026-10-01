@@ -21,7 +21,9 @@ mastery check
 - [Take the Python Readiness Check](00-python-primer/readiness-check.md)
 - [Open Module 0 — Python Primer](00-python-primer/)
 - [Start Module 1 — Thinking in Objects](week-01/)
+- [Copy/use the Learner Progress Tracker](LEARNER_PROGRESS.md)
 - [Open the full Colab notebook index](COLAB.md)
+- [Read the Reference Access Guide](READING_GUIDE.md)
 
 You can begin entirely in the browser. Cloning the repository is optional.
 
@@ -91,9 +93,11 @@ See the [Course Map](COURSE_MAP.md) for detailed learning-outcome and assessment
 
 Move forward when you can explain the core idea, complete a representative exercise, predict and verify example behavior, justify a design decision, and identify what you still do not understand.
 
-## 6. Build evidence as you learn
+## 6. Track progress and build evidence
 
-Keep completed notebooks, selected exercises, coding assignments, design explanations, the mid-course assessment attempt, and the final project as portfolio evidence.
+Use the [Learner Progress Tracker](LEARNER_PROGRESS.md) as an optional checklist.
+
+Keep completed notebooks, selected exercises, coding assignments, design explanations, the mid-course assessment attempt, and the final project as portfolio evidence. Record a short reflection or remaining gap before moving on rather than treating completion as a calendar event.
 
 ## 7. Continue
 
@@ -101,7 +105,9 @@ Keep completed notebooks, selected exercises, coding assignments, design explana
 - [Open in Google Colab](COLAB.md)
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
+- [Learner Progress Tracker](LEARNER_PROGRESS.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
+- [Reading & Reference Access Guide](READING_GUIDE.md)
 - [Mastery Checks](MASTERY_CHECKS.md)
 - [Course Map](COURSE_MAP.md)
 - [Reference Map](REFERENCE_MAP.md)

@@ -12,7 +12,9 @@ Primary lab environment: **Google Colab**
 ## Start learning
 
 - New learner: [Start Here](START_HERE.md)
+- Want to track progress: [Learner Progress Tracker](LEARNER_PROGRESS.md)
 - Ready to run code: [Open notebooks in Google Colab](COLAB.md)
+- Need the course readings: [Reading & Reference Access Guide](READING_GUIDE.md)
 - Want the full pathway: [Course Map](COURSE_MAP.md)
 
 No enrollment or fixed calendar is required.
@@ -79,7 +81,9 @@ Open-course guidance:
 - [Open in Google Colab](COLAB.md)
 - [Open Course Guide](OPEN_COURSE_GUIDE.md)
 - [Self-Paced Learning Guide](SELF_PACED_GUIDE.md)
+- [Learner Progress Tracker](LEARNER_PROGRESS.md)
 - [Self-Assessment Guide](SELF_ASSESSMENT_GUIDE.md)
+- [Reading & Reference Access Guide](READING_GUIDE.md)
 - [Mastery Checks with Worked Feedback](MASTERY_CHECKS.md)
 - [Assessment Alignment](ASSESSMENT_ALIGNMENT.md)
 - [Reference Map](REFERENCE_MAP.md)
@@ -140,6 +144,8 @@ Self-paced learners may instead use the quizzes, labs, and rubrics purely for se
 The formal course scope is intentionally aligned to these two references.
 
 The Diktat is used primarily for OOP concepts and terminology. OpenStax is used primarily for Python-facing implementation.
+
+Learners can use the [Reading & Reference Access Guide](READING_GUIDE.md) for the official free OpenStax access path and guidance on using the Diktat without making an unofficial copy a course dependency.
 
 See the [Reference Map](REFERENCE_MAP.md) for module-by-module source alignment and the [Source Boundary](SOURCE_BOUNDARY.md) for the rule that separates formal course concepts, minimal Python implementation bridges, and out-of-scope additions.
 
