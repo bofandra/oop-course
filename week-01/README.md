@@ -1,5 +1,8 @@
 # Module 1 — Introduction to OOP & Thinking in Objects
 
+![Week 01 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 1 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-01/01_thinking_in_objects.ipynb)
 
 ## Learning outcomes

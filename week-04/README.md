@@ -1,5 +1,8 @@
 # Module 4 — Encapsulation & Abstraction
 
+![Week 04 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 4 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-04/04_encapsulation_abstraction.ipynb)
 
 ## Learning outcomes

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Week 06: Inheritance</title>
+  <desc id="desc">Specialize a general class when the relationship truly means is-a. Key concepts and a learning flow for this OOP course module.</desc>
+  <rect width="1600" height="1000" fill="#F8FAFC"/>
+  <rect width="1600" height="220" fill="#0F172A"/>
+  <rect x="0" y="0" width="18" height="220" fill="#DC2626"/>
+  <text x="70" y="62" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#DC2626">OBJECT-ORIENTED PROGRAMMING · PYTHON</text>
+  <rect x="1345" y="42" width="170" height="58" rx="29" fill="#DC2626"/>
+  <text x="1430" y="80" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">WEEK 06</text>
+  <text x="70" y="118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="44" font-weight="800" fill="#FFFFFF">Inheritance</text>
+  <text x="70" y="195" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#CBD5E1">Specialize a general class when the relationship truly means is-a</text>
+  <text x="70" y="270" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" fill="#334155">KEY CONCEPTS</text>
+  <g>
+      <rect x="70" y="300" width="410" height="180" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="70" y="300" width="8" height="180" rx="4" fill="#DC2626"/>
+      <text x="100" y="345" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0F172A">Is-a Test</text>
+      <text x="100" y="382" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">Inheritance models a specific kind of a more</text><text x="100" y="409" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">general concept, not mere code convenience.</text>
+    </g><g>
+      <rect x="520" y="300" width="410" height="180" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="520" y="300" width="8" height="180" rx="4" fill="#DC2626"/>
+      <text x="550" y="345" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0F172A">Superclass</text>
+      <text x="550" y="382" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">The general class provides state and behavior</text><text x="550" y="409" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">that subclasses can inherit.</text>
+    </g><g>
+      <rect x="70" y="520" width="410" height="180" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="70" y="520" width="8" height="180" rx="4" fill="#DC2626"/>
+      <text x="100" y="565" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0F172A">Subclass</text>
+      <text x="100" y="602" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">A specialized class can add state or behavior</text><text x="100" y="629" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">while reusing inherited features.</text>
+    </g><g>
+      <rect x="520" y="520" width="410" height="180" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="520" y="520" width="8" height="180" rx="4" fill="#DC2626"/>
+      <text x="550" y="565" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#0F172A">super()</text>
+      <text x="550" y="602" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">Reuse superclass initialization when the</text><text x="550" y="629" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#475569">subclass extends, rather than replaces, setup.</text>
+    </g>
+  <text x="1045" y="270" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800" fill="#334155">MENTAL MODEL / FLOW</text>
+  <g>
+      <rect x="1045" y="335" width="470" height="64" rx="18" fill="#DC2626" stroke="#DC2626" stroke-width="2"/>
+      <circle cx="1080" cy="367" r="17" fill="#FFFFFF" opacity="0.95"/>
+      <text x="1080" y="373" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#DC2626">1</text>
+      <text x="1112" y="374" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#FFFFFF">General class</text>
+    </g><g>
+      <rect x="1045" y="409" width="470" height="64" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+      <circle cx="1080" cy="441" r="17" fill="#DC2626" opacity="1"/>
+      <text x="1080" y="447" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">2</text>
+      <text x="1112" y="448" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#1E293B">Specialize</text>
+    </g><g>
+      <rect x="1045" y="483" width="470" height="64" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+      <circle cx="1080" cy="515" r="17" fill="#DC2626" opacity="1"/>
+      <text x="1080" y="521" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">3</text>
+      <text x="1112" y="522" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#1E293B">Inherit</text>
+    </g><g>
+      <rect x="1045" y="557" width="470" height="64" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+      <circle cx="1080" cy="589" r="17" fill="#DC2626" opacity="1"/>
+      <text x="1080" y="595" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">4</text>
+      <text x="1112" y="596" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#1E293B">Extend</text>
+    </g>
+  <rect x="70" y="760" width="1445" height="150" rx="28" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="70" y="760" width="14" height="150" rx="7" fill="#DC2626"/>
+  <text x="110" y="805" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="800" fill="#DC2626">PRACTICE FOCUS</text>
+  <text x="110" y="845" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="500" fill="#334155">Model a Person hierarchy, then compare inheritance with a has-a design before choosing.</text>
+  <text x="70" y="964" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="500" fill="#64748B">oop-course · Module 6 · Course references: Inggriani Liem + OpenStax</text>
+  <text x="1515" y="964" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" fill="#64748B">bofandra/oop-course</text>
+  </svg>

@@ -1,5 +1,8 @@
 # Module 5 — Object Relationships
 
+![Week 05 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 5 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-05/05_object_relationships.ipynb)
 
 ## Learning outcomes

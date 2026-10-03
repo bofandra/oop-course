@@ -1,5 +1,8 @@
 # Module 16 — Final Project / Final Test
 
+![Week 16 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 16 planning notebook in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-16/16_final_project_planning.ipynb)
 
 ## Learning outcome

@@ -1,5 +1,8 @@
 # Module 15 — Reusability, Design Patterns & OOP Case Study
 
+![Week 15 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 15 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-15/15_reusability_patterns_case_study.ipynb)
 
 ## Learning outcomes

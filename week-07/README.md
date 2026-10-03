@@ -1,5 +1,8 @@
 # Module 7 — Overriding, Polymorphism & Dynamic Binding
 
+![Week 07 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 7 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-07/07_overriding_polymorphism.ipynb)
 
 ## Learning outcomes

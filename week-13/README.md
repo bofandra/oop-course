@@ -1,5 +1,8 @@
 # Module 13 — Exception Handling & Assertions
 
+![Week 13 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 13 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-13/13_exceptions_assertions.ipynb)
 
 ## Learning outcomes

@@ -1,5 +1,8 @@
 # Module 14 — OOP Analysis, Design, Class Diagram & Testing
 
+![Week 14 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 14 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-14/14_oop_analysis_design_testing.ipynb)
 
 ## Learning outcomes

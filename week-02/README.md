@@ -1,5 +1,8 @@
 # Module 2 — Classes, Objects & Instances
 
+![Week 02 infographic](infographic.svg)
+
+
 > **Run the notebook:** [Open Module 2 in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/week-02/02_classes_objects_instances.ipynb)
 
 ## Learning outcomes

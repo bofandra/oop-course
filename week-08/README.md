@@ -1,5 +1,8 @@
 # Module 8 — Mid Test
 
+![Week 08 infographic](infographic.svg)
+
+
 > **Assessment notebook:** [Open Mid-Course Assessment in Google Colab](https://colab.research.google.com/github/bofandra/oop-course/blob/main/assessments/midterm/midterm_exam.ipynb)
 
 ## Learning outcome
