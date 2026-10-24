@@ -28,7 +28,7 @@ Primary lab environment: **Google Colab**
 - Ready to run code: [Open notebooks in Google Colab](COLAB.md)
 - Need the course readings: [Reading & Reference Access Guide](READING_GUIDE.md)
 - Want the full pathway: [Course Map](COURSE_MAP.md)
-- Optional after learning OOP: [FastAPI, Flask, and Django mini-projects](examples/web-frameworks/README.md)
+- Optional OOP-first extension: [Pure Python domain → FastAPI, Flask, and Django](examples/web-frameworks/README.md) ([learning bridge](examples/web-frameworks/OOP_LEARNING_BRIDGE.md), [module mapping](examples/web-frameworks/OOP_CONCEPT_MAPPING.md))
 
 No enrollment or fixed calendar is required.
 

@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        framework: [fastapi, flask, django]
+        framework: [00-pure-python, fastapi, flask, django]
     defaults:
       run:
         working-directory: examples/web-frameworks/${{ matrix.framework }}
@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
-      - name: Test FastAPI and Flask
+      - name: Test pure Python, FastAPI, and Flask
         if: matrix.framework != 'django'
         run: python -m unittest discover -s tests -v
       - name: Test Django and migrations

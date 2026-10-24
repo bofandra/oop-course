@@ -1,53 +1,81 @@
-# FastAPI: Book Management REST API
+# FastAPI — adapter HTTP untuk OOP domain yang sama
 
-FastAPI menonjolkan **type hints** dan validasi otomatis dengan **Pydantic**.
-`BookInput` memvalidasi body JSON, `BookOutput` mendokumentasikan response,
-dan `BookRepository` memegang state serta operasi penyimpanan.
+> Baca dahulu: [pure Python](../00-pure-python/README.md),
+> [learning bridge](../OOP_LEARNING_BRIDGE.md), dan
+> [mapping OOP 1–16](../OOP_CONCEPT_MAPPING.md).
 
-## Arsitektur
+## Fokus belajar: validasi request bukan model domain
 
-```text
-HTTP request
-    -> FastAPI routing (@app.get/post/put/delete)
-    -> Pydantic BookInput (validasi otomatis)
-    -> BookRepository (enkapsulasi state & business operation)
-    -> Book dataclass
-    -> JSON response tervalidasi oleh BookOutput
-```
+- `book_domain.Book`: domain entity, invariant, behavior.
+- `BookInput(BaseModel)`: bentuk input HTTP, divalidasi Pydantic.
+- `BookOutput(BaseModel)`: bentuk output HTTP/OpenAPI; bukan domain class.
+- `BookService`: method yang merepresentasikan use case CRUD.
+- `InMemoryBookRepository(BookRepository)`: penyimpanan tanpa database.
+- `create_app(repository)`: **composition root**, menyuntikkan
+  implementasi repository sehingga tests mengisolasi state.
 
-**Konsep OOP:** `Book` adalah objek data; `BookRepository` adalah class
-pemilik state `_books`; route functions adalah client dari repository
-(**composition**); `create_app` memungkinkan repository berbeda pada setiap tes.
+### Kolaborasi objek saat POST /books
 
-## Menjalankan (Python 3.12+)
+~~~text
+JSON -> Pydantic BookInput -> create_book()
+     -> BookService.create() -> TitlePolicy.normalize()
+     -> Book.validated_fields() -> InMemoryBookRepository.create()
+     -> domain Book -> Book.to_dict()
+     -> BookOutput schema -> JSON 201
+~~~
 
-```bash
+Handler **tidak** menyusun ulang aturan validitas domain.
+Input HTTP tidak valid → 422 otomatis dari Pydantic; error domain tetap
+diterjemahkan ke 422, dan `BookNotFound` menjadi 404.
+
+## Kaitan ke materi sebelumnya
+
+| Modul | Evidensi kode |
+|---|---|
+| 2–4 | objek `Book`, state `_title`, invariant `revise` |
+| 5 | `create_app` menyusun service dan repository (has-a) |
+| 7 & 9 | repository konkret memenuhi abstract repository |
+| 11 | objek Book yang disimpan in-memory dapat ter-alias |
+| 12 | import `book_domain` sebagai paket eksternal |
+| 13 | domain exception diterjemahkan pada boundary HTTP |
+| 14–15 | test domain vs test HTTP adapter; reuse lintas framework |
+
+Peta lengkap per modul: [OOP_CONCEPT_MAPPING.md](../OOP_CONCEPT_MAPPING.md).
+
+## Cara menjalankan (Python 3.12+)
+
+Dari folder repository, masuk ke:
+
+~~~bash
 cd examples/web-frameworks/fastapi
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate # Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
 uvicorn app:app --reload --port 8001
-```
+~~~
 
-- API: http://127.0.0.1:8001/books
-- Swagger UI: http://127.0.0.1:8001/docs
-- OpenAPI JSON: http://127.0.0.1:8001/openapi.json
-- Test: `python -m unittest discover -s tests -v`
+Lihat http://127.0.0.1:8001/docs untuk Swagger UI dan
+http://127.0.0.1:8001/openapi.json untuk skema.
 
-Contoh:
-
-```bash
+~~~bash
 curl -i -X POST http://127.0.0.1:8001/books \
   -H "Content-Type: application/json" \
   -d '{"title":"Clean Code","author":"Robert C. Martin"}'
-curl -i http://127.0.0.1:8001/books/1
-```
+python -m unittest discover -s tests -v
+~~~
 
-## Apa yang perlu diperhatikan?
+Run command test pada terminal kedua setelah install (tidak harus
+sambil menjalankan server).
 
-- Input salah mendapat HTTP **422** tanpa menulis parser JSON manual.
-- `response_model` membuat skema respons terdokumentasi otomatis.
-- Contoh ini memakai handler sinkron (`def`): `async def` hanya perlu
-  ketika pekerjaan I/O-nya mendukung async, bukan sekadar demi tampilan.
-- Penyimpanan **in-memory**, akan kosong lagi setelah restart, dan tidak aman
-  untuk banyak worker/proses. Ini bukan desain produksi.
+## Diskusi refleksi
+
+1. Mengapa `BookInput` bukan subclass domain `Book`?
+2. Apa dampaknya jika `BookService` memanggil `HTTPException`?
+3. Mengapa `create_app(repository)` memudahkan unit/integration testing?
+4. Jika Pydantic memastikan judul non-empty, mengapa domain tetap
+   memvalidasi judulnya sendiri?
+5. Apakah `async def` otomatis lebih cepat daripada `def`?
+   Contoh ini menggunakan handler sinkron untuk operasi sinkron.
+
+> Perhatian: state in-memory lokal hilang setelah proses restart, dan
+> tidak dirancang untuk worker/concurrency atau produksi.
