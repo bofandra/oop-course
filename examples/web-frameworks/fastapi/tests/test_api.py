@@ -1,13 +1,14 @@
 import unittest
 
+from book_domain import InMemoryBookRepository
 from fastapi.testclient import TestClient
 
-from app import BookRepository, create_app
+from app import create_app
 
 
 class BookApiTests(unittest.TestCase):
     def setUp(self):
-        self.client = TestClient(create_app(BookRepository()))
+        self.client = TestClient(create_app(InMemoryBookRepository()))
 
     def test_complete_crud(self):
         self.assertEqual(self.client.get("/books").json(), [])
@@ -20,7 +21,6 @@ class BookApiTests(unittest.TestCase):
         )
         self.assertEqual(self.client.get("/books/1").json(), created.json())
         self.assertEqual(len(self.client.get("/books").json()), 1)
-
         updated = self.client.put(
             "/books/1", json={"title": "Refactoring", "author": "Martin Fowler"}
         )
@@ -46,6 +46,14 @@ class BookApiTests(unittest.TestCase):
             self.client.put("/books/9", json={"title": "X", "author": "Y"}).status_code, 404
         )
         self.assertEqual(self.client.delete("/books/9").status_code, 404)
+
+    def test_invalid_update_does_not_change_existing_book(self):
+        self.client.post("/books", json={"title": "Original", "author": "Teacher"})
+        invalid = self.client.put(
+            "/books/1", json={"title": "Changed", "author": " "}
+        )
+        self.assertEqual(invalid.status_code, 422)
+        self.assertEqual(self.client.get("/books/1").json()["title"], "Original")
 
     def test_openapi_is_generated(self):
         self.assertEqual(self.client.get("/openapi.json").status_code, 200)

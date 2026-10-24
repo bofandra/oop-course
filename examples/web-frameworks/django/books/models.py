@@ -1,4 +1,8 @@
-"""A Django ORM class: combines domain data with database persistence."""
+"""Django's persistence model, deliberately separate from domain Book.
+
+The ORM model inherits models.Model; BookRepository maps rows to domain Book.
+This is a deliberate architectural trade-off, not a Django requirement.
+"""
 
 from django.db import models
 

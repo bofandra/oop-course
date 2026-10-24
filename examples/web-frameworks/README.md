@@ -1,172 +1,214 @@
-# Bonus praktikum: FastAPI, Flask, dan Django
+# Ekstensi opsional: OOP ke FastAPI, Flask, dan Django
 
-> **Materi tambahan (opsional)** untuk pembelajar yang sudah memahami OOP.
-> Web framework, HTTP/REST, database, dan dependency eksternal **bukan**
-> capaian wajib atau bahan asesmen modul 0–16. Lihat [Source Boundary](../../SOURCE_BOUNDARY.md).
+> **Mulai dari desain OOP, baru framework.** Ini materi praktik tambahan
+> untuk yang telah menempuh modul 1–16. Tidak mengubah referensi formal,
+> CLO, atau penilaian kursus utama.
+> Lihat [Source Boundary](../../SOURCE_BOUNDARY.md).
 
-Ketiga proyek menjalankan **Book Management REST API** yang sama sehingga
-perbandingan berfokus pada cara setiap framework menerima HTTP request,
-memproses business logic, dan menghasilkan HTTP response.
+## Mulai dari sini: jalur belajar
 
-## Tujuan pembelajaran
+1. **[OOP_LEARNING_BRIDGE.md](OOP_LEARNING_BRIDGE.md)** —
+   requirement → class diagram → objek → kolaborasi → adapter HTTP → testing.
+2. **[OOP_CONCEPT_MAPPING.md](OOP_CONCEPT_MAPPING.md)** —
+   relasi nyata ke modul 1–16, lengkap dengan path kode dan pertanyaan refleksi.
+3. **[00-pure-python](00-pure-python/README.md)** —
+   jalankan domain tanpa HTTP/server/database; ini baseline yang benar-benar
+   diimpor oleh ketiga proyek web.
+4. **[FastAPI](fastapi/README.md)** —
+   pelajari Pydantic, route, OpenAPI, exception translation.
+5. **[Flask](flask/README.md)** —
+   bandingkan routing/parsing manual yang memakai service yang sama.
+6. **[Django](django/README.md)** —
+   belajar perbedaan ORM model dan domain entity melalui repository adapter.
+7. **[Perbandingan arsitektur](ARCHITECTURE_COMPARISON.md)** —
+   sequence diagram, dependency direction, identity & design trade-offs.
+8. **[Latihan pemula](exercises/beginner.md)** →
+   [menengah](exercises/intermediate.md) →
+   [lanjut](exercises/advanced.md).
+   Fasilitator: [INSTRUCTOR_EXTENSION_GUIDE.md](INSTRUCTOR_EXTENSION_GUIDE.md).
 
-- Menghubungkan class, object, encapsulation, state, dan responsibility dengan backend web.
-- Melihat perbedaan routing, request parsing, validation, persistence, dan pengujian.
-- Memahami bahwa framework bukan pengganti desain OOP.
+## Arsitektur: satu business core yang sama
 
-## Struktur
+~~~mermaid
+flowchart TB
+    FastAPI[FastAPI HTTP Adapter] --> Service
+    Flask[Flask HTTP Adapter] --> Service
+    Django[Django HTTP Adapter] --> Service
+    Service[BookService] --> Book[Book domain: behavior & invariant]
+    Service --> Repository[BookRepository ABC]
+    Repository --> Memory[InMemoryBookRepository]
+    Repository --> ORM[DjangoBookRepository]
+    ORM --> Database[(SQLite via Django ORM)]
+~~~
 
-```text
+Diagram bersifat perbandingan: saat menjalankan satu aplikasi,
+hanya adapter framework dan implementasi repository terkait yang aktif.
+Paket pure Python (`book_domain`) tidak mengenal HTTP dan tidak
+bergantung pada framework.
+
+## Struktur folder
+
+~~~text
 examples/web-frameworks/
-├── README.md                 # Panduan komparatif ini
-├── fastapi/                  # Type hints, Pydantic, OpenAPI, in-memory repository
-├── flask/                    # Minimal routing, validasi manual, in-memory repository
-└── django/                   # Model ORM, migration, SQLite, view JSON native
-```
+├── README.md
+├── OOP_LEARNING_BRIDGE.md
+├── OOP_CONCEPT_MAPPING.md
+├── ARCHITECTURE_COMPARISON.md
+├── INSTRUCTOR_EXTENSION_GUIDE.md
+├── 00-pure-python/
+│   ├── pyproject.toml, requirements.txt, demo.py, README.md
+│   ├── src/book_domain/
+│   │   ├── entities.py, errors.py, ports.py
+│   │   ├── policies.py, services.py, memory.py
+│   │   └── __init__.py
+│   └── tests/
+├── fastapi/        # API + tes HTTP: in-memory implementation
+├── flask/          # API + tes HTTP: in-memory implementation
+├── django/         # API + ORM repository + SQLite + tes integrasi
+└── exercises/
+    ├── beginner.md
+    ├── intermediate.md
+    └── advanced.md
+~~~
 
-## API yang dibandingkan (ketiga proyek sama)
+## API: perilaku eksternal yang setara
 
-| Method | Endpoint | Hasil | Status sukses |
-|---|---|---|---|
-| GET | /books | Semua buku | 200 |
-| GET | /books/{id} | Satu buku | 200 |
-| POST | /books | Membuat buku | 201 |
-| PUT | /books/{id} | Mengubah seluruh field buku | 200 |
-| DELETE | /books/{id} | Menghapus buku | 204 |
+| Method | Endpoint | Sukses |
+|---|---|---|
+| GET | /books | 200, array |
+| GET | /books/{id} | 200, object; tidak ada = 404 |
+| POST | /books | 201, object baru |
+| PUT | /books/{id} | 200, object terubah; tidak ada = 404 |
+| DELETE | /books/{id} | 204 tanpa body; tidak ada = 404 |
 
-Format input untuk POST dan PUT:
+Input create/update:
 
-```json
-{"title": "Clean Code", "author": "Robert C. Martin"}
-```
+~~~json
+{"title":"Clean Code","author":"Robert C. Martin"}
+~~~
 
-Format objek output:
+Output:
 
-```json
-{"id": 1, "title": "Clean Code", "author": "Robert C. Martin"}
-```
+~~~json
+{"id":1,"title":"Clean Code","author":"Robert C. Martin"}
+~~~
 
-Seluruh field `title` dan `author` wajib berupa teks yang tidak kosong
-(setelah whitespace dibuang), maksimal 120 karakter. ID dibuat server.
-Respons input tidak valid adalah 422 (FastAPI) atau 400 (Flask/Django).
-ID tidak ditemukan menghasilkan 404.
+Domain: setiap title/author harus string 1–120 karakter setelah trim;
+ID dibuat sistem dan bersifat read-only. HTTP input invalid menjadi
+**422** di FastAPI, **400** di Flask/Django, sedangkan exception internal
+tetap `BookValidationError`. Nilai yang tidak ditemukan memicu
+`BookNotFound` di domain → **404** di adapter.
 
-## Cara cepat menjalankan
+## Menjalankan (Python 3.12+)
 
-Gunakan **Python 3.12+**. Jalankan dari direktori proyek masing-masing,
-dan buat virtual environment terpisah agar dependensi tidak saling bertabrakan.
+**Dari root repository**: `git clone https://github.com/bofandra/oop-course.git`
+kemudian `cd oop-course`. Gunakan virtualenv terpisah setiap contoh.
 
-**FastAPI** — [baca panduan](fastapi/README.md):
+### 0. Pure Python — tanpa server
 
-```bash
+~~~bash
+cd examples/web-frameworks/00-pure-python
+python -m venv .venv
+source .venv/bin/activate # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
+python demo.py
+python -m unittest discover -s tests -v
+~~~
+
+Kembali ke root repo saat ingin membuka contoh lain.
+
+### 1. FastAPI — port 8001
+
+~~~bash
 cd examples/web-frameworks/fastapi
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 python -m pip install -r requirements.txt
 uvicorn app:app --reload --port 8001
-```
+~~~
 
-Buka http://127.0.0.1:8001/docs untuk dokumentasi interaktif.
+Dokumentasi interaktif: http://127.0.0.1:8001/docs
 
-**Flask** — [baca panduan](flask/README.md):
+### 2. Flask — port 8002
 
-```bash
+~~~bash
 cd examples/web-frameworks/flask
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 flask --app app run --debug --port 8002
-```
+~~~
 
-**Django** — [baca panduan](django/README.md):
+### 3. Django — port 8003
 
-```bash
+~~~bash
 cd examples/web-frameworks/django
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver 8003
-```
+~~~
 
-Di terminal terpisah, uji salah satu server (ganti port 8001 menjadi 8002/8003):
+Setiap `requirements.txt` memasang domain yang **sama** melalui
+`-e ../00-pure-python`. Ketiga contoh menggunakan folder berdampingan
+dalam clone repository; jangan salin salah satu folder saja.
 
-```bash
-curl -i http://127.0.0.1:8001/books
-curl -i -X POST http://127.0.0.1:8001/books \
+### Uji API dari terminal lain
+
+Ganti PORT menjadi 8001, 8002, atau 8003.
+
+~~~bash
+PORT=8001
+curl -i "http://127.0.0.1:$PORT/books"
+curl -i -X POST "http://127.0.0.1:$PORT/books" \
   -H "Content-Type: application/json" \
   -d '{"title":"Clean Code","author":"Robert C. Martin"}'
-curl -i http://127.0.0.1:8001/books/1
-curl -i -X PUT http://127.0.0.1:8001/books/1 \
+curl -i "http://127.0.0.1:$PORT/books/1"
+curl -i -X PUT "http://127.0.0.1:$PORT/books/1" \
   -H "Content-Type: application/json" \
   -d '{"title":"Refactoring","author":"Martin Fowler"}'
-curl -i -X DELETE http://127.0.0.1:8001/books/1
-```
+curl -i -X DELETE "http://127.0.0.1:$PORT/books/1"
+~~~
 
-### Menjalankan tes
+Di Windows PowerShell, sesuaikan deklarasi environment variable dan curl.
 
-Jalankan dari direktori tiap proyek, setelah memasang `requirements.txt`:
+## Test suite & CI
 
-```bash
-# FastAPI / Flask
-python -m unittest discover -s tests -v
+- Pure Python, FastAPI, Flask:
+  `python -m unittest discover -s tests -v` di masing-masing direktori.
+- Django: `python manage.py test books -v 2` dari direktorinya,
+  didahului `python manage.py migrate` saat menjalankan server.
+- GitHub Actions `web-framework-examples.yml` menguji keempat target
+  termasuk core, dan workflow kursus utama tetap terpisah.
 
-# Django
-python manage.py test books -v 2
-```
+## Tabel tanggung jawab
 
-GitHub Actions juga menjalankan ketiga suite melalui
-[`web-framework-examples.yml`](../../.github/workflows/web-framework-examples.yml).
+| Tanggung jawab | Kelas/komponen |
+|---|---|
+| Invariant data dan behavior | `book_domain.Book` |
+| Abstraksi persistence | `book_domain.BookRepository(ABC)` |
+| Use case / collaboration | `book_domain.BookService` |
+| Variasi behavior | `TitlePolicy` subclasses (Strategy-style) |
+| Penyimpanan memori | `InMemoryBookRepository` |
+| Penyimpanan database | `DjangoBookRepository` + ORM Book |
+| HTTP request/response | framework adapter masing-masing |
 
-## Perbandingan arsitektur
+**OOP bukan sekadar banyak class**. Pertimbangkan apa yang berubah saat
+domain rule berganti, framework diganti, atau penyimpanan berpindah.
+Tidak semua aplikasi kecil membutuhkan port/service terpisah: itu salah
+satu trade-off yang justru perlu dievaluasi mahasiswa.
 
-```text
-Client (curl/browser)
-    |
-    v
-HTTP router / endpoint       <-- FastAPI / Flask / Django
-    |
-    v
-Business objects & rules     <-- Book / BookRepository atau Book ORM
-    |
-    v
-Storage                       <-- dict in-memory atau SQLite
-    |
-    v
-JSON response + HTTP status
-```
+## Batasan keamanan dan reproduktibilitas
 
-| Aspek | FastAPI | Flask | Django |
-|---|---|---|---|
-| Pemetaan URL | Decorator `@app.get/post/put/delete` | Decorator `@app.get/post/put/delete` | `urls.py` |
-| Validasi input | `Pydantic` | Manual pada handler | Manual pada handler (tanpa Django REST Framework) |
-| Model/domain | Dataclass `Book` | Dataclass `Book` | `models.Model` |
-| Penyimpanan contoh | Dictionary dalam `BookRepository` | Dictionary dalam `BookRepository` | SQLite melalui ORM & migration |
-| Dokumentasi OpenAPI | Otomatis di `/docs` | Tidak otomatis | Tidak otomatis |
-| Konsep OOP | Composition: handler memakai repository | Composition: handler memakai repository | Model adalah class berbasis ORM |
+Proyek bersifat edukatif **lokal saja**. Belum ada autentikasi, kontrol
+akses, limit/pagination, audit trail, transaksi lintas-request, ataupun
+pengamanan deployment. Penyimpanan in-memory tidak bertahan saat restart
+atau lintas worker; Django SQLite adalah demo lokal. Contoh Django
+memakai konfigurasi development dan CSRF exemption untuk unauthenticated
+JSON API, **bukan pola untuk aplikasi produksi berbasis cookie/session**.
 
-**Catatan tentang keadilan perbandingan:** perbedaan penyimpanan disengaja.
-FastAPI/Flask memakai state proses yang hilang saat server restart; Django
-memakai SQLite yang bertahan setelah restart. Karena itu contoh ini **bukan**
-benchmark performa maupun rekomendasi arsitektur produksi.
-
-## Tugas praktikum lanjutan (opsional)
-
-1. Tambahkan atribut `year` pada tiga implementasi dan ubah pengujiannya.
-2. Jelaskan perbedaan validasi FastAPI, Flask, dan Django.
-3. Ubah Flask/FastAPI agar menyimpan data ke database; bandingkan tanggung jawab handler.
-4. Tambahkan autentikasi, otorisasi, rate limiting, dan konfigurasi aman jika proyek dikembangkan ke produksi.
-
-## Peringatan keamanan dan operasional
-
-Semua contoh disediakan untuk **belajar di lokal**: tanpa autentikasi, tanpa
-otorisasi, tanpa pagination, tanpa audit log, dan tanpa deployment hardening.
-Penggunaan untuk produksi memerlukan konfigurasi rahasia dari environment,
-penanganan konkurensi/transaksi, database yang sesuai, dan proteksi request
-(termasuk CSRF bila menggunakan autentikasi berbasis cookie).
-
-## Bacaan dokumentasi resmi
-
-- FastAPI: https://fastapi.tiangolo.com/
-- Flask: https://flask.palletsprojects.com/
-- Django: https://docs.djangoproject.com/
+Dokumentasi resmi (pendukung teknologi, bukan referensi formal kursus):
+[FastAPI](https://fastapi.tiangolo.com/),
+[Flask](https://flask.palletsprojects.com/),
+[Django](https://docs.djangoproject.com/).
